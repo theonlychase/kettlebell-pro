@@ -80,7 +80,6 @@ const journeyLinks = ref([
   <div>
     <!-- Hero Section -->
     <UPageHero
-      class="bg-muted "
       :links="links"
     >
       <template #title>
@@ -113,41 +112,31 @@ const journeyLinks = ref([
     </section>
 
     <!-- Features Section -->
-    <section class="bg-gray-50 dark:bg-gray-800 py-24">
-      <UContainer>
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-            Everything You Need to Succeed
-          </h2>
-          <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-            Our comprehensive platform provides all the tools and resources for your kettlebell training journey.
-          </p>
-        </div>
-
-        <div class="mx-auto mt-16 max-w-7xl">
-          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div
-              v-for="feature in features"
-              :key="feature.title"
-              class="relative rounded-2xl bg-white dark:bg-gray-900 p-8 shadow-sm ring-1 ring-gray-200 dark:ring-gray-700"
-            >
-              <div class="flex items-center">
-                <UIcon
-                  :name="feature.icon"
-                  class="h-8 w-8 text-primary-600 dark:text-primary-400"
-                />
-                <h3 class="ml-3 text-lg font-semibold text-gray-900 dark:text-white">
-                  {{ feature.title }}
-                </h3>
-              </div>
-              <p class="mt-4 text-gray-600 dark:text-gray-400">
-                {{ feature.description }}
-              </p>
+    <UPageSection
+      class="bg-muted"
+      title="Everything You Need to Succeed"
+      description="Our comprehensive platform provides all the tools and resources for your kettlebell training journey."
+    >
+      <template #features>
+        <UPageCard
+          v-for="feature in features"
+          :key="feature.title"
+          :description="feature.description"
+          spotlight
+          :ui="{ description: 'mt-4', title: 'text-lg' }"
+        >
+          <template #title>
+            <div class="flex items-center gap-x-2">
+              <UIcon
+                :name="feature.icon"
+                class="size-8 text-primary-600 dark:text-primary-400"
+              />
+              {{ feature.title }}
             </div>
-          </div>
-        </div>
-      </UContainer>
-    </section>
+          </template>
+        </UPageCard>
+      </template>
+    </UPageSection>
 
     <!-- CTA Section -->
     <UPageSection

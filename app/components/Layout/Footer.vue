@@ -25,7 +25,7 @@ const footerLinks = {
 </script>
 
 <template>
-  <UFooter :ui="{ top: 'page-container', left: 'flex-col items-start' }">
+  <UFooter :ui="{ top: 'page-container', right: 'max-md:justify-start', left: 'flex-col items-start' }">
     <template #top>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <!-- Workouts -->
