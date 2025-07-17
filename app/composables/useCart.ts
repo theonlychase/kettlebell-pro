@@ -1,29 +1,15 @@
 export const useCart = () => {
-  // Use Pinia store for persistent cart state
-  const cartItems = ref<CartItem[]>([])
+  const cartCookie = useCookie<CartItem[]>('kettlebell-pro-cart', {
+    default: () => [],
+  })
+
+  // Initialize cart items from cookie for SSR compatibility
+  const cartItems = ref<CartItem[]>(cartCookie.value || [])
   const isLoading = ref(false)
 
-  // Load cart from localStorage on initialization
-  const loadCart = () => {
-    if (import.meta.client) {
-      const savedCart = localStorage.getItem('kettlebell-pro-cart')
-      if (savedCart) {
-        try {
-          cartItems.value = JSON.parse(savedCart)
-        }
-        catch (error) {
-          console.error('Error loading cart from localStorage:', error)
-          cartItems.value = []
-        }
-      }
-    }
-  }
-
-  // Save cart to localStorage
+  // Save cart to cookie
   const saveCart = () => {
-    if (import.meta.client) {
-      localStorage.setItem('kettlebell-pro-cart', JSON.stringify(cartItems.value))
-    }
+    cartCookie.value = [...cartItems.value]
   }
 
   // Add item to cart
@@ -42,6 +28,17 @@ export const useCart = () => {
     }
 
     saveCart()
+
+    // Show success toast notification
+    if (import.meta.client) {
+      const toast = useToast()
+      toast.add({
+        title: 'Added to Cart',
+        description: `${program.title} has been added to your cart`,
+        icon: 'i-heroicons-shopping-cart',
+        color: 'primary',
+      })
+    }
   }
 
   // Remove item from cart
@@ -87,6 +84,10 @@ export const useCart = () => {
   // Calculate item total (price * quantity)
   const getItemTotal = (item: CartItem) => {
     const price = item.program.salePrice || item.program.price
+    // Handle invalid prices to prevent NaN
+    if (isNaN(price) || price == null) {
+      return 0
+    }
     return price * item.quantity
   }
 
@@ -114,7 +115,7 @@ export const useCart = () => {
 
   // Get cart item count
   const getItemCount = computed(() => {
-    return cartItems.value.reduce((count, item) => count + item.quantity, 0)
+    return cartCookie.value.reduce((count, item) => count + item.quantity, 0)
   })
 
   // Get unique item count
@@ -141,6 +142,10 @@ export const useCart = () => {
 
   // Format price for display
   const formatPrice = (price: number) => {
+    // Handle NaN, null, undefined, or invalid numbers
+    if (isNaN(price) || price == null) {
+      return '$0.00'
+    }
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
@@ -201,13 +206,11 @@ export const useCart = () => {
     }
   }
 
-  // Initialize cart on composable creation
-  onMounted(() => {
-    loadCart()
-  })
+  // Cart is already initialized above for SSR compatibility
 
   return {
-    cartItems: readonly(cartItems),
+    cartCookie,
+    cartItems,
     isLoading: readonly(isLoading),
     addToCart,
     removeFromCart,
@@ -228,6 +231,5 @@ export const useCart = () => {
     getTotalSavings,
     validateCart,
     prepareCheckout,
-    loadCart,
   }
 }

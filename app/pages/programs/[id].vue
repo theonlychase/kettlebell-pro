@@ -104,10 +104,27 @@ const curriculum = [
 // Reactive state
 const selectedTab = ref('overview')
 
-// Cart functionality (placeholder)
-const addToCart = () => {
-  // This would integrate with the cart composable
-  console.log('Adding to cart:', mockProgram.title)
+// Cart functionality
+const { addToCart: addProgramToCart } = useCart()
+
+// Animation states
+const isAddingToCart = ref(false)
+const showSuccess = ref(false)
+
+const addToCart = async () => {
+  isAddingToCart.value = true
+  try {
+    addProgramToCart(mockProgram)
+
+    // Show success animation
+    showSuccess.value = true
+    setTimeout(() => {
+      showSuccess.value = false
+    }, 2000)
+  }
+  finally {
+    isAddingToCart.value = false
+  }
 }
 
 const buyNow = () => {
@@ -183,13 +200,21 @@ const buyNow = () => {
             </UButton>
             <UButton
               size="xl"
-              color="primary"
-              variant="outline"
+              :color="showSuccess ? 'green' : 'primary'"
+              :variant="showSuccess ? 'solid' : 'outline'"
+              :loading="isAddingToCart"
               class="font-semibold"
               @click="addToCart"
             >
-              Add to Cart
+              <span v-if="showSuccess">Added to Cart!</span>
+              <span v-else>Add to Cart</span>
               <UIcon
+                v-if="showSuccess"
+                name="i-heroicons-check"
+                class="ml-2 w-5 h-5"
+              />
+              <UIcon
+                v-else
                 name="i-heroicons-shopping-cart"
                 class="ml-2 w-5 h-5"
               />

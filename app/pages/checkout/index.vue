@@ -589,28 +589,28 @@ const states = [
                 <div class="flex justify-between">
                   <span class="text-gray-600 dark:text-gray-400">Subtotal</span>
                   <span class="font-medium text-gray-900 dark:text-white">
-                    {{ formatPrice(getSubtotal.value) }}
+                    {{ formatPrice(getSubtotal) }}
                   </span>
                 </div>
 
-                <div v-if="getTotalSavings.value > 0" class="flex justify-between text-green-600 dark:text-green-400">
+                <div v-if="getTotalSavings > 0" class="flex justify-between text-green-600 dark:text-green-400">
                   <span>Savings</span>
                   <span class="font-medium">
-                    -{{ formatPrice(getTotalSavings.value) }}
+                    -{{ formatPrice(getTotalSavings) }}
                   </span>
                 </div>
 
                 <div class="flex justify-between">
                   <span class="text-gray-600 dark:text-gray-400">Tax</span>
                   <span class="font-medium text-gray-900 dark:text-white">
-                    {{ formatPrice(getTax.value) }}
+                    {{ formatPrice(getTax) }}
                   </span>
                 </div>
 
                 <div class="flex justify-between">
                   <span class="text-gray-600 dark:text-gray-400">Shipping</span>
                   <span class="font-medium text-gray-900 dark:text-white">
-                    {{ getShipping.value === 0 ? 'Free' : formatPrice(getShipping.value) }}
+                    {{ getShipping === 0 ? 'Free' : formatPrice(getShipping) }}
                   </span>
                 </div>
 
@@ -618,7 +618,7 @@ const states = [
                   <div class="flex justify-between">
                     <span class="text-base font-semibold text-gray-900 dark:text-white">Total</span>
                     <span class="text-base font-semibold text-gray-900 dark:text-white">
-                      {{ formatPrice(getTotal.value) }}
+                      {{ formatPrice(getTotal) }}
                     </span>
                   </div>
                 </div>

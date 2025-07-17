@@ -80,6 +80,7 @@ const journeyLinks = ref([
   <div>
     <!-- Hero Section -->
     <UPageHero
+      class="bg-muted "
       :links="links"
     >
       <template #title>

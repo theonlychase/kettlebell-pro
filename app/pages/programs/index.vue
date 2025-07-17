@@ -160,6 +160,13 @@ const clearFilters = () => {
   selectedPriceRange.value = null
   sortBy.value = 'popularity'
 }
+
+// Cart functionality
+const { addToCart: addProgramToCart } = useCart()
+
+const addToCart = (program: Program) => {
+  addProgramToCart(program)
+}
 </script>
 
 <template>
@@ -239,7 +246,6 @@ const clearFilters = () => {
               <UBadge
                 class="capitalize"
                 :label="program.level"
-                color="neutral"
                 variant="outline"
               />
             </template>
@@ -261,7 +267,7 @@ const clearFilters = () => {
                   block
                   color="primary"
                   variant="outline"
-                  @click="() => {}"
+                  @click="addToCart(program)"
                 >
                   Add to Cart
                   <UIcon

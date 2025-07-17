@@ -95,10 +95,27 @@ const maxFeatures = computed(() => {
   }
 })
 
-// Cart functionality (placeholder)
-const addToCart = () => {
-  // This would integrate with the cart composable
-  console.log('Adding to cart:', props.program.title)
+// Cart functionality
+const { addToCart: addProgramToCart } = useCart()
+
+// Animation states
+const isAddingToCart = ref(false)
+const showSuccess = ref(false)
+
+const addToCart = async () => {
+  isAddingToCart.value = true
+  try {
+    addProgramToCart(props.program)
+
+    // Show success animation
+    showSuccess.value = true
+    setTimeout(() => {
+      showSuccess.value = false
+    }, 2000)
+  }
+  finally {
+    isAddingToCart.value = false
+  }
 }
 </script>
 
@@ -242,14 +259,22 @@ const addToCart = () => {
 
         <UButton
           :size="size === 'sm' ? 'sm' : 'md'"
-          color="primary"
-          variant="outline"
+          :color="showSuccess ? 'green' : 'primary'"
+          :variant="showSuccess ? 'solid' : 'outline'"
+          :loading="isAddingToCart"
           block
           @click="addToCart"
         >
-          <span v-if="size === 'lg'">Add to Cart</span>
+          <span v-if="showSuccess">Added to Cart!</span>
+          <span v-else-if="size === 'lg'">Add to Cart</span>
           <span v-else>Add to Cart</span>
           <UIcon
+            v-if="showSuccess"
+            name="i-heroicons-check"
+            :class="`ml-2 ${size === 'sm' ? 'w-3 h-3' : 'w-4 h-4'}`"
+          />
+          <UIcon
+            v-else
             name="i-heroicons-shopping-cart"
             :class="`ml-2 ${size === 'sm' ? 'w-3 h-3' : 'w-4 h-4'}`"
           />
