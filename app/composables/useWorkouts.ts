@@ -1,5 +1,3 @@
-import type { Workout } from '~/types'
-
 // Mock data - in production this would come from API
 const mockWorkouts: Workout[] = [
   {

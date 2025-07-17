@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { CartItem, Program } from '~/types'
 import { useCart } from '~/composables/useCart'
 
 useSeoMeta({
@@ -75,7 +74,10 @@ const proceedToCheckout = () => {
     />
 
     <UPageBody>
-      <div v-if="isLoading" class="flex justify-center py-12">
+      <div
+        v-if="isLoading"
+        class="flex justify-center py-12"
+      >
         <div class="text-center">
           <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600 mx-auto mb-4" />
           <p class="text-gray-600 dark:text-gray-400">
@@ -84,8 +86,14 @@ const proceedToCheckout = () => {
         </div>
       </div>
 
-      <div v-else-if="isEmpty" class="text-center py-12">
-        <UIcon name="i-heroicons-shopping-cart" class="mx-auto h-16 w-16 text-gray-400 mb-4" />
+      <div
+        v-else-if="isEmpty"
+        class="text-center py-12"
+      >
+        <UIcon
+          name="i-heroicons-shopping-cart"
+          class="mx-auto h-16 w-16 text-gray-400 mb-4"
+        />
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
           Your cart is empty
         </h2>
@@ -100,7 +108,10 @@ const proceedToCheckout = () => {
             size="lg"
           >
             Browse Programs
-            <UIcon name="i-heroicons-arrow-right" class="ml-2 w-4 h-4" />
+            <UIcon
+              name="i-heroicons-arrow-right"
+              class="ml-2 w-4 h-4"
+            />
           </UButton>
           <UButton
             to="/workouts"
@@ -113,7 +124,10 @@ const proceedToCheckout = () => {
         </div>
       </div>
 
-      <div v-else class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div
+        v-else
+        class="grid grid-cols-1 lg:grid-cols-3 gap-8"
+      >
         <!-- Cart Items -->
         <div class="lg:col-span-2 space-y-6">
           <div class="flex items-center justify-between">
@@ -142,7 +156,10 @@ const proceedToCheckout = () => {
                 <div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex-shrink-0 relative overflow-hidden">
                   <div class="absolute inset-0 bg-black/20" />
                   <div class="absolute inset-0 flex items-center justify-center">
-                    <UIcon name="i-heroicons-academic-cap" class="w-8 h-8 text-white" />
+                    <UIcon
+                      name="i-heroicons-academic-cap"
+                      class="w-8 h-8 text-white"
+                    />
                   </div>
                 </div>
 
@@ -165,11 +182,17 @@ const proceedToCheckout = () => {
                       <!-- Program Meta -->
                       <div class="flex items-center space-x-4 mt-2 text-sm text-gray-500 dark:text-gray-400">
                         <div class="flex items-center space-x-1">
-                          <UIcon name="i-heroicons-calendar-days" class="w-4 h-4" />
+                          <UIcon
+                            name="i-heroicons-calendar-days"
+                            class="w-4 h-4"
+                          />
                           <span>{{ item.program.duration }}</span>
                         </div>
                         <div class="flex items-center space-x-1">
-                          <UIcon name="i-heroicons-academic-cap" class="w-4 h-4" />
+                          <UIcon
+                            name="i-heroicons-academic-cap"
+                            class="w-4 h-4"
+                          />
                           <span class="capitalize">{{ item.program.level }}</span>
                         </div>
                       </div>
@@ -240,7 +263,10 @@ const proceedToCheckout = () => {
               variant="outline"
               color="primary"
             >
-              <UIcon name="i-heroicons-arrow-left" class="mr-2 w-4 h-4" />
+              <UIcon
+                name="i-heroicons-arrow-left"
+                class="mr-2 w-4 h-4"
+              />
               Continue Shopping
             </UButton>
           </div>
@@ -261,7 +287,10 @@ const proceedToCheckout = () => {
                 </span>
               </div>
 
-              <div v-if="getTotalSavings.value > 0" class="flex justify-between text-green-600 dark:text-green-400">
+              <div
+                v-if="getTotalSavings.value > 0"
+                class="flex justify-between text-green-600 dark:text-green-400"
+              >
                 <span>Savings</span>
                 <span class="font-medium">
                   -{{ formatPrice(getTotalSavings.value) }}
@@ -282,7 +311,10 @@ const proceedToCheckout = () => {
                 </span>
               </div>
 
-              <div v-if="getShipping.value > 0" class="text-xs text-gray-500 dark:text-gray-400">
+              <div
+                v-if="getShipping.value > 0"
+                class="text-xs text-gray-500 dark:text-gray-400"
+              >
                 Free shipping on orders over $50
               </div>
 
@@ -306,20 +338,29 @@ const proceedToCheckout = () => {
                 @click="proceedToCheckout"
               >
                 Proceed to Checkout
-                <UIcon name="i-heroicons-arrow-right" class="ml-2 w-4 h-4" />
+                <UIcon
+                  name="i-heroicons-arrow-right"
+                  class="ml-2 w-4 h-4"
+                />
               </UButton>
             </div>
 
             <!-- Security Notice -->
             <div class="mt-4 flex items-center justify-center space-x-2 text-xs text-gray-500 dark:text-gray-400">
-              <UIcon name="i-heroicons-lock-closed" class="w-3 h-3" />
+              <UIcon
+                name="i-heroicons-lock-closed"
+                class="w-3 h-3"
+              />
               <span>Secure checkout with SSL encryption</span>
             </div>
 
             <!-- Money Back Guarantee -->
             <div class="mt-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
               <div class="flex items-center space-x-2 text-green-700 dark:text-green-400">
-                <UIcon name="i-heroicons-shield-check" class="w-4 h-4" />
+                <UIcon
+                  name="i-heroicons-shield-check"
+                  class="w-4 h-4"
+                />
                 <span class="text-xs font-medium">30-day money-back guarantee</span>
               </div>
             </div>

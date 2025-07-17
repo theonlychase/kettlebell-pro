@@ -1,5 +1,3 @@
-import type { Workout } from '~/types'
-
 // Mock workout data - in production this would come from database
 const mockWorkouts: Workout[] = [
   {
@@ -107,9 +105,11 @@ export default defineEventHandler(async (event) => {
     const duration = Number(query.duration)
     if (duration === 20) {
       filteredWorkouts = filteredWorkouts.filter(w => w.duration < 20)
-    } else if (duration === 30) {
+    }
+    else if (duration === 30) {
       filteredWorkouts = filteredWorkouts.filter(w => w.duration >= 20 && w.duration <= 30)
-    } else if (duration === 45) {
+    }
+    else if (duration === 45) {
       filteredWorkouts = filteredWorkouts.filter(w => w.duration > 30)
     }
   }
@@ -123,9 +123,9 @@ export default defineEventHandler(async (event) => {
   if (query.search) {
     const searchTerm = (query.search as string).toLowerCase()
     filteredWorkouts = filteredWorkouts.filter(w =>
-      w.title.toLowerCase().includes(searchTerm) ||
-      w.description.toLowerCase().includes(searchTerm) ||
-      w.tags.some(tag => tag.toLowerCase().includes(searchTerm)),
+      w.title.toLowerCase().includes(searchTerm)
+      || w.description.toLowerCase().includes(searchTerm)
+      || w.tags.some(tag => tag.toLowerCase().includes(searchTerm)),
     )
   }
 

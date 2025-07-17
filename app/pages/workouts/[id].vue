@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { Workout, Exercise } from '~/types'
-
 const route = useRoute()
 const workoutId = route.params.id as string
 

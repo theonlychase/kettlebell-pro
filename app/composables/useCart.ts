@@ -1,5 +1,3 @@
-import type { CartItem, Program } from '~/types'
-
 export const useCart = () => {
   // Use Pinia store for persistent cart state
   const cartItems = ref<CartItem[]>([])

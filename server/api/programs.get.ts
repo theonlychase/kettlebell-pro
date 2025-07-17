@@ -1,5 +1,3 @@
-import type { Program } from '~/types'
-
 // Mock program data - in production this would come from database
 const mockPrograms: Program[] = [
   {

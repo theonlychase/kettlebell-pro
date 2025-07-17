@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const currentYear = new Date().getFullYear()
-
 const footerLinks = {
   workouts: [
     { label: 'Browse Workouts', to: '/workouts' },

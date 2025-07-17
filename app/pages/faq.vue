@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { FAQ } from '~/types'
-
 useSeoMeta({
   title: 'FAQ - Kettlebell Pro',
   description: 'Find answers to frequently asked questions about kettlebell training, our programs, equipment, and more.',

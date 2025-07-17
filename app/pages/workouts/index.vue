@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { Workout } from '~/types'
-
 useSeoMeta({
   title: 'Workouts - Kettlebell Pro',
   description: 'Browse our comprehensive library of kettlebell workouts. Filter by difficulty, duration, and muscle groups to find the perfect workout for your fitness level.',
@@ -153,7 +151,7 @@ const clearFilters = () => {
             />
             <UButton
               variant="outline"
-              color="gray"
+              color="neutral"
               @click="clearFilters"
             >
               Clear Filters
