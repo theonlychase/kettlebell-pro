@@ -170,181 +170,134 @@ const clearFilters = () => {
     />
 
     <UPageBody>
-      <!-- Search and Filters -->
-      <div class="mb-8 space-y-4">
-        <!-- Search Bar -->
-        <div class="relative">
-          <UInput
-            v-model="searchQuery"
-            placeholder="Search programs..."
-            icon="i-heroicons-magnifying-glass"
-            size="lg"
-            class="w-full"
-          />
+      <UContainer>
+        <!-- Search and Filters -->
+        <div class="mb-8 space-y-4">
+          <!-- Search Bar -->
+          <div class="relative">
+            <UInput
+              v-model="searchQuery"
+              placeholder="Search programs..."
+              icon="i-heroicons-magnifying-glass"
+              size="lg"
+              class="w-full"
+            />
+          </div>
+
+          <!-- Filter Controls -->
+          <div class="flex flex-wrap gap-4">
+            <USelect
+              v-model="selectedLevel"
+              :items="levelOptions"
+              placeholder="Level"
+              class="min-w-[150px]"
+            />
+            <USelect
+              v-model="selectedPriceRange"
+              :items="priceRangeOptions"
+              placeholder="Price Range"
+              class="min-w-[150px]"
+            />
+            <USelect
+              v-model="sortBy"
+              :items="sortOptions"
+              placeholder="Sort By"
+              class="min-w-[180px]"
+            />
+            <UButton
+              variant="outline"
+              color="gray"
+              @click="clearFilters"
+            >
+              Clear Filters
+            </UButton>
+          </div>
+
+          <!-- Results Count -->
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            {{ filteredPrograms.length }} program{{ filteredPrograms.length !== 1 ? 's' : '' }} found
+          </div>
         </div>
 
-        <!-- Filter Controls -->
-        <div class="flex flex-wrap gap-4">
-          <USelect
-            v-model="selectedLevel"
-            :items="levelOptions"
-            placeholder="Level"
-            class="min-w-[150px]"
+        <!-- Programs Grid -->
+        <UPricingPlans
+          v-if="filteredPrograms.length > 0"
+          class="!grid-cols-3"
+        >
+          <UPricingPlan
+            v-for="program in filteredPrograms"
+            :key="program.id"
+            :title="program.title"
+            :description="program.description"
+            :price="formatPrice(getCurrentPrice(program))"
+            :discount="program.salePrice"
+            :features="program.features"
+            variant="subtle"
+            :ui="{ title: '!text-xl sm:!text-xl', description: '!text-[15px]', price: 'text-2xl sm:text-3xl' }"
+          >
+            <template #header>
+              <UBadge
+                class="capitalize"
+                :label="program.level"
+                color="neutral"
+                variant="outline"
+              />
+            </template>
+            <template #button>
+              <div class="space-y-2">
+                <UButton
+                  :to="`/programs/${program.id}`"
+                  block
+                  color="primary"
+                  variant="solid"
+                >
+                  View Details
+                  <UIcon
+                    name="i-heroicons-arrow-right"
+                    class="ml-2 w-4 h-4"
+                  />
+                </UButton>
+                <UButton
+                  block
+                  color="primary"
+                  variant="outline"
+                  @click="() => {}"
+                >
+                  Add to Cart
+                  <UIcon
+                    name="i-heroicons-shopping-cart"
+                    class="ml-2 w-4 h-4"
+                  />
+                </UButton>
+              </div>
+            </template>
+          </UPricingPlan>
+        </UPricingPlans>
+
+        <!-- Empty State -->
+        <div
+          v-else
+          class="text-center py-12"
+        >
+          <UIcon
+            name="i-heroicons-magnifying-glass"
+            class="mx-auto h-12 w-12 text-gray-400"
           />
-          <USelect
-            v-model="selectedPriceRange"
-            :items="priceRangeOptions"
-            placeholder="Price Range"
-            class="min-w-[150px]"
-          />
-          <USelect
-            v-model="sortBy"
-            :items="sortOptions"
-            placeholder="Sort By"
-            class="min-w-[180px]"
-          />
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+            No programs found
+          </h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">
+            Try adjusting your search criteria or clearing the filters.
+          </p>
           <UButton
+            class="mt-4"
             variant="outline"
-            color="gray"
             @click="clearFilters"
           >
-            Clear Filters
+            Clear All Filters
           </UButton>
         </div>
-
-        <!-- Results Count -->
-        <div class="text-sm text-gray-600 dark:text-gray-400">
-          {{ filteredPrograms.length }} program{{ filteredPrograms.length !== 1 ? 's' : '' }} found
-        </div>
-      </div>
-
-      <!-- Programs Grid -->
-      <div v-if="filteredPrograms.length > 0" class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div
-          v-for="program in filteredPrograms"
-          :key="program.id"
-          class="group relative overflow-hidden rounded-lg bg-white dark:bg-gray-800 shadow-sm ring-1 ring-gray-200 dark:ring-gray-700 transition-all hover:shadow-lg hover:ring-primary-500"
-        >
-          <!-- Program Image -->
-          <div class="aspect-video bg-gradient-to-br from-primary-500 to-primary-600 relative overflow-hidden">
-            <div class="absolute inset-0 bg-black/20" />
-
-            <!-- Sale Badge -->
-            <div v-if="program.salePrice" class="absolute top-4 left-4">
-              <UBadge
-                :label="`${getDiscountPercentage(program)}% OFF`"
-                color="red"
-                variant="solid"
-              />
-            </div>
-
-            <!-- Level Badge -->
-            <div class="absolute top-4 right-4">
-              <UBadge
-                :label="program.level"
-                :color="program.level === 'beginner' ? 'green' : program.level === 'intermediate' ? 'yellow' : 'red'"
-                variant="solid"
-              />
-            </div>
-
-            <!-- Duration -->
-            <div class="absolute bottom-4 left-4">
-              <div class="flex items-center space-x-2 text-white">
-                <UIcon name="i-heroicons-calendar-days" class="w-4 h-4" />
-                <span class="text-sm font-medium">{{ program.duration }}</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Program Content -->
-          <div class="p-6">
-            <div class="flex items-start justify-between mb-3">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                {{ program.title }}
-              </h3>
-            </div>
-
-            <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4">
-              {{ program.description }}
-            </p>
-
-            <!-- Features -->
-            <div class="mb-4">
-              <h4 class="text-sm font-medium text-gray-900 dark:text-white mb-2">
-                What's Included:
-              </h4>
-              <ul class="space-y-1">
-                <li
-                  v-for="feature in program.features.slice(0, 3)"
-                  :key="feature"
-                  class="flex items-center text-xs text-gray-600 dark:text-gray-400"
-                >
-                  <UIcon name="i-heroicons-check" class="w-3 h-3 text-green-500 mr-2 flex-shrink-0" />
-                  {{ feature }}
-                </li>
-                <li v-if="program.features.length > 3" class="text-xs text-gray-500 dark:text-gray-400">
-                  +{{ program.features.length - 3 }} more features
-                </li>
-              </ul>
-            </div>
-
-            <!-- Pricing -->
-            <div class="flex items-center justify-between mb-4">
-              <div class="flex items-center space-x-2">
-                <span class="text-2xl font-bold text-gray-900 dark:text-white">
-                  {{ formatPrice(getCurrentPrice(program)) }}
-                </span>
-                <span
-                  v-if="program.salePrice"
-                  class="text-sm text-gray-500 dark:text-gray-400 line-through"
-                >
-                  {{ formatPrice(program.price) }}
-                </span>
-              </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="space-y-2">
-              <UButton
-                :to="`/programs/${program.id}`"
-                block
-                color="primary"
-                variant="solid"
-              >
-                View Details
-                <UIcon name="i-heroicons-arrow-right" class="ml-2 w-4 h-4" />
-              </UButton>
-              <UButton
-                block
-                color="primary"
-                variant="outline"
-                @click="() => {}"
-              >
-                Add to Cart
-                <UIcon name="i-heroicons-shopping-cart" class="ml-2 w-4 h-4" />
-              </UButton>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Empty State -->
-      <div v-else class="text-center py-12">
-        <UIcon name="i-heroicons-magnifying-glass" class="mx-auto h-12 w-12 text-gray-400" />
-        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
-          No programs found
-        </h3>
-        <p class="mt-2 text-gray-600 dark:text-gray-400">
-          Try adjusting your search criteria or clearing the filters.
-        </p>
-        <UButton
-          class="mt-4"
-          variant="outline"
-          @click="clearFilters"
-        >
-          Clear All Filters
-        </UButton>
-      </div>
+      </UContainer>
     </UPageBody>
   </UPage>
 </template>

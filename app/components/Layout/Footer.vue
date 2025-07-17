@@ -15,7 +15,7 @@ const footerLinks = {
   content: [
     { label: 'Learning Center', to: '/content' },
     { label: 'Articles', to: '/content/articles' },
-    { label: 'FAQ', to: '/content/faq' },
+    { label: 'FAQ', to: '/faq' },
   ],
   company: [
     { label: 'About Us', to: '/about' },

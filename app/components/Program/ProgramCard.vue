@@ -105,7 +105,7 @@ const addToCart = () => {
 <template>
   <div :class="cardClasses">
     <!-- Program Image -->
-    <div :class="`${imageClasses} bg-gradient-to-br from-primary-500 to-primary-600 relative overflow-hidden`">
+    <div :class="`${imageClasses} relative overflow-hidden`">
       <div class="absolute inset-0 bg-black/20" />
 
       <!-- Program Image (if available) -->
@@ -140,11 +140,17 @@ const addToCart = () => {
         <!-- Bottom Row: Duration -->
         <div class="flex items-center justify-between text-white text-sm">
           <div class="flex items-center space-x-1">
-            <UIcon name="i-heroicons-calendar-days" class="w-4 h-4" />
+            <UIcon
+              name="i-heroicons-calendar-days"
+              class="w-4 h-4"
+            />
             <span>{{ program.duration }}</span>
           </div>
           <div class="flex items-center space-x-1">
-            <UIcon name="i-heroicons-fire" class="w-4 h-4" />
+            <UIcon
+              name="i-heroicons-fire"
+              class="w-4 h-4"
+            />
             <span>{{ program.workouts?.length || 0 }}+ workouts</span>
           </div>
         </div>
@@ -167,7 +173,10 @@ const addToCart = () => {
       </p>
 
       <!-- Features -->
-      <div v-if="showFeatures && program.features?.length" class="mb-4">
+      <div
+        v-if="showFeatures && program.features?.length"
+        class="mb-4"
+      >
         <h4 :class="`text-sm font-medium text-gray-900 dark:text-white mb-2 ${size === 'sm' ? 'sr-only' : ''}`">
           What's Included:
         </h4>
@@ -177,10 +186,16 @@ const addToCart = () => {
             :key="feature"
             class="flex items-center text-xs text-gray-600 dark:text-gray-400"
           >
-            <UIcon name="i-heroicons-check" class="w-3 h-3 text-green-500 mr-2 flex-shrink-0" />
+            <UIcon
+              name="i-heroicons-check"
+              class="w-3 h-3 text-green-500 mr-2 flex-shrink-0"
+            />
             {{ feature }}
           </li>
-          <li v-if="program.features.length > maxFeatures" class="text-xs text-gray-500 dark:text-gray-400">
+          <li
+            v-if="program.features.length > maxFeatures"
+            class="text-xs text-gray-500 dark:text-gray-400"
+          >
             +{{ program.features.length - maxFeatures }} more features
           </li>
         </ul>
@@ -219,7 +234,10 @@ const addToCart = () => {
         >
           <span v-if="size === 'lg'">View Details</span>
           <span v-else>Details</span>
-          <UIcon name="i-heroicons-arrow-right" :class="`ml-2 ${size === 'sm' ? 'w-3 h-3' : 'w-4 h-4'}`" />
+          <UIcon
+            name="i-heroicons-arrow-right"
+            :class="`ml-2 ${size === 'sm' ? 'w-3 h-3' : 'w-4 h-4'}`"
+          />
         </UButton>
 
         <UButton
@@ -231,13 +249,22 @@ const addToCart = () => {
         >
           <span v-if="size === 'lg'">Add to Cart</span>
           <span v-else>Add to Cart</span>
-          <UIcon name="i-heroicons-shopping-cart" :class="`ml-2 ${size === 'sm' ? 'w-3 h-3' : 'w-4 h-4'}`" />
+          <UIcon
+            name="i-heroicons-shopping-cart"
+            :class="`ml-2 ${size === 'sm' ? 'w-3 h-3' : 'w-4 h-4'}`"
+          />
         </UButton>
       </div>
 
       <!-- Money Back Guarantee -->
-      <div v-if="size !== 'sm'" class="mt-4 flex items-center justify-center space-x-2 text-xs text-green-600 dark:text-green-400">
-        <UIcon name="i-heroicons-shield-check" class="w-3 h-3" />
+      <div
+        v-if="size !== 'sm'"
+        class="mt-4 flex items-center justify-center space-x-2 text-xs text-green-600 dark:text-green-400"
+      >
+        <UIcon
+          name="i-heroicons-shield-check"
+          class="w-3 h-3"
+        />
         <span>30-day money-back guarantee</span>
       </div>
     </div>

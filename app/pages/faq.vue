@@ -182,7 +182,7 @@ const categoryStats = computed(() => {
       description="Find answers to common questions about kettlebell training, our programs, and getting started."
     />
 
-    <UPageBody>
+    <UPageBody class="page-container">
       <!-- Search and Filters -->
       <div class="mb-8 space-y-4">
         <!-- Search Bar -->
@@ -220,7 +220,10 @@ const categoryStats = computed(() => {
       </div>
 
       <!-- Category Overview (when no category selected) -->
-      <div v-if="!selectedCategory && !searchQuery" class="mb-12">
+      <div
+        v-if="!selectedCategory && !searchQuery"
+        class="mb-12"
+      >
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
           Browse by Category
         </h2>
@@ -244,7 +247,10 @@ const categoryStats = computed(() => {
       <!-- FAQ List -->
       <div v-if="selectedCategory || searchQuery || filteredFAQs.length > 0">
         <!-- Grouped by Category -->
-        <div v-if="!selectedCategory && !searchQuery" class="space-y-12">
+        <div
+          v-if="!selectedCategory && !searchQuery"
+          class="space-y-12"
+        >
           <div
             v-for="(faqs, category) in groupedFAQs"
             :key="category"
@@ -285,7 +291,10 @@ const categoryStats = computed(() => {
         </div>
 
         <!-- Filtered Results -->
-        <div v-else class="space-y-4">
+        <div
+          v-else
+          class="space-y-4"
+        >
           <div
             v-for="faq in filteredFAQs"
             :key="faq.id"
@@ -326,8 +335,14 @@ const categoryStats = computed(() => {
       </div>
 
       <!-- Empty State -->
-      <div v-else class="text-center py-12">
-        <UIcon name="i-heroicons-question-mark-circle" class="mx-auto h-12 w-12 text-gray-400" />
+      <div
+        v-else
+        class="text-center py-12"
+      >
+        <UIcon
+          name="i-heroicons-question-mark-circle"
+          class="mx-auto h-12 w-12 text-gray-400"
+        />
         <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
           No questions found
         </h3>
@@ -342,37 +357,42 @@ const categoryStats = computed(() => {
           Clear Filters
         </UButton>
       </div>
-
-      <!-- Contact Support -->
-      <section class="mt-16 py-12 bg-gray-50 dark:bg-gray-800 rounded-2xl">
-        <div class="text-center">
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Still have questions?
-          </h2>
-          <p class="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-            Can't find the answer you're looking for? Our support team is here to help you get started with your kettlebell training journey.
-          </p>
-          <div class="flex justify-center gap-4">
-            <UButton
-              to="/contact"
-              color="primary"
-              size="lg"
-            >
-              Contact Support
-              <UIcon name="i-heroicons-envelope" class="ml-2 w-4 h-4" />
-            </UButton>
-            <UButton
-              to="/content"
-              variant="outline"
-              color="primary"
-              size="lg"
-            >
-              Browse Articles
-              <UIcon name="i-heroicons-book-open" class="ml-2 w-4 h-4" />
-            </UButton>
-          </div>
-        </div>
-      </section>
     </UPageBody>
+    <!-- Contact Support -->
+    <section class="py-12 bg-gray-50 dark:bg-gray-800 rounded-2xl">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          Still have questions?
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
+          Can't find the answer you're looking for? Our support team is here to help you get started with your kettlebell training journey.
+        </p>
+        <div class="flex justify-center gap-4">
+          <UButton
+            to="/contact"
+            color="primary"
+            size="lg"
+          >
+            Contact Support
+            <UIcon
+              name="i-heroicons-envelope"
+              class="ml-2 w-4 h-4"
+            />
+          </UButton>
+          <UButton
+            to="/content"
+            variant="outline"
+            color="primary"
+            size="lg"
+          >
+            Browse Articles
+            <UIcon
+              name="i-heroicons-book-open"
+              class="ml-2 w-4 h-4"
+            />
+          </UButton>
+        </div>
+      </div>
+    </section>
   </UPage>
 </template>
