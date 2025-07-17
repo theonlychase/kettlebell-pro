@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image',
     '@vueuse/nuxt',
+    '@pinia/nuxt',
     '@nuxt/eslint',
   ],
 
@@ -42,6 +43,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-17',
 
   eslint: { config: { stylistic: true } },
+
+  runtimeConfig: {
+    public: {
+      appName: 'Kettlebell Pro',
+      stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY || '',
+    },
+    stripeSecretKey: process.env.STRIPE_SECRET_KEY || '',
+  },
 
   uiPro: { license: process.env.NUXT_UI_PRO_LICENSE },
 })

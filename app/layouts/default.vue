@@ -9,6 +9,10 @@
       <slot />
     </UMain>
 
+    <USeparator
+      class="h-px"
+    />
+
     <Footer />
   </div>
 </template>
