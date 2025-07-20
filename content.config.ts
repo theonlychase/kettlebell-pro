@@ -8,7 +8,7 @@ export default defineContentConfig({
       {
         source: '**',
         type: 'page',
-      }
+      },
     ),
   },
 })

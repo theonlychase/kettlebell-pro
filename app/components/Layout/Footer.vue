@@ -15,11 +15,9 @@ const footerLinks = {
     { label: 'Articles', to: '/content/articles' },
     { label: 'FAQ', to: '/faq' },
   ],
-  company: [
-    { label: 'About Us', to: '/about' },
+  info: [
+    { label: 'About Me', to: '/about' },
     { label: 'Contact', to: '/contact' },
-    { label: 'Privacy Policy', to: '/privacy' },
-    { label: 'Terms of Service', to: '/terms' },
   ],
 }
 </script>
@@ -91,11 +89,11 @@ const footerLinks = {
         <!-- Company -->
         <div>
           <h3 class="font-semibold text-gray-900 dark:text-white mb-4">
-            Company
+            Info
           </h3>
           <ul class="space-y-2">
             <li
-              v-for="link in footerLinks.company"
+              v-for="link in footerLinks.info"
               :key="link.to"
             >
               <NuxtLink
