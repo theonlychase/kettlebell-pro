@@ -2,16 +2,55 @@ export interface Exercise {
   id: string
   name: string
   description: string
-  duration: number
-  reps?: number
-  sets?: number
-  weight?: string
-  muscleGroups: string[]
+  targetMuscleGroups: string[]
+  secondaryMuscleGroups?: string[]
   difficulty: 'beginner' | 'intermediate' | 'advanced'
+  exerciseType: 'strength' | 'cardio' | 'endurance' | 'power' | 'mobility' | 'combination'
+  bodyPosition: 'standing' | 'kneeling' | 'lying' | 'sitting' | 'multiple'
+  weight: {
+    kg: number
+    lbs: number
+  }
+  equipment?: string[]
+  instructions: string[]
+  sets?: number
+  reps?: number
+  duration?: number // in seconds for time-based exercises
+  restPeriod?: number // in seconds
   videoUrl?: string
   imageUrl?: string
-  instructions: string[]
+  cautions?: string[]
+  commonMistakes?: string[]
+  faq?: string[]
+  relatedExercises?: string[]
+  variations?: string[]
+  tags?: string[]
   tips?: string[]
+}
+
+export interface BlogPost {
+  id: string
+  author: {
+    avatar?: {
+      src: string
+      target: string
+    }
+    name: string
+    to?: string
+  }
+  title: string
+  image?: {
+    src: string
+    alt: string
+  }
+  description: string
+  short?: string
+  icon?: string
+  tags?: string[]
+  path: string
+  slug: string
+  created: string
+  lastModified: string
 }
 
 export interface Workout {
@@ -39,36 +78,4 @@ export interface Program {
   features: string[]
   imageUrl?: string
   salePrice?: number
-}
-
-export interface CartItem {
-  programId: string
-  program: Program
-  quantity: number
-}
-
-export interface User {
-  id: string
-  name: string
-  email: string
-  avatar?: string
-}
-
-export interface Article {
-  id: string
-  title: string
-  description: string
-  content: string
-  author: string
-  publishedAt: string
-  imageUrl?: string
-  tags: string[]
-  readTime: number
-}
-
-export interface FAQ {
-  id: string
-  question: string
-  answer: string
-  category: string
 }

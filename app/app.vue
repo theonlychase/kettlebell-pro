@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('exercises'))
+provide('navigation', navigation)
+
 useHead({
   meta: [
     { charset: 'utf-8' },

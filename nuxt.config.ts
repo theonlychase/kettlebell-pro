@@ -2,12 +2,13 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/eslint',
+    '@nuxt/image',
     '@nuxt/ui-pro',
     '@nuxt/content',
-    '@nuxt/image',
+    'nuxt-og-image',
+    'nuxt-llms',
     '@vueuse/nuxt',
-    '@pinia/nuxt',
-    '@nuxt/eslint',
   ],
 
   $development: {
@@ -54,9 +55,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appName: 'Kettlebell Pro',
-      stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY || '',
     },
-    stripeSecretKey: process.env.STRIPE_SECRET_KEY || '',
   },
 
   compatibilityDate: '2025-07-17',
