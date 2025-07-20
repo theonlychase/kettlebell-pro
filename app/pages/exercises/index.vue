@@ -35,7 +35,7 @@ useSeoMeta({
 
       <template v-for="child in children">
         <UPageHeader
-          v-if="child.category"
+          v-if="child.parent"
           :key="child.title"
           as="h3"
           :title="child.title"

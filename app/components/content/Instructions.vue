@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ items: string[] }>()
+defineProps<{ items?: string[] }>()
 </script>
 
 <template>
@@ -11,7 +11,4 @@ defineProps<{ items: string[] }>()
       {{ item }}
     </li>
   </ProseOl>
-  <div v-else>
-    Coming soon...
-  </div>
 </template>

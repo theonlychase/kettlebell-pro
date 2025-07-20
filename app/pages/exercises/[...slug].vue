@@ -35,13 +35,18 @@ useSeoMeta({
 const headline = computed(() => findPageHeadline(navigation?.value, page.value?.path))
 
 const customData = computed(() => {
-  const { instructions, videoUrl } = page.value
-
   return {
-    instructions: instructions ?? [],
+    instructions: page.value?.instructions,
     title,
-    videoUrl,
+    videoUrl: page.value?.videoUrl ?? '',
   }
+})
+
+const tocLinks = computed(() => {
+  if (!page.value?.instructions) {
+    return page.value?.body?.toc?.links.filter(link => link.id !== 'instructions')
+  }
+  return page.value?.body?.toc?.links
 })
 </script>
 
@@ -56,13 +61,10 @@ const customData = computed(() => {
 
       <UPageBody>
         <ContentRenderer
-          v-if="page"
+          v-if="page.body"
+          id="exercise-content"
           :value="page"
-          :data="{
-            instructions: page.instructions ?? [],
-            title: page.title,
-            videoUrl: page.videoUrl,
-          }"
+          :data="customData"
         />
 
         <USeparator v-if="surround?.length" />
@@ -76,7 +78,7 @@ const customData = computed(() => {
       >
         <UContentToc
           :title="toc?.title"
-          :links="page.body?.toc?.links"
+          :links="tocLinks"
         />
       </template>
     </UPage>
