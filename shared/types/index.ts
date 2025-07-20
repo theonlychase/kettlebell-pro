@@ -1,22 +1,24 @@
-export interface Exercise {
-  id: string
-  name: string
+interface Exercise {
+  id?: string
+  title: string
   description: string
-  targetMuscleGroups: string[]
+  category?: string
+  bodyPart?: string
+  targetMuscleGroups?: string[]
   secondaryMuscleGroups?: string[]
-  difficulty: 'beginner' | 'intermediate' | 'advanced'
-  exerciseType: 'strength' | 'cardio' | 'endurance' | 'power' | 'mobility' | 'combination'
-  bodyPosition: 'standing' | 'kneeling' | 'lying' | 'sitting' | 'multiple'
-  weight: {
-    kg: number
-    lbs: number
+  difficulty?: 'beginner' | 'intermediate' | 'advanced'
+  exerciseType?: 'strength' | 'cardio' | 'endurance' | 'power' | 'mobility' | 'combination'
+  bodyPosition?: 'standing' | 'kneeling' | 'lying' | 'sitting' | 'multiple'
+  weight?: {
+    kg?: number
+    lbs?: number
   }
   equipment?: string[]
-  instructions: string[]
+  instructions?: string[]
   sets?: number
   reps?: number
-  duration?: number // in seconds for time-based exercises
-  restPeriod?: number // in seconds
+  duration?: number
+  restPeriod?: number
   videoUrl?: string
   imageUrl?: string
   cautions?: string[]
