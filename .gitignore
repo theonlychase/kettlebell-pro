@@ -28,6 +28,6 @@ logs
 # Local Netlify folder
 .netlify
 
-# Plans
+# Plans/Guides
 plan.md
-!/plan.md
+IMPROVEMENT_PLAN.md

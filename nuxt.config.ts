@@ -10,6 +10,17 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
 
+  $development: {
+    vite: {
+      optimizeDeps: {
+        include: [
+          '@vue/devtools-core',
+          '@vue/devtools-kit',
+        ],
+      },
+    },
+  },
+
   components: [
     {
       path: '~/components',
@@ -40,10 +51,6 @@ export default defineNuxtConfig({
     experimental: { nativeSqlite: true },
   },
 
-  compatibilityDate: '2025-07-17',
-
-  eslint: { config: { stylistic: true } },
-
   runtimeConfig: {
     public: {
       appName: 'Kettlebell Pro',
@@ -51,6 +58,10 @@ export default defineNuxtConfig({
     },
     stripeSecretKey: process.env.STRIPE_SECRET_KEY || '',
   },
+
+  compatibilityDate: '2025-07-17',
+
+  eslint: { config: { stylistic: true } },
 
   uiPro: { license: process.env.NUXT_UI_PRO_LICENSE },
 })

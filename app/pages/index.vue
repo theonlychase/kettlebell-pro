@@ -91,29 +91,25 @@ const journeyLinks = ref([
       </template>
     </UPageHero>
 
-    <!-- Stats Section -->
-    <section class="bg-white dark:bg-gray-900 py-16">
-      <UContainer>
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
-          <div
-            v-for="stat in stats"
-            :key="stat.label"
-            class="text-center"
-          >
-            <div class="text-3xl font-bold text-primary-600 dark:text-primary-400">
-              {{ stat.value }}
-            </div>
-            <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              {{ stat.label }}
-            </div>
+    <UPageSection class="bg-muted border-y border-y-muted">
+      <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div
+          v-for="stat in stats"
+          :key="stat.label"
+          class="text-center"
+        >
+          <div class="text-3xl font-bold text-primary-500 dark:text-primary-400">
+            {{ stat.value }}
+          </div>
+          <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            {{ stat.label }}
           </div>
         </div>
-      </UContainer>
-    </section>
+      </div>
+    </UPageSection>
 
     <!-- Features Section -->
     <UPageSection
-      class="bg-muted"
       title="Everything You Need to Succeed"
       description="Our comprehensive platform provides all the tools and resources for your kettlebell training journey."
     >
@@ -123,7 +119,8 @@ const journeyLinks = ref([
           :key="feature.title"
           :description="feature.description"
           spotlight
-          :ui="{ description: 'mt-4', title: 'text-lg' }"
+          variant="subtle"
+          :ui="{ description: 'mt-4', title: 'text-lg', spotlight: 'bg-muted/90' }"
         >
           <template #title>
             <div class="flex items-center gap-x-2">
@@ -140,6 +137,7 @@ const journeyLinks = ref([
 
     <!-- CTA Section -->
     <UPageSection
+      class="bg-muted border-t border-t-muted"
       title="Ready to Start Your Journey?"
       description="Join thousands of users who have transformed their fitness with Kettlebell Pro."
       :links="journeyLinks"
