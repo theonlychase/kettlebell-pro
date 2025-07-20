@@ -1,27 +1,17 @@
 <script setup lang="ts">
 import type { ContentNavigationItem } from '@nuxt/content'
-
-definePageMeta({
-  layout: 'exercises',
-})
+import { findPageChildren } from '@nuxt/content/utils'
 
 const route = useRoute()
 const { toc } = useAppConfig()
-const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
-console.log(navigation)
 
 const { data: page } = await useAsyncData(route.path, () => queryCollection('exercises').all())
-console.log(page)
+const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
+const children = findPageChildren(navigation?.value, '/exercises')
 
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
-
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('exercises', route.path, {
-    fields: ['description'],
-  })
-})
 
 const title = 'All Kettlebell Exercises'
 const description = 'List of all kettlebell exercises.'
@@ -32,10 +22,6 @@ useSeoMeta({
   description,
   ogDescription: description,
 })
-
-// defineOgImageComponent('Exercises', {
-//   headline: headline.value,
-// })
 </script>
 
 <template>
@@ -47,15 +33,60 @@ useSeoMeta({
         headline="Exercises"
       />
 
-      <UPageBody>
-        <ContentRenderer
-          v-if="page"
-          :value="page"
+      <template v-for="child in children">
+        <UPageHeader
+          v-if="child.category"
+          :key="child.title"
+          as="h3"
+          :title="child.title"
+          :description="child.description"
+          :ui="{ root: 'mb-8', title: 'text-xl sm:text-2xl' }"
         />
+        <!--        <h3 -->
+        <!--          v-if="child.category" -->
+        <!--          :key="child.title" -->
+        <!--          class="text-xl sm:text-2xl text-pretty font-bold text-highlighted border-b border-b-default py-6" -->
+        <!--        > -->
+        <!--          {{ child.title }} -->
+        <!--        </h3> -->
 
-        <USeparator v-if="surround?.length" />
+        <UPageGrid
+          v-if="child.children.length"
+          :key="child.title"
+        >
+          <UPageCard
+            v-for="c in child.children"
+            :key="c.title"
+            :description="c.description"
+            :title="c.title"
+            :to="c.path"
+          />
+        </UPageGrid>
+      </template>
 
-        <UContentSurround :surround="surround" />
+      <UPageBody>
+        <!--        <template v-for="child in children"> -->
+        <!--          <h3 -->
+        <!--            v-if="child.category" -->
+        <!--            :key="child.title" -->
+        <!--            class="text-xl sm:text-2xl text-pretty font-bold text-highlighted border-b border-b-default py-6" -->
+        <!--          > -->
+        <!--            {{ child.title }} -->
+        <!--          </h3> -->
+
+        <!--          <UPageGrid -->
+        <!--            v-if="child.children.length" -->
+        <!--            :key="child.title" -->
+        <!--          > -->
+        <!--            <UPageCard -->
+        <!--              v-for="c in child.children" -->
+        <!--              :key="c.title" -->
+        <!--              :description="c.description" -->
+        <!--              :title="c.title" -->
+        <!--              :to="c.path" -->
+        <!--            /> -->
+        <!--          </UPageGrid> -->
+        <!--        </template> -->
       </UPageBody>
 
       <template

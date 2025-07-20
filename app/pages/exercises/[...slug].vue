@@ -9,7 +9,6 @@ definePageMeta({
 const route = useRoute()
 const { toc } = useAppConfig()
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
-console.log(navigation)
 
 const { data: page } = await useAsyncData(route.path, () => queryCollection('exercises').path(route.path).first())
 
@@ -35,9 +34,15 @@ useSeoMeta({
 
 const headline = computed(() => findPageHeadline(navigation?.value, page.value?.path))
 
-// defineOgImageComponent('Exercises', {
-//   headline: headline.value,
-// })
+const customData = computed(() => {
+  const { instructions, videoUrl } = page.value
+
+  return {
+    instructions: instructions ?? [],
+    title,
+    videoUrl,
+  }
+})
 </script>
 
 <template>
@@ -53,6 +58,11 @@ const headline = computed(() => findPageHeadline(navigation?.value, page.value?.
         <ContentRenderer
           v-if="page"
           :value="page"
+          :data="{
+            instructions: page.instructions ?? [],
+            title: page.title,
+            videoUrl: page.videoUrl,
+          }"
         />
 
         <USeparator v-if="surround?.length" />

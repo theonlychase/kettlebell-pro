@@ -42,6 +42,7 @@ export default defineContentConfig({
         id: z.string().min(1, 'ID is required'),
         name: z.string().min(1, 'Exercise name is required'),
         description: z.string().min(1, 'Description is required'),
+        bodyPart: z.string().min(1, 'Body part is required'),
         targetMuscleGroups: z.array(z.string().min(1)).min(1, 'At least one target muscle group is required'),
         secondaryMuscleGroups: z.array(z.string().min(1)),
         difficulty: z.enum(['beginner', 'intermediate', 'advanced']),

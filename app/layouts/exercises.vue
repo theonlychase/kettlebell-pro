@@ -4,7 +4,6 @@ import { findPageChildren } from '@nuxt/content/utils'
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 const children = findPageChildren(navigation?.value, '/exercises')
-console.log(children)
 </script>
 
 <template>
