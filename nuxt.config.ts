@@ -62,5 +62,20 @@ export default defineNuxtConfig({
 
   eslint: { config: { stylistic: true } },
 
+  icon: {
+    clientBundle: {
+      scan: true,
+      includeCustomCollections: true,
+    },
+    customCollections: [
+      {
+        prefix: 'custom',
+        dir: './app/assets/icons',
+      },
+    ],
+    mode: 'svg',
+    provider: 'iconify',
+  },
+
   uiPro: { license: process.env.NUXT_UI_PRO_LICENSE },
 })

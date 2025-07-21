@@ -6,7 +6,8 @@ useSeoMeta({
 
 const features = [
   {
-    icon: 'i-lucide-dumbbell',
+    icon: 'i-custom-kettlebell',
+    mode: 'svg',
     title: 'Complete Kettlebell Library',
     description: 'Professional kettlebell exercises & routines for maximum results.',
   },
@@ -41,7 +42,7 @@ const journeyLinks = ref([
   {
     label: 'See All Exercises',
     to: '/exercises',
-    icon: 'i-lucide-dumbbell',
+    icon: 'i-custom-kettlebell',
     color: 'neutral',
   },
   // {
@@ -86,7 +87,8 @@ const journeyLinks = ref([
             <div class="flex items-center gap-x-2">
               <UIcon
                 :name="feature.icon"
-                class="size-8 text-primary-600 dark:text-primary-400"
+                class="size-8 fill-current text-primary-600 dark:text-primary-400"
+                :class="feature.icon.includes('custom') ? 'size-10' : 'size-8'"
               />
               {{ feature.title }}
             </div>

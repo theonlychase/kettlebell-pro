@@ -5,10 +5,10 @@
 <template>
   <UFooter :ui="{ top: 'page-container', right: 'max-md:justify-start', left: 'flex-col items-start' }">
     <template #left>
-      <div class="flex items-center space-x-2">
+      <div class="flex items-center">
         <UIcon
-          name="i-heroicons-fire"
-          class="w-6 h-6 text-primary-600"
+          name="i-custom-kettlebell"
+          class="w-8 h-8 fill-current"
         />
         <span class="font-bold text-gray-900 dark:text-white">
           Kettlebell Pro
@@ -25,7 +25,7 @@
           <UButton
             to="https://youtube.com/kettlebellpro"
             target="_blank"
-            icon="i-simple-icons-youtube"
+            icon="i-lucide-youtube"
             aria-label="YouTube"
             color="neutral"
             variant="ghost"

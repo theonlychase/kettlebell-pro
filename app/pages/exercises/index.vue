@@ -82,7 +82,7 @@ onMounted(() => {
       </div>
       <UContainer>
         <UPageGrid
-          v-if="category.children.length"
+          v-if="category.children?.length"
           :id="category.title"
           :key="category.title"
           class="xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 pb-24 scroll-mt-[calc(97px+var(--ui-header-height))] sm:scroll-mt-[calc(133px+var(--ui-header-height))] lg:scroll-mt-[calc(165px+var(--ui-header-height))]"

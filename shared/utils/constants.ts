@@ -63,6 +63,6 @@ export const NAVIGATION = [
   {
     label: 'Contact',
     to: ROUTES.contact,
-    icon: 'i-heroicons-envelope',
+    icon: 'i-lucide-mail',
   },
 ] as const

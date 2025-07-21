@@ -7,11 +7,12 @@
     <template #left>
       <NuxtLink
         :to="ROUTES.home"
-        class="flex items-center space-x-2"
+        class="flex items-center"
       >
         <UIcon
-          name="i-heroicons-fire"
-          class="w-8 h-8 text-primary-600"
+          mode="svg"
+          name="i-custom-kettlebell"
+          class="w-12 h-12 fill-current"
         />
 
         <span class="text-xl font-bold text-gray-900 dark:text-white">
@@ -27,8 +28,6 @@
 
     <template #right>
       <div class="flex items-center space-x-2">
-
-
         <UColorModeButton />
       </div>
     </template>
