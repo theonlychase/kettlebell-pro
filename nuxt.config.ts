@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro',
     '@nuxt/content',
     'nuxt-og-image',
-    'nuxt-llms',
+    // 'nuxt-llms',
     '@vueuse/nuxt',
   ],
 
@@ -17,6 +17,8 @@ export default defineNuxtConfig({
         include: [
           '@vue/devtools-core',
           '@vue/devtools-kit',
+          '@nuxt/content/utils',
+          'zod',
         ],
       },
     },
