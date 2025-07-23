@@ -29,13 +29,6 @@ const links = ref([
     to: '/exercises',
     icon: 'i-lucide-biceps-flexed',
   },
-  // {
-  //   label: 'Learn more',
-  //   to: '/workouts',
-  //   color: 'neutral',
-  //   variant: 'subtle',
-  //   trailingIcon: 'i-lucide-arrow-right',
-  // },
 ])
 
 const journeyLinks = ref([
@@ -45,13 +38,6 @@ const journeyLinks = ref([
     icon: 'i-custom-kettlebell',
     color: 'neutral',
   },
-  // {
-  //   label: 'Workouts',
-  //   to: '/workouts',
-  //   color: 'neutral',
-  //   variant: 'subtle',
-  //   trailingIcon: 'i-lucide-arrow-right',
-  // },
 ])
 </script>
 
@@ -99,6 +85,7 @@ const journeyLinks = ref([
 
     <!-- CTA Section -->
     <UPageSection
+      class="[&_svg]:fill-current [&_svg]:w-8 [&_svg]:h-8"
       title="Ready to Start?"
       description="Transform your fitness with Kettlebell Pro"
       :links="journeyLinks"

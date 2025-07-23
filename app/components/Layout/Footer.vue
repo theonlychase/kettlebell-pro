@@ -29,7 +29,7 @@
             aria-label="YouTube"
             color="neutral"
             variant="ghost"
-            size="sm"
+            size="xl"
           />
         </div>
       </div>
