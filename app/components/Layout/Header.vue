@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
@@ -21,13 +20,11 @@
       </NuxtLink>
     </template>
 
-    <UNavigationMenu
-      variant="link"
-      :items="NAVIGATION"
-    />
+    <UContentSearchButton :collapsed="false" />
 
     <template #right>
       <div class="flex items-center space-x-2">
+        <UContentSearchButton class="lg:hidden" />
         <UColorModeButton />
       </div>
     </template>

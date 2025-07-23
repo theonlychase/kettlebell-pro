@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('exercises', ['description']))
+const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('exercises'))
 provide('navigation', navigation)
 
 useHead({
@@ -26,6 +27,14 @@ if (import.meta.server) {
 <template>
   <UApp :toaster="{ position: 'top-right' }">
     <NuxtLoadingIndicator />
+
+    <LazyUContentSearch
+      :color-mode="false"
+      :files="files"
+      :links="NAVIGATION"
+      :navigation="navigation"
+      :fuse="{ resultLimit: 10 }"
+    />
 
     <NuxtLayout>
       <NuxtPage />
