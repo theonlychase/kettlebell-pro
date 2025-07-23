@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <UHeader>
+  <UHeader :ui="{ center: 'flex-1' }">
     <template #left>
       <NuxtLink
         :to="ROUTES.home"
@@ -20,7 +20,10 @@
       </NuxtLink>
     </template>
 
-    <UContentSearchButton :collapsed="false" />
+    <UContentSearchButton
+      class="flex-1"
+      :collapsed="false"
+    />
 
     <template #right>
       <div class="flex items-center space-x-2">

@@ -156,14 +156,13 @@
 
 ## CARRIES & HOLDS
 
-- **Suitcase Lateral Walks**: Lateral walking while carrying kettlebell suitcase style
-- **Side Plank**: Static side plank hold
-- **Pushup Hold**: Static hold in push-up position
 - **Bear Hug Kickstand**: Bear hug hold with kickstand position
 - **Kettlebell Plank**: Plank position with kettlebell
 - **Kneeling Bottom Up Hold**: Bottom-up kettlebell hold from kneeling
-- **Pushup Hold**: Static hold in push-up position
 - **Knees Over Toes Lunge Ploy Off**: Explosive lunge movement with knees tracking over toes
+- **Pushup Hold**: Static hold in push-up position
+- **Side Plank**: Static side plank hold
+- **Suitcase Lateral Walks**: Lateral walking while carrying kettlebell suitcase style
 
 ## ROTATIONAL/CORE MOVEMENTS
 
