@@ -25,6 +25,7 @@ const state = reactive({
   subject: '',
   message: '',
 })
+const toast = useToast()
 
 // Form submission state
 const isSubmitting = ref(false)
@@ -59,6 +60,17 @@ async function onSubmit(_event: FormSubmitEvent<Schema>) {
     isSubmitting.value = false
   }
 }
+
+watch(isSubmitted, (value) => {
+  if (value) {
+    toast.add({
+      title: 'Message sent',
+      description: 'Thank you for contacting me. I\'ll get back to you within 24 hours.',
+      icon: 'i-heroicons-check-circle',
+      color: 'primary',
+    })
+  }
+})
 
 // Contact information
 const contactInfo = [
@@ -104,17 +116,6 @@ const contactInfo = [
               Have a question about my exercises or need help with your training? I'd love to hear from you.
             </p>
           </div>
-
-          <!-- Success Message -->
-          <UAlert
-            v-if="isSubmitted"
-            icon="i-heroicons-check-circle"
-            color="success"
-            variant="subtle"
-            title="Message sent successfully!"
-            description="Thank you for contacting me. I'll get back to you within 24 hours."
-            class="mb-6"
-          />
 
           <!-- Contact Form -->
           <UForm
