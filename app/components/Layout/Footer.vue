@@ -15,7 +15,7 @@
         </span>
       </div>
       <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-        Transform your fitness with professional kettlebell training programs.
+        Transform your fitness with professional kettlebell training exercises.
       </p>
     </template>
 

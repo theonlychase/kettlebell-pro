@@ -23,11 +23,15 @@
     <UContentSearchButton
       class="flex-1"
       :collapsed="false"
+      label="Search Exercises..."
     />
 
     <template #right>
       <div class="flex items-center space-x-2">
-        <UContentSearchButton class="lg:hidden" />
+        <UContentSearchButton
+          class="lg:hidden"
+          label="Search Exercises..."
+        />
         <UColorModeButton />
       </div>
     </template>

@@ -53,7 +53,8 @@ export const NAVIGATION = [
   {
     label: 'Exercises',
     to: ROUTES.exercises,
-    icon: 'i-lucide-dumbbell',
+    icon: 'i-custom-kettlebell',
+    class: '[&_svg]:w-8 [&_svg]:h-8 -ml-1.5',
   },
   // {
   //   label: 'Blog',
@@ -64,5 +65,6 @@ export const NAVIGATION = [
     label: 'Contact',
     to: ROUTES.contact,
     icon: 'i-lucide-mail',
+    class: '[&_svg]:mr-1.5',
   },
 ] as const
