@@ -62,6 +62,13 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-07-17',
 
+  nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true,
+    },
+  },
+
   eslint: { config: { stylistic: true } },
 
   icon: {
