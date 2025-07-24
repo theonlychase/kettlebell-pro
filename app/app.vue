@@ -31,6 +31,7 @@ if (import.meta.server) {
     <LazyUContentSearch
       :color-mode="false"
       :files="files"
+      label-key="title"
       :links="NAVIGATION"
       :navigation="navigation"
       :fuse="{ resultLimit: 10 }"

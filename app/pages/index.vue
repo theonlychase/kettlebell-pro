@@ -27,7 +27,7 @@ const links = ref([
   {
     label: 'Get started',
     to: '/exercises',
-    icon: 'i-lucide-biceps-flexed',
+    icon: 'i-custom-kettlebell',
   },
 ])
 

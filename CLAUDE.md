@@ -1,6 +1,15 @@
-# CLAUDE.md
+# guidelines.md
 
 This file provides guidance to Claude Code (claude.ai/code) and Junie when working with code in this repository.
+
+## Documentation
+
+- Before Each Task, make sure to get the latest documentation from `context7` using MCP
+- use context7 as the prompt. Let me know you have fetched the documentation.
+- Get documentation for the following libraries from `context7`:
+  1. Nuxt 4 - Try libraryName `nuxt/nuxt` first, then look for another if not found.
+  2. Nuxt Content - Try `nuxt/content` first, then look for another if not found.
+  3. Nuxt UI - Try `nuxt/ui` first, then look for another if not found.
 
 ## Development Commands
 
@@ -24,6 +33,27 @@ This file provides guidance to Claude Code (claude.ai/code) and Junie when worki
 - **Icons**: Heroicons and Lucide via Iconify
 
 ### Directory Structure
+
+```
+kettlebell-pro/
+├─ app/ 
+│  ├─ assets/
+│  ├─ components/
+│  ├─ composables/
+│  ├─ layouts/
+│  ├─ middleware/
+│  ├─ pages/
+│  ├─ plugins/
+│  ├─ utils/
+│  ├─ app.vue
+│  ├─ app.config.ts
+│  └─ error.vue
+├─ content/
+├─ public/
+├─ shared/
+├─ server/
+└─ nuxt.config.ts
+```
 
 #### App Directory (`/app/`)
 - `app.vue` - Main application layout with navigation setup
@@ -65,6 +95,9 @@ Exercise Markdown files include:
 - Tailwind CSS for styling with custom configurations in `stylelint.config.js`
 - Custom icon system with local SVG assets (`kettlebell.svg`, `kettlebell-dark.svg`)
 - Responsive layouts with mobile-first approach
+
+#### Nuxt UI Component List
+- `.junie/components.md`
 
 ### Content Authoring
 When creating new exercises:

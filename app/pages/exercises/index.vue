@@ -121,36 +121,39 @@ function getBodyPositionIcon(bodyPosition: string): string {
         data-track-sticky
         class="group mb-4 sm:mb-6 lg:mb-8 sticky top-[calc(var(--ui-header-height)-1px)] bg-default/75 backdrop-blur z-[1]"
       >
-        <div class="relative border-y border-default py-4 sm:not-group-[[data-stuck]]:py-6 lg:not-group-[[data-stuck]]:py-8 transition-all duration-300">
+        <div class="relative border-y border-default py-4 group-[[data-stuck]]:bg-muted sm:not-group-[[data-stuck]]:py-6 lg:not-group-[[data-stuck]]:py-8 transition-all duration-300">
           <UContainer>
             <div class="flex items-center justify-between">
               <div class="flex-1">
-                <h2 class="relative text-pretty font-bold text-highlighted text-base sm:not-group-[[data-stuck]]:text-xl lg:not-group-[[data-stuck]]:text-2xl transition-all duration-300">
-                  <a
-                    :href="`#${category.title}`"
-                    class="group lg:not-group-[[data-stuck]]:ps-2 lg:not-group-[[data-stuck]]:-ms-2"
+                <div class="flex items-center">
+                  <h2 class="relative text-pretty font-bold text-highlighted text-base sm:not-group-[[data-stuck]]:text-xl lg:not-group-[[data-stuck]]:text-2xl transition-all duration-300">
+                    <a
+                      :href="`#${category.title}`"
+                      class="group lg:not-group-[[data-stuck]]:ps-2 lg:not-group-[[data-stuck]]:-ms-2"
+                    >
+                      <span class="absolute -ms-8 top-1 opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-1 bg-elevated hover:text-primary rounded-md hidden lg:not-group-[[data-stuck]]:flex text-muted transition">
+                        <UIcon
+                          name="i-lucide-hash"
+                          class="size-4 shrink-0"
+                        />
+                      </span>
+                      {{ category.title }}
+                    </a>
+                  </h2>
+                  <UBadge
+                    v-if="category.children?.length"
+                    variant="subtle"
+                    color="primary"
+                    class="ml-4 shrink-0"
                   >
-                    <span class="absolute -ms-8 top-1 opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-1 bg-elevated hover:text-primary rounded-md hidden lg:not-group-[[data-stuck]]:flex text-muted transition">
-                      <UIcon
-                        name="i-lucide-hash"
-                        class="size-4 shrink-0"
-                      />
-                    </span>
-                    {{ category.title }}
-                  </a>
-                </h2>
+                    {{ category.children.length }} exercises
+                  </UBadge>
+                </div>
+
                 <p class="text-pretty text-muted text-sm sm:not-group-[[data-stuck]]:text-base lg:not-group-[[data-stuck]]:text-lg mt-1 sm:not-group-[[data-stuck]]:mt-2 line-clamp-1 transition-all duration-300">
                   {{ category.description }}
                 </p>
               </div>
-              <UBadge
-                v-if="category.children?.length"
-                variant="subtle"
-                color="primary"
-                class="ml-4 shrink-0"
-              >
-                {{ category.children.length }} exercises
-              </UBadge>
             </div>
           </UContainer>
         </div>
@@ -166,10 +169,7 @@ function getBodyPositionIcon(bodyPosition: string): string {
             v-for="child in category.children"
             :key="child.title"
             class="group hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer"
-            :ui="{
-              body: { padding: 'p-4 sm:p-6' },
-              header: { padding: 'px-4 pt-4 sm:px-6 sm:pt-6 pb-0' },
-            }"
+
             @click="navigateTo(child.path)"
           >
             <template #header>
@@ -248,7 +248,10 @@ function getBodyPositionIcon(bodyPosition: string): string {
                 </div>
 
                 <!-- Target Muscle Groups -->
-                <div v-if="child.targetMuscleGroups?.length" class="flex flex-wrap gap-1">
+                <div
+                  v-if="child.targetMuscleGroups?.length"
+                  class="flex flex-wrap gap-1"
+                >
                   <UChip
                     v-for="muscle in child.targetMuscleGroups.slice(0, 3)"
                     :key="muscle"
@@ -269,8 +272,14 @@ function getBodyPositionIcon(bodyPosition: string): string {
               </div>
 
               <!-- Video Indicator -->
-              <div v-if="child.videoUrl" class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
-                <UIcon name="i-lucide-play-circle" class="size-4" />
+              <div
+                v-if="child.videoUrl"
+                class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400"
+              >
+                <UIcon
+                  name="i-lucide-play-circle"
+                  class="size-4"
+                />
                 <span>Video available</span>
               </div>
             </div>

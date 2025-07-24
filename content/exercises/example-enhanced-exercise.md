@@ -1,4 +1,5 @@
 ---
+id: enhanced-kettlebell-swing
 title: Enhanced Kettlebell Swing
 description: A comprehensive example showcasing improved exercise content with rich metadata display
 category: Swing Variations

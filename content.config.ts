@@ -38,7 +38,7 @@ export default defineContentConfig({
       source: 'exercises/**',
       type: 'page',
       schema: z.object({
-        id: z.string().optional(),
+        id: z.string(),
         title: z.string(),
         description: z.string(),
         category: z.string().optional(),
