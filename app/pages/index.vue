@@ -9,17 +9,17 @@ const features = [
     icon: 'i-custom-kettlebell',
     mode: 'svg',
     title: 'Complete Kettlebell Library',
-    description: 'Professional kettlebell exercises & routines for maximum results.',
+    description: 'Professional kettlebell exercises for maximum results.',
   },
   {
-    icon: 'i-heroicons-trophy',
+    icon: 'i-heroicons-numbered-list',
     title: 'Step by Step Instructions',
     description: 'Step-by-step instructions for each exercise',
   },
   {
     icon: 'i-heroicons-play-circle',
     title: 'Video Demonstrations',
-    description: 'High-quality video guides for perfect form and technique mastery.',
+    description: 'High-quality video guides coming soon.',
   },
 ]
 
@@ -27,7 +27,6 @@ const links = ref([
   {
     label: 'Get started',
     to: '/exercises',
-    icon: 'i-custom-kettlebell',
   },
 ])
 
@@ -35,7 +34,6 @@ const journeyLinks = ref([
   {
     label: 'See All Exercises',
     to: '/exercises',
-    icon: 'i-custom-kettlebell',
     color: 'neutral',
   },
 ])
@@ -44,7 +42,9 @@ const journeyLinks = ref([
 <template>
   <div>
     <!-- Hero Section -->
-    <UPageHero :links="links">
+    <UPageHero
+      :links="links"
+    >
       <template #title>
         Transform Your Fitness with <br>Kettlebell Pro
       </template>
@@ -52,6 +52,18 @@ const journeyLinks = ref([
         Professional kettlebell training exercises.<br>
         Build strength, burn fat, and achieve your fitness goals.
       </template>
+      <!--      <template #links> -->
+      <!--        <UButton -->
+      <!--          label="Get started" -->
+      <!--          to="/exercises" -->
+      <!--        > -->
+      <!--          <UIcon -->
+      <!--            name="i-custom-kettlebell" -->
+      <!--            class="w-8 h-8 fill-current" -->
+      <!--          /> -->
+      <!--          Get Started -->
+      <!--        </UButton> -->
+      <!--      </template> -->
     </UPageHero>
 
     <!-- Features Section -->
