@@ -52,18 +52,6 @@ const journeyLinks = ref([
         Professional kettlebell training exercises.<br>
         Build strength, burn fat, and achieve your fitness goals.
       </template>
-      <!--      <template #links> -->
-      <!--        <UButton -->
-      <!--          label="Get started" -->
-      <!--          to="/exercises" -->
-      <!--        > -->
-      <!--          <UIcon -->
-      <!--            name="i-custom-kettlebell" -->
-      <!--            class="w-8 h-8 fill-current" -->
-      <!--          /> -->
-      <!--          Get Started -->
-      <!--        </UButton> -->
-      <!--      </template> -->
     </UPageHero>
 
     <!-- Features Section -->

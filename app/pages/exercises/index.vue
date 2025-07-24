@@ -41,67 +41,67 @@ onMounted(() => {
 })
 
 // Helper functions for exercise metadata display
-function getDifficultyColor(difficulty: string): string {
-  switch (difficulty) {
-    case 'beginner':
-      return 'green'
-    case 'intermediate':
-      return 'yellow'
-    case 'advanced':
-      return 'red'
-    default:
-      return 'gray'
-  }
-}
-
-function getDifficultyIcon(difficulty: string): string {
-  switch (difficulty) {
-    case 'beginner':
-      return 'i-lucide-circle'
-    case 'intermediate':
-      return 'i-lucide-circle-dot'
-    case 'advanced':
-      return 'i-lucide-circle-dot-dashed'
-    default:
-      return 'i-lucide-circle'
-  }
-}
-
-function getExerciseTypeIcon(exerciseType: string): string {
-  switch (exerciseType) {
-    case 'strength':
-      return 'i-lucide-dumbbell'
-    case 'cardio':
-      return 'i-lucide-heart'
-    case 'endurance':
-      return 'i-lucide-timer'
-    case 'power':
-      return 'i-lucide-zap'
-    case 'mobility':
-      return 'i-lucide-rotate-3d'
-    case 'combination':
-      return 'i-lucide-layers'
-    default:
-      return 'i-lucide-activity'
-  }
-}
-
-function getBodyPositionIcon(bodyPosition: string): string {
-  switch (bodyPosition) {
-    case 'standing':
-      return 'i-lucide-user'
-    case 'kneeling':
-      return 'i-lucide-user-minus'
-    case 'lying':
-      return 'i-lucide-bed'
-    case 'sitting':
-      return 'i-lucide-armchair'
-    case 'multiple':
-      return 'i-lucide-users'
-    default:
-      return 'i-lucide-user'
-  }
-}
+// function getDifficultyColor(difficulty: string): string {
+//   switch (difficulty) {
+//     case 'beginner':
+//       return 'green'
+//     case 'intermediate':
+//       return 'yellow'
+//     case 'advanced':
+//       return 'red'
+//     default:
+//       return 'gray'
+//   }
+// }
+//
+// function getDifficultyIcon(difficulty: string): string {
+//   switch (difficulty) {
+//     case 'beginner':
+//       return 'i-lucide-circle'
+//     case 'intermediate':
+//       return 'i-lucide-circle-dot'
+//     case 'advanced':
+//       return 'i-lucide-circle-dot-dashed'
+//     default:
+//       return 'i-lucide-circle'
+//   }
+// }
+//
+// function getExerciseTypeIcon(exerciseType: string): string {
+//   switch (exerciseType) {
+//     case 'strength':
+//       return 'i-lucide-dumbbell'
+//     case 'cardio':
+//       return 'i-lucide-heart'
+//     case 'endurance':
+//       return 'i-lucide-timer'
+//     case 'power':
+//       return 'i-lucide-zap'
+//     case 'mobility':
+//       return 'i-lucide-rotate-3d'
+//     case 'combination':
+//       return 'i-lucide-layers'
+//     default:
+//       return 'i-lucide-activity'
+//   }
+// }
+//
+// function getBodyPositionIcon(bodyPosition: string): string {
+//   switch (bodyPosition) {
+//     case 'standing':
+//       return 'i-lucide-user'
+//     case 'kneeling':
+//       return 'i-lucide-user-minus'
+//     case 'lying':
+//       return 'i-lucide-bed'
+//     case 'sitting':
+//       return 'i-lucide-armchair'
+//     case 'multiple':
+//       return 'i-lucide-users'
+//     default:
+//       return 'i-lucide-user'
+//   }
+// }
 </script>
 
 <template>
@@ -169,7 +169,9 @@ function getBodyPositionIcon(bodyPosition: string): string {
             v-for="child in category.children"
             :key="child.title"
             class="group hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer"
-
+            :ui="{
+              header: 'bg-muted',
+            }"
             @click="navigateTo(child.path)"
           >
             <template #header>
@@ -184,104 +186,17 @@ function getBodyPositionIcon(bodyPosition: string): string {
                   class="size-4 text-gray-400 group-hover:text-primary transition-colors shrink-0 mt-0.5"
                 />
               </div>
-            </template>
-
-            <div class="space-y-4">
-              <p class="text-gray-600 dark:text-gray-300 text-sm line-clamp-2">
+              <p class="text-gray-600 dark:text-gray-300 text-sm line-clamp-1">
                 {{ child.description }}
               </p>
+            </template>
 
-              <!-- Exercise Metadata -->
-              <div class="space-y-3">
-                <!-- Difficulty & Type Row -->
-                <div class="flex flex-wrap gap-2">
-                  <UBadge
-                    v-if="child.difficulty"
-                    :color="getDifficultyColor(child.difficulty)"
-                    variant="subtle"
-                    size="xs"
-                  >
-                    <UIcon
-                      :name="getDifficultyIcon(child.difficulty)"
-                      class="size-3 mr-1"
-                    />
-                    {{ child.difficulty }}
-                  </UBadge>
-                  <UBadge
-                    v-if="child.exerciseType"
-                    color="gray"
-                    variant="subtle"
-                    size="xs"
-                  >
-                    <UIcon
-                      :name="getExerciseTypeIcon(child.exerciseType)"
-                      class="size-3 mr-1"
-                    />
-                    {{ child.exerciseType }}
-                  </UBadge>
-                </div>
-
-                <!-- Body Position & Equipment -->
-                <div class="flex flex-wrap gap-2">
-                  <UChip
-                    v-if="child.bodyPosition"
-                    size="xs"
-                    color="blue"
-                  >
-                    <UIcon
-                      :name="getBodyPositionIcon(child.bodyPosition)"
-                      class="size-3 mr-1"
-                    />
-                    {{ child.bodyPosition }}
-                  </UChip>
-                  <UChip
-                    v-if="child.equipment?.length"
-                    size="xs"
-                    color="green"
-                  >
-                    <UIcon
-                      name="i-lucide-dumbbell"
-                      class="size-3 mr-1"
-                    />
-                    {{ child.equipment[0] }}{{ child.equipment.length > 1 ? ` +${child.equipment.length - 1}` : '' }}
-                  </UChip>
-                </div>
-
-                <!-- Target Muscle Groups -->
-                <div
-                  v-if="child.targetMuscleGroups?.length"
-                  class="flex flex-wrap gap-1"
-                >
-                  <UChip
-                    v-for="muscle in child.targetMuscleGroups.slice(0, 3)"
-                    :key="muscle"
-                    size="xs"
-                    color="purple"
-                  >
-                    {{ muscle }}
-                  </UChip>
-                  <UChip
-                    v-if="child.targetMuscleGroups.length > 3"
-                    size="xs"
-                    color="purple"
-                    variant="outline"
-                  >
-                    +{{ child.targetMuscleGroups.length - 3 }}
-                  </UChip>
-                </div>
-              </div>
-
-              <!-- Video Indicator -->
-              <div
-                v-if="child.videoUrl"
-                class="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400"
-              >
-                <UIcon
-                  name="i-lucide-play-circle"
-                  class="size-4"
-                />
-                <span>Video available</span>
-              </div>
+            <div class="aspect-video">
+              <NuxtImg
+                class="w-full h-full"
+                src="/images/video-placeholder.webp"
+                :alt="`${child.title}`"
+              />
             </div>
           </UCard>
         </UPageGrid>
