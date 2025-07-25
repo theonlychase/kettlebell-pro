@@ -24,6 +24,12 @@ export default defineNuxtConfig({
     },
   },
 
+  // $production: {
+  //   image: {
+  //     provider: 'netlifyImageCdn',
+  //   },
+  // },
+
   components: [
     {
       path: '~/components',
@@ -60,12 +66,15 @@ export default defineNuxtConfig({
     },
   },
 
+  features: { devLogs: true },
+
+  experimental: { inlineRouteRules: true },
+
   compatibilityDate: '2025-07-17',
 
   nitro: {
     prerender: {
-      routes: ['/'],
-      crawlLinks: true,
+      autoSubfolderIndex: false,
     },
   },
 

@@ -10,10 +10,16 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <UCard v-if="items?.length" class="mb-6">
+  <UCard
+    v-if="items?.length"
+    class="mb-6"
+  >
     <template #header>
       <div class="flex items-center gap-3">
-        <UIcon name="i-lucide-list-ordered" class="text-primary" />
+        <UIcon
+          name="i-lucide-list-ordered"
+          class="text-primary"
+        />
         <h3 class="text-lg font-semibold">
           {{ title }}
         </h3>
@@ -40,7 +46,10 @@ withDefaults(defineProps<Props>(), {
 
     <template #footer>
       <div class="flex items-center gap-2 text-sm text-muted-foreground">
-        <UIcon name="i-lucide-info" class="w-4 h-4" />
+        <UIcon
+          name="i-lucide-info"
+          class="w-4 h-4"
+        />
         <span>Follow each step carefully for best results</span>
       </div>
     </template>

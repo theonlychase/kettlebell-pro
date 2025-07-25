@@ -2,10 +2,14 @@
 import type { ContentNavigationItem } from '@nuxt/content'
 import { findPageChildren } from '@nuxt/content/utils'
 
+defineRouteRules({ prerender: true })
+
 const route = useRoute()
 const { toc } = useAppConfig()
 
 const { data: page } = await useAsyncData(route.path, () => queryCollection('exercises').all())
+prerenderRoutes(page.value?.map(post => post.path) ?? [])
+
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 const children = findPageChildren(navigation?.value, '/exercises', { indexAsChild: true })
 

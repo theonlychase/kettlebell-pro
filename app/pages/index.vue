@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Kettlebell Pro - Transform Your Fitness',
-  description: 'Professional kettlebell exercises, workouts, and educational content. Transform your fitness with expert-designed routines for all levels.',
+  description: 'Professional kettlebell training exercises. Transform your fitness.',
 })
 
 const features = [
@@ -61,13 +61,14 @@ const journeyLinks = ref([
       description="All the tools and resources for your kettlebell training journey."
     >
       <template #features>
-        <UPageCard
+        <LazyUPageCard
           v-for="feature in features"
           :key="feature.title"
           :description="feature.description"
           spotlight
           variant="subtle"
           :ui="{ description: 'mt-4', title: 'text-lg', spotlight: 'bg-muted/90' }"
+          hydrate-on-visible
         >
           <template #title>
             <div class="flex items-center gap-x-2">
@@ -79,7 +80,7 @@ const journeyLinks = ref([
               {{ feature.title }}
             </div>
           </template>
-        </UPageCard>
+        </LazyUPageCard>
       </template>
     </UPageSection>
 
