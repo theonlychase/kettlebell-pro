@@ -54,7 +54,7 @@ export const NAVIGATION = [
     label: 'Exercises',
     to: ROUTES.exercises,
     icon: 'i-custom-kettlebell',
-    class: '[&_svg]:w-8 [&_svg]:h-8 -ml-1.5',
+    class: '[&_svg]:w-8 [&_svg]:h-8 -ml-1.5 fill-current',
   },
   // {
   //   label: 'Blog',

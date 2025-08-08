@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import type { ContentNavigationItem } from '@nuxt/content'
+
+const { navigation } = defineProps<{ navigation: ContentNavigationItem[] }>()
 </script>
 
 <template>
@@ -24,6 +27,7 @@
       class="flex-1"
       :collapsed="false"
       label="Search Exercises..."
+      :kbds="[]"
     />
 
     <template #right>
@@ -31,6 +35,7 @@
         <UContentSearchButton
           class="lg:hidden"
           label="Search Exercises..."
+          :kbds="[]"
         />
         <UColorModeButton />
       </div>
@@ -41,6 +46,17 @@
         :items="NAVIGATION"
         highlight
         orientation="vertical"
+      />
+
+      <USeparator
+        type="dashed"
+        class="mt-4 mb-6"
+      />
+
+      <UContentNavigation
+        :navigation="navigation"
+        highlight
+        :ui="{ linkTrailingBadge: 'font-semibold uppercase' }"
       />
     </template>
   </UHeader>

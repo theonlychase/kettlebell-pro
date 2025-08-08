@@ -8,7 +8,7 @@ const children = findPageChildren(navigation?.value, '/exercises')
 
 <template>
   <div id="app">
-    <Header />
+    <Header :navigation="children" />
 
     <UMain>
       <UContainer>

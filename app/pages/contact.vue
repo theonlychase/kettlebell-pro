@@ -77,19 +77,19 @@ const contactInfo = [
   {
     icon: 'i-heroicons-envelope',
     label: 'Email',
-    value: 'hello@kettlebellpro.com',
-    href: 'mailto:hello@kettlebellpro.com',
+    value: 'isleychase@gmail.com',
+    href: 'mailto:isleychase@gmail.com',
   },
-  {
-    icon: 'i-heroicons-phone',
-    label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567',
-  },
+  // {
+  //   icon: 'i-heroicons-phone',
+  //   label: 'Phone',
+  //   value: '+1 (555) 123-4567',
+  //   href: 'tel:+15551234567',
+  // },
   {
     icon: 'i-heroicons-map-pin',
-    label: 'Address',
-    value: '123 Fitness Street, Workout City, WC 12345',
+    label: 'Location',
+    value: 'Parrish, FL / Las Vegas, NV',
     href: '#',
   },
 ]
@@ -113,7 +113,7 @@ const contactInfo = [
               Send me a message
             </h2>
             <p class="text-gray-600 dark:text-gray-400">
-              Have a question about my exercises or need help with your training? I'd love to hear from you.
+              Have a question about any exercises or need help with your training? I'm more than happy to help.
             </p>
           </div>
 
@@ -131,7 +131,7 @@ const contactInfo = [
             >
               <UInput
                 v-model="state.name"
-                placeholder="Your full name"
+                placeholder="Full Name"
                 icon="i-heroicons-user"
                 variant="outline"
                 size="lg"

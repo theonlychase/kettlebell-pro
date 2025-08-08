@@ -23,7 +23,7 @@
       <div class="flex flex-col items-end">
         <div class="flex items-center space-x-2 mt-2">
           <UButton
-            to="https://youtube.com/kettlebellpro"
+            to="https://www.youtube.com/@ChaseIsley87"
             target="_blank"
             icon="i-lucide-youtube"
             aria-label="YouTube"
