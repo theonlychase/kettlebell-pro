@@ -1,36 +1,62 @@
 ---
 id: bent-over-rotation
 title: Bent-over Rotation
-description: Torso rotation in hinged position
+description: Thoracic spine rotation exercise performed in hip hinge position, improving rotational mobility while challenging core stability and teaching dissociation between hips and shoulders.
 category: Movement Prep
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
+targetMuscleGroups: ['Thoracic spine', 'Obliques']
+secondaryMuscleGroups: ['Core', 'Shoulders']
+difficulty: intermediate
 exerciseType: mobility
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Light kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet hip-width apart',
+  'Hold light kettlebell in right hand',
+  'Hinge forward to 45-degree angle',
+  'Place left hand on left hip or behind back',
+  'Let right arm hang straight down',
+  'Rotate torso to right, lifting kettlebell',
+  'Keep hips square and facing forward',
+  'Return to center with control'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Maintain neutral spine throughout',
+  'Rotate from mid-back, not lower back',
+  'Keep core engaged',
+  'Start with very light weight'
 ]
+cautions: [
+  'Do not rotate hips with torso',
+  'Avoid rounding lower back',
+  'Do not use momentum',
+  'Do not rotate from lumbar spine'
+]
+commonMistakes: [
+  'Rotating hips with torso',
+  'Rounding lower back',
+  'Using momentum',
+  'Rotating from lumbar spine'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

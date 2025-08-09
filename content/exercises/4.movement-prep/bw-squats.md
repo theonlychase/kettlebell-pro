@@ -38,6 +38,7 @@ commonMistakes: [
   'Excessive forward lean',
   'Incomplete depth or quarter squatting'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

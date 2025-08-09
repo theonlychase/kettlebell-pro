@@ -1,36 +1,62 @@
 ---
 id: seated-lower-band-series
 title: Seated Lower Band Series
-description: Lower body activation exercises with band
+description: Collection of seated resistance band exercises targeting lower body muscles, ideal for activation and injury prevention while maintaining stable torso position.
 category: Movement Prep
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+bodyPart: Lower Body
+targetMuscleGroups: ['Glutes', 'Quadriceps', 'Hamstrings']
+secondaryMuscleGroups: ['Hip stabilizers']
 difficulty: beginner
-exerciseType: mobility
+exerciseType: activation
 bodyPosition: sitting
-equipment: ["Kettlebell"]
+equipment: ['Resistance band', 'Light kettlebell (optional)']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Seated Abduction: Band around knees, press knees out 15-20 reps',
+  'Seated Leg Extension: Band around ankles, extend one leg 10-15 reps each',
+  'Seated Hamstring Curl: Band anchored front, pull heel back 10-15 reps each',
+  'Seated Clamshells: Feet together, open knees against band 15-20 reps',
+  'Perform all exercises with control',
+  'Maintain upright seated posture',
+  'Rest 30 seconds between exercises',
+  'Can hold light kettlebell for added stability challenge'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Choose appropriate band resistance',
+  'Keep movements controlled',
+  'Maintain neutral spine',
+  'Focus on target muscle contraction'
 ]
+cautions: [
+  'Do not use momentum',
+  'Avoid poor posture/slumping',
+  'Ensure band is placed correctly',
+  'Do not move too quickly'
+]
+commonMistakes: [
+  'Using momentum',
+  'Poor posture/slumping',
+  'Band placed incorrectly',
+  'Moving too quickly'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

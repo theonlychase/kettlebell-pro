@@ -1,36 +1,62 @@
 ---
 id: sa-march
-title: SA March
-description: Single arm march in place for core activation
+title: Single Arm March
+description: Core activation exercise combining marching movement with unilateral kettlebell hold, challenging anti-rotation strength and improving gait mechanics.
 category: Movement Prep
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
-exerciseType: mobility
+targetMuscleGroups: ['Core (anti-rotation)']
+secondaryMuscleGroups: ['Hip flexors', 'Shoulders']
+difficulty: intermediate
+exerciseType: activation
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold kettlebell in right hand at shoulder (rack position)',
+  'Stand tall with feet hip-width apart',
+  'Lift left knee to hip height',
+  'Hold for 1-2 seconds',
+  'Lower with control',
+  'Lift right knee to hip height',
+  'Continue alternating legs',
+  'Keep torso completely still'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Resist urge to lean away from weight',
+  'Keep core tight throughout',
+  'Breathe normally',
+  'Start with lighter weight'
 ]
+cautions: [
+  'Do not lean to compensate for weight',
+  'Avoid using momentum to lift knees',
+  'Do not allow torso rotation',
+  'Do not hold breath'
+]
+commonMistakes: [
+  'Leaning to compensate for weight',
+  'Using momentum to lift knees',
+  'Allowing torso rotation',
+  'Holding breath'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

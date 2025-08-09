@@ -1,36 +1,62 @@
 ---
 id: dual-kneeling-windmill
 title: Dual Kneeling Windmill
-description: Windmill movement from kneeling position
+description: Kneeling variation of windmill pattern that removes balance demands while teaching proper hip hinge and shoulder stability mechanics for more advanced variations.
 category: Movement Prep
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
-exerciseType: mobility
+targetMuscleGroups: ['Shoulders', 'Obliques']
+secondaryMuscleGroups: ['Core', 'Hip flexors']
+difficulty: intermediate
+exerciseType: stability
 bodyPosition: kneeling
-equipment: ["Kettlebell"]
+equipment: ['Light kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Kneel with knees hip-width apart',
+  'Press light kettlebell overhead with right hand',
+  'Turn left knee out 45 degrees',
+  'Keep right arm locked, eyes on kettlebell',
+  'Hinge at hips, sliding left hand down left thigh',
+  'Maintain straight line from right hand to hips',
+  'Return to upright by driving through hips',
+  'Complete reps, then switch sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Master bodyweight version first',
+  'Keep pressing arm completely locked',
+  'Move slowly with complete control',
+  'Stop if shoulder stability compromised'
 ]
+cautions: [
+  'Do not bend the overhead arm',
+  'Avoid rotating instead of hinging',
+  'Do not look away from kettlebell',
+  'Do not use momentum to return'
+]
+commonMistakes: [
+  'Bending the overhead arm',
+  'Rotating instead of hinging',
+  'Looking away from kettlebell',
+  'Using momentum to return'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

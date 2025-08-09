@@ -1,36 +1,62 @@
 ---
 id: pushup-childs-pose
 title: Pushup - Child's Pose
-description: Transition between push-up position and child's pose
+description: Flowing movement between push-up position and child's pose rest position, combining strength work with active recovery while improving shoulder and hip mobility.
 category: Movement Prep
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+targetMuscleGroups: ['Chest', 'Shoulders']
+secondaryMuscleGroups: ['Core', 'Hips', 'Lower back']
 difficulty: beginner
 exerciseType: mobility
-bodyPosition: standing
-equipment: ["Kettlebell"]
+bodyPosition: multiple
+equipment: ['None']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start in push-up position',
+  'Perform one full push-up',
+  'Push hips back toward heels',
+  "Extend arms forward into child's pose",
+  'Rest forehead on ground if possible',
+  'Hold for 2-3 breaths',
+  'Return to push-up position',
+  'Repeat sequence'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Move smoothly between positions',
+  'Use breath to deepen stretch',
+  'Modify push-up from knees if needed',
+  'Keep transitions controlled'
 ]
+cautions: [
+  'Do not rush through positions',
+  'Maintain proper push-up form',
+  "Do not force the stretch in child's pose",
+  'Do not hold breath'
+]
+commonMistakes: [
+  'Rushing through positions',
+  'Poor push-up form',
+  "Not fully extending in child's pose",
+  'Holding breath'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

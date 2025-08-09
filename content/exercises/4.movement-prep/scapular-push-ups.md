@@ -38,6 +38,7 @@ commonMistakes: [
   'Moving too quickly',
   'Limited range of motion'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

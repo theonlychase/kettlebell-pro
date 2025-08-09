@@ -38,6 +38,7 @@ commonMistakes: [
   'Forcing through pain or pinching',
   'Moving too quickly'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

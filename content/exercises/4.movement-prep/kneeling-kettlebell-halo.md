@@ -38,6 +38,7 @@ commonMistakes: [
   'Moving kettlebell too far from head',
   'Rushing through movement'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

@@ -38,6 +38,7 @@ commonMistakes: [
   'Using momentum instead of controlled movement',
   'Incomplete hip extension'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

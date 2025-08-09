@@ -1,36 +1,62 @@
 ---
 id: kneel-to-stand-squat
 title: Kneel to Stand Squat
-description: Transition from kneeling to standing squat position
+description: Transitional movement combining kneeling and standing positions to improve functional mobility, coordination, and unilateral leg strength while challenging balance and stability.
 category: Movement Prep
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Core', 'Hip flexors']
+difficulty: intermediate
 exerciseType: mobility
-bodyPosition: standing
-equipment: ["Kettlebell"]
+bodyPosition: multiple
+equipment: ['Light kettlebell (optional)']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start in tall kneeling position',
+  'Hold light kettlebell at chest (optional)',
+  'Step right foot forward to half-kneeling',
+  'Step left foot forward to squat position',
+  'Stand up from squat',
+  'Reverse: squat down',
+  'Step back to half-kneeling (right knee down)',
+  'Return to tall kneeling'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Move with control throughout',
+  'Keep torso upright',
+  'Use padding under knees if needed',
+  'Can use support initially'
 ]
+cautions: [
+  'Do not use momentum to stand',
+  'Avoid leaning forward excessively',
+  'Do not rush transitions',
+  'Ensure proper foot placement'
+]
+commonMistakes: [
+  'Using momentum to stand',
+  'Leaning forward excessively',
+  'Rushing transitions',
+  'Poor foot placement'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
