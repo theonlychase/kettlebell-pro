@@ -1,36 +1,65 @@
 ---
 id: split-stance-crossbody-halo
 title: Split Stance Crossbody Halo
-description: Halo across body in split stance
+description: A halo variation performed in split stance with crossbody component, combining upper body mobility with lower body stability while developing anti-rotation core strength and balance.
 category: Rotational/Core Movements
-bodyPart: Core
-targetMuscleGroups: ["Core","Obliques"]
-secondaryMuscleGroups: ["Shoulders","Back"]
+bodyPart: Full Body
+targetMuscleGroups: ['Core', 'Shoulders']
+secondaryMuscleGroups: ['Legs', 'Obliques']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Assume split stance (right foot forward)',
+  'Hold KB by horns at chest',
+  'Begin halo around head',
+  'As KB passes behind, shift path diagonally',
+  'Bring KB toward left hip (crossbody)',
+  'Maintain split stance throughout',
+  'Return KB to start via same path',
+  'Complete reps, then switch stance'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep weight evenly distributed',
+  'Do not let stance narrow',
+  'Control KB path throughout',
+  'Keep core engaged',
+  'Focus on stability'
 ]
+cautions: [
+  'Do not lose split stance position',
+  'Avoid excessive torso lean',
+  'Maintain proper KB control',
+  'Do not shift weight forward/back',
+  'Avoid moving too quickly'
+]
+commonMistakes: [
+  'Losing split stance position',
+  'Excessive torso lean',
+  'Poor KB control',
+  'Shifting weight forward/back',
+  'Moving too quickly'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

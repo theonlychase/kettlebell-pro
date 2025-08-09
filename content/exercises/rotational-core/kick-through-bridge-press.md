@@ -1,36 +1,65 @@
 ---
 id: kick-through-bridge-press
 title: Kick Through Bridge Press
-description: Press combined with kick-through bridge movement
+description: An advanced ground-based movement combining a kick-through pattern with bridge and press, developing total-body coordination, mobility, and strength through complex transitional movements.
 category: Rotational/Core Movements
-bodyPart: Core
-targetMuscleGroups: ["Core","Obliques"]
-secondaryMuscleGroups: ["Shoulders","Back"]
-difficulty: intermediate
-exerciseType: strength
-bodyPosition: standing
-equipment: ["Kettlebell"]
+bodyPart: Full Body
+targetMuscleGroups: ['Full body']
+secondaryMuscleGroups: ['Core', 'Shoulders', 'Hips']
+difficulty: advanced
+exerciseType: combination
+bodyPosition: multiple
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start in quadruped with KB in right hand',
+  'Lift KB slightly off ground',
+  'Kick left leg through to right side',
+  'Rotate into side bridge position',
+  'Press KB overhead from bridge',
+  'Lower KB with control',
+  'Return leg to start position',
+  'Repeat or alternate sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Master bodyweight kick-through first',
+  'Keep core engaged throughout',
+  'Control all transitions',
+  'Start with light weight',
+  'Ensure adequate shoulder mobility'
 ]
+cautions: [
+  'Avoid poor kick-through technique',
+  'Do not lose balance in transition',
+  'Maintain unstable bridge position',
+  'Avoid poor overhead position',
+  'Do not rush movements'
+]
+commonMistakes: [
+  'Poor kick-through technique',
+  'Losing balance in transition',
+  'Unstable bridge position',
+  'Poor overhead position',
+  'Rushing movements'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

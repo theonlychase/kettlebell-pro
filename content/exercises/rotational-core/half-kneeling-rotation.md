@@ -1,36 +1,65 @@
 ---
 id: half-kneeling-rotation
 title: Half Kneeling Rotation
-description: Rotational movement from half kneeling
+description: A rotational exercise from half-kneeling position that trains transverse plane movement while maintaining hip stability, building rotational strength and improving thoracic spine mobility.
 category: Rotational/Core Movements
-bodyPart: Core
-targetMuscleGroups: ["Core","Obliques"]
-secondaryMuscleGroups: ["Shoulders","Back"]
+bodyPart: Full Body
+targetMuscleGroups: ['Core', 'Thoracic spine']
+secondaryMuscleGroups: ['Obliques', 'Shoulders']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: mobility
 bodyPosition: kneeling
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Assume half-kneeling (right knee down)',
+  'Hold KB with both hands at chest',
+  'Keep hips facing forward',
+  'Rotate torso to the right',
+  'Pause at end range',
+  'Return to center with control',
+  'Rotate to left',
+  'Keep front shin vertical throughout'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Rotate from mid-back, not lower back',
+  'Keep hips square',
+  'Maintain tall posture',
+  'Breathe normally',
+  'Progress range before load'
 ]
+cautions: [
+  'Do not allow hip rotation',
+  'Avoid rotating from lumbar spine',
+  'Do not lose half-kneeling position',
+  'Maintain proper posture',
+  'Do not use momentum'
+]
+commonMistakes: [
+  'Allowing hip rotation',
+  'Rotating from lumbar spine',
+  'Losing half-kneeling position',
+  'Poor posture',
+  'Using momentum'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

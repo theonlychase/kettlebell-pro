@@ -1,36 +1,65 @@
 ---
 id: standing-rotations-highlow
 title: Standing Rotations High/Low
-description: Standing rotational movements at different levels
+description: Rotational core exercises performed at different heights to train various movement patterns, developing rotational power and control through multiple planes while building functional core strength.
 category: Rotational/Core Movements
-bodyPart: Core
-targetMuscleGroups: ["Core","Obliques"]
-secondaryMuscleGroups: ["Shoulders","Back"]
+bodyPart: Full Body
+targetMuscleGroups: ['Obliques', 'Core']
+secondaryMuscleGroups: ['Hips', 'Shoulders']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet shoulder-width apart',
+  'Hold KB at left shoulder height',
+  'Rotate torso to left (wind up)',
+  'Explosively rotate right and down',
+  'Finish with KB by right hip',
+  'Control return to start',
+  'Complete reps, then switch sides',
+  'For Low to High: Start at hip, finish at shoulder'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Rotate from hips and core',
+  'Keep feet planted',
+  'Control speed based on goals',
+  'Do not rotate from lower back',
+  'Maintain athletic stance'
 ]
+cautions: [
+  'Avoid poor foot positioning',
+  'Do not rotate from lumbar spine',
+  'Avoid using arms only',
+  'Do not lose balance',
+  'Maintain consistent path'
+]
+commonMistakes: [
+  'Poor foot positioning',
+  'Rotating from lumbar spine',
+  'Using arms only',
+  'Losing balance',
+  'Inconsistent path'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
