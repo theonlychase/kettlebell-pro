@@ -41,6 +41,7 @@ commonMistakes: [
   'Rounding back to increase range',
   'Not maintaining square hips'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

@@ -41,6 +41,7 @@ commonMistakes: [
   'Moving too quickly through drag phase',
   'Not completing full hip extension'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

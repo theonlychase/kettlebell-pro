@@ -41,6 +41,7 @@ commonMistakes: [
   'Looking up during movement',
   'Bar drifting away from body'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

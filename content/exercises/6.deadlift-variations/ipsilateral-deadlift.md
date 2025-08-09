@@ -41,6 +41,7 @@ commonMistakes: [
   'Reaching with arm instead of hinging',
   'Moving too quickly'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details

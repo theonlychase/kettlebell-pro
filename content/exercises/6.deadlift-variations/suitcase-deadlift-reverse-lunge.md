@@ -38,6 +38,7 @@ commonMistakes: [
   'Using momentum between movements',
   'Inadequate depth on lunge'
 ]
+videoUrl: ''
 ---
 
 ## Exercise Details
