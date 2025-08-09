@@ -4,54 +4,25 @@ interface Props {
   title?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   title: 'Instructions',
+})
+
+const computedItems = computed(() => {
+  return props?.items?.map((item, index) => ({
+    label: index + 1,
+    title: item,
+  }))
 })
 </script>
 
 <template>
-  <UCard
-    v-if="items?.length"
-    class="mb-6"
+  <UTimeline
+    :default-value="40"
+    :items="computedItems"
   >
-    <template #header>
-      <div class="flex items-center gap-3">
-        <UIcon
-          name="i-lucide-list-ordered"
-          class="text-primary"
-        />
-        <h3 class="text-lg font-semibold">
-          {{ title }}
-        </h3>
-      </div>
+    <template #indicator="{ item }">
+      <span>{{ item.label }}</span>
     </template>
-
-    <div class="space-y-4">
-      <div
-        v-for="(item, index) in items"
-        :key="item"
-        class="flex gap-4 items-start"
-      >
-        <UBadge
-          :label="(index + 1).toString()"
-          variant="solid"
-          color="primary"
-          class="shrink-0 mt-0.5"
-        />
-        <p class="text-sm leading-relaxed">
-          {{ item }}
-        </p>
-      </div>
-    </div>
-
-    <template #footer>
-      <div class="flex items-center gap-2 text-sm text-muted-foreground">
-        <UIcon
-          name="i-lucide-info"
-          class="w-4 h-4"
-        />
-        <span>Follow each step carefully for best results</span>
-      </div>
-    </template>
-  </UCard>
+  </UTimeline>
 </template>

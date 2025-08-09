@@ -1,36 +1,60 @@
 ---
 id: lateral-step-up-to-balance
 title: Lateral Step Up to Balance
-description: Step up sideways onto platform, hold balance position
+description: Dynamic lateral movement combining strength, balance, and proprioception, essential for athletic performance and injury prevention.
 category: Mobility
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
-exerciseType: mobility
+bodyPart: Legs
+targetMuscleGroups: ['Glutes', 'Quadriceps']
+secondaryMuscleGroups: ['Hip stabilizers', 'Core', 'Calves']
+difficulty: intermediate
+exerciseType: combination
 bodyPosition: standing
-equipment: ["None"]
+equipment: ['Box/platform', 'Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand beside box/platform with kettlebell in opposite hand from stepping leg',
+  'Place nearest foot fully on box',
+  'Press through heel to step up laterally',
+  'Bring trailing leg up to 90-degree hip flexion',
+  'Hold balance position for 2-3 seconds',
+  'Slowly lower back to starting position',
+  'Complete reps before switching sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Ensure entire foot is on platform before stepping up',
+  'Keep core engaged throughout movement',
+  'Start without weight to master balance component',
+  'Choose appropriate box height for fitness level'
+]
+cautions: [
+  'Do not use momentum to step up',
+  'Avoid not achieving full hip extension at top',
+  'Do not rush through balance hold',
+  'Never allow knee to cave inward'
+]
+commonMistakes: [
+  'Using momentum to step up',
+  'Not achieving full hip extension at top',
+  'Rushing through balance hold',
+  'Allowing knee to cave inward'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

@@ -1,6 +1,6 @@
 # Single Kettlebell Exercise Descriptions
 
-## MOBILITY EXERCISES
+## MOBILITY EXERCISES (16)
 
 - **Scorpion Taps**: Prone position, lift one leg and tap it to the opposite side behind you
 - **Scorpion Rotations**: Similar to taps but with controlled rotational movement through the spine
@@ -19,7 +19,7 @@
 - **Toe Halo**: Circular movement around toes while in deep squat or seated position
 - **Adduction Step Up**: Step up movement with emphasis on hip adduction
 
-## MOVEMENT PREP EXERCISES
+## MOVEMENT PREP EXERCISES (15)
 
 - **Banded Hip Thrust**: Hip thrust movement using resistance band for activation
 - **BW Squats**: Bodyweight squats for movement preparation
@@ -37,7 +37,7 @@
 - **Band Upper Series**: Upper body activation exercises with band
 - **Standing Super Man**: Standing back extension movement
 
-## SQUAT VARIATIONS
+## SQUAT VARIATIONS (15)
 
 - **Front Rack Squat**: Squat with kettlebell in front rack position
 - **Kettlebell Clean Squat**: Clean movement followed by squat
@@ -55,7 +55,7 @@
 - **Kettlebell Split Squat Press**: Split squat combined with overhead press
 - **Staggered RDL Clean**: Romanian deadlift in staggered stance leading to clean
 
-## DEADLIFT VARIATIONS
+## DEADLIFT VARIATIONS (8)
 
 - **Kettlebell Deadlift**: Standard deadlift with kettlebell
 - **Suitcase Deadlift Reverse Lunge**: Deadlift followed by reverse lunge, suitcase style
@@ -66,7 +66,7 @@
 - **SA Bent Over Drag Row**: Single arm row with dragging motion in bent position
 - **Staggered SA RDL**: Single arm Romanian deadlift in staggered stance
 
-## LUNGE VARIATIONS
+## LUNGE VARIATIONS (13)
 
 - **Alt Lateral Lunges**: Alternating lateral lunge movements
 - **Goblet Hold Forward Lunge**: Forward lunge holding kettlebell in goblet position
@@ -82,7 +82,7 @@
 - **Crossbody KB B Stance Squat**: B-stance squat with crossbody kettlebell movement
 - **Suitcase Knee Drive**: Knee drive movement while holding kettlebell suitcase style
 
-## KETTLEBELL SWINGS & BALLISTIC MOVEMENTS
+## KETTLEBELL SWINGS & BALLISTIC MOVEMENTS (12)
 
 - **Kettlebell Swing Goblet Squat**: Swing movement combined with goblet squat
 - **Staggered Swing**: Kettlebell swing in staggered stance
@@ -97,7 +97,7 @@
 - **SA Dead Snatch**: Single arm snatch from dead stop position
 - **SA Swing Dead Snatch**: Single arm swing transitioning to snatch
 
-## KETTLEBELL CLEANS
+## KETTLEBELL CLEANS (10)
 
 - **SA Clean Cossack Squat**: Single arm clean followed by cossack squat
 - **Dead Rotational Clean**: Clean with rotational component from dead position
@@ -110,7 +110,7 @@
 - **Staggered Clean Row**: Clean followed by rowing movement in staggered stance
 - **Clean March**: Clean movement combined with marching in place
 
-## PRESSING MOVEMENTS
+## PRESSING MOVEMENTS (16)
 
 - **Rotational Press Lunge**: Lunge with rotational pressing movement
 - **Goblet Hold B Stance Press**: Press from B-stance while holding goblet position
@@ -129,7 +129,7 @@
 - **SA Hold SA Press**: Single arm press while holding position
 - **Plank Rotational Press**: Press with rotation from plank position
 
-## CHEST/PUSH-UP VARIATIONS
+## CHEST/PUSH-UP VARIATIONS (8)
 
 - **Push Ups**: Standard push-up movement
 - **Kettlebell Elevated Push Ups**: Push-ups with feet or hands elevated on kettlebell
@@ -140,7 +140,7 @@
 - **Shoulder Tap - Pushup**: Push-up with shoulder tap component
 - **Floor SA Chest Fly**: Single arm chest fly movement from floor
 
-## ROWING/PULLING MOVEMENTS
+## ROWING/PULLING MOVEMENTS (11)
 
 - **Split Stance SA Row/Press**: Single arm row/press combo in split stance
 - **Bent-over Reverse Grip Row**: Row with reverse grip in bent position
@@ -154,7 +154,7 @@
 - **Split Stance KB Row Hold**: Row with hold component in split stance
 - **Split Stance RDL**: Romanian deadlift in split stance
 
-## CARRIES & HOLDS
+## CARRIES & HOLDS (7)
 
 - **Bear Hug Kickstand**: Bear hug hold with kickstand position
 - **Kettlebell Plank**: Plank position with kettlebell
@@ -164,7 +164,7 @@
 - **Side Plank**: Static side plank hold
 - **Suitcase Lateral Walks**: Lateral walking while carrying kettlebell suitcase style
 
-## ROTATIONAL/CORE MOVEMENTS
+## ROTATIONAL/CORE MOVEMENTS (15)
 
 - **Kneeling Crossbody Halo**: Halo movement across body from kneeling
 - **Half Kneeling Chops**: Chopping movement from half kneeling position
@@ -182,7 +182,7 @@
 - **Rotational Step Up**: Step up with rotational component
 - **Dual Rack March**: Marching with kettlebell in dual rack position
 
-## SINGLE LEG/BALANCE MOVEMENTS
+## SINGLE LEG/BALANCE MOVEMENTS (4)
 
 - **SL Dead Bug Bridge Press**: Single leg dead bug with bridge and press
 - **Single Leg KB Bridge**: Bridge performed on single leg with kettlebell

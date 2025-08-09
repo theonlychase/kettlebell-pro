@@ -1,38 +1,60 @@
 ---
 id: scorpion-taps
 title: Scorpion Taps
-description: Prone position, lift one leg and tap it to the opposite side behind you
+description: A dynamic prone mobility exercise that enhances spinal rotation, hip flexibility, and shoulder stability while challenging core control through cross-body movement patterns.
 category: Mobility
 bodyPart: Core
-targetMuscleGroups: ['Core', 'Hip flexors', 'Glutes']
-secondaryMuscleGroups: ['Lower back', 'Hamstrings']
+targetMuscleGroups: ['Thoracic spine', 'Hip flexors', 'Obliques']
+secondaryMuscleGroups: ['Shoulders', 'Lower back', 'Glutes']
 difficulty: beginner
 exerciseType: mobility
 bodyPosition: lying
 equipment: ['None']
 instructions: [
-  'Lie face down on the floor with your arms extended out to your sides',
-  'Keep your chest and arms pressed to the floor throughout the movement',
-  'Lift your right leg and rotate your hip to tap your right foot to the left side behind you',
+  'Start in prone position (face down) with arms extended out to sides at 90 degrees',
+  'Keep chest and shoulders pressed to the ground',
+  'Lift right leg up, bending knee to 90 degrees',
+  'Rotate through hips and lower back, bringing right foot across body toward left hand',
+  'Tap foot to ground near opposite hand if flexibility allows',
   'Return to starting position with control',
-  'Repeat on the other side',
-  'Continue alternating sides for the desired number of repetitions'
+  'Repeat on opposite side'
 ]
 tips: [
-  'Keep your chest pressed to the floor throughout the movement',
-  'Move slowly and with control',
-  'Focus on hip mobility rather than forcing the range of motion'
+  'Keep shoulders flat against ground throughout movement',
+  'Move slowly and controlled, never forcing the range of motion',
+  'Breathe steadily throughout the movement',
+  'Start with smaller range of motion and gradually increase'
+]
+cautions: [
+  'Do not lift shoulders off the ground',
+  'Avoid moving too quickly or using momentum',
+  'Never force the stretch beyond comfortable range',
+  'Stop if you experience any sharp pain'
+]
+commonMistakes: [
+  'Lifting shoulders off the ground',
+  'Moving too quickly or using momentum',
+  'Forcing the stretch beyond comfortable range',
+  'Holding breath during rotation'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
 
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

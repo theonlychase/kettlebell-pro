@@ -1,36 +1,61 @@
 ---
 id: step-back-split-squat
 title: Step Back Split Squat
-description: Dynamic stepping back into split squat position
+description: Dynamic reverse lunge variation that challenges balance, single-leg strength, and hip flexibility while teaching proper deceleration mechanics.
 category: Mobility
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
-exerciseType: mobility
+bodyPart: Legs
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Hip flexors', 'Calves', 'Core']
+difficulty: intermediate
+exerciseType: combination
 bodyPosition: standing
-equipment: ["None"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand tall holding kettlebell in goblet position',
+  'Step right foot back into lunge position',
+  'Lower back knee toward ground',
+  'Keep front knee over ankle',
+  'Press through front heel to return to standing',
+  'Bring feet together',
+  'Repeat on same leg or alternate',
+  'Maintain upright torso throughout'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Step back far enough to achieve 90-degree angles',
+  'Keep weight on front leg',
+  'Control the descent',
+  'Don\'t let front knee drift inward'
+]
+cautions: [
+  'Do not step back too short',
+  'Avoid leaning forward excessively',
+  'Never bounce at bottom',
+  'Do not push off back leg to stand'
+]
+commonMistakes: [
+  'Stepping back too short',
+  'Leaning forward excessively',
+  'Bouncing at bottom',
+  'Pushing off back leg to stand'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

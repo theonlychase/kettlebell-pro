@@ -6,89 +6,63 @@ interface Props {
   title?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   title: 'Tips & Safety',
+})
+
+const items = computed(() => {
+  return [
+    {
+      label: 'Pro Tips',
+      icon: 'i-lucide-check-circle',
+      content: props.tips,
+    },
+    {
+      label: 'Safety Cautions',
+      icon: 'i-lucide-alert-triangle',
+      content: props.cautions,
+    },
+    {
+      label: 'Common Mistakes to Avoid',
+      icon: 'i-lucide-x-circle',
+      content: props.commonMistakes,
+    },
+  ]
 })
 </script>
 
 <template>
-  <UCard v-if="tips?.length || cautions?.length || commonMistakes?.length" class="mb-6">
-    <template #header>
-      <div class="flex items-center gap-3">
-        <UIcon name="i-lucide-lightbulb" class="text-primary" />
-        <h3 class="text-lg font-semibold">
-          {{ title }}
-        </h3>
+  <UPageAccordion
+    :items="items"
+  >
+    <template #leading="{ item }">
+      <UIcon
+        :name="item.icon"
+        class="w-5 h-5 mr-1"
+        :class="{
+          'text-success': item.label === 'Pro Tips',
+          'text-warning': item.label === 'Safety Cautions',
+          'text-error': item.label === 'Common Mistakes to Avoid',
+        }"
+      />
+    </template>
+    <template #content="{ item }">
+      <div class="flex flex-col gap-4 pl-8 mb-6">
+        <div
+          v-for="i in item.content"
+          :key="i"
+        >
+          <div class="flex items-center gap-2">
+            <UIcon
+              name="i-lucide-check-circle"
+              class="w-4 h-4"
+            />
+            <div class="text-sm">
+              {{ i }}
+            </div>
+          </div>
+        </div>
       </div>
     </template>
-
-    <div class="space-y-6">
-      <!-- Tips Section -->
-      <div v-if="tips?.length">
-        <div class="flex items-center gap-2 mb-3">
-          <UIcon name="i-lucide-check-circle" class="w-5 h-5 text-green-500" />
-          <h4 class="font-medium text-green-700 dark:text-green-400">
-            Pro Tips
-          </h4>
-        </div>
-        <div class="space-y-3">
-          <UAlert
-            v-for="tip in tips"
-            :key="tip"
-            color="green"
-            variant="soft"
-            :description="tip"
-            icon="i-lucide-lightbulb"
-          />
-        </div>
-      </div>
-
-      <!-- Cautions Section -->
-      <div v-if="cautions?.length">
-        <div class="flex items-center gap-2 mb-3">
-          <UIcon name="i-lucide-alert-triangle" class="w-5 h-5 text-yellow-500" />
-          <h4 class="font-medium text-yellow-700 dark:text-yellow-400">
-            Safety Cautions
-          </h4>
-        </div>
-        <div class="space-y-3">
-          <UAlert
-            v-for="caution in cautions"
-            :key="caution"
-            color="yellow"
-            variant="soft"
-            :description="caution"
-            icon="i-lucide-alert-triangle"
-          />
-        </div>
-      </div>
-
-      <!-- Common Mistakes Section -->
-      <div v-if="commonMistakes?.length">
-        <div class="flex items-center gap-2 mb-3">
-          <UIcon name="i-lucide-x-circle" class="w-5 h-5 text-red-500" />
-          <h4 class="font-medium text-red-700 dark:text-red-400">
-            Common Mistakes to Avoid
-          </h4>
-        </div>
-        <div class="space-y-3">
-          <UAlert
-            v-for="mistake in commonMistakes"
-            :key="mistake"
-            color="red"
-            variant="soft"
-            :description="mistake"
-            icon="i-lucide-x-circle"
-          />
-        </div>
-      </div>
-    </div>
-
-    <template #footer>
-      <div class="flex items-center gap-2 text-sm text-muted-foreground">
-        <UIcon name="i-lucide-shield-check" class="w-4 h-4" />
-        <span>Always prioritize proper form and safety</span>
-      </div>
-    </template>
-  </UCard>
+  </UPageAccordion>
 </template>

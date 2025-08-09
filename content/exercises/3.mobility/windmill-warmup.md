@@ -1,36 +1,61 @@
 ---
 id: windmill-warmup
 title: Windmill Warmup
-description: Preparatory windmill movements for shoulder and hip mobility
+description: Preparatory movement pattern for full windmill exercise, developing shoulder stability, hip hinge mechanics, and lateral chain flexibility.
 category: Mobility
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
+targetMuscleGroups: ['Shoulders', 'Obliques', 'Hips']
+secondaryMuscleGroups: ['Hamstrings', 'Thoracic spine']
+difficulty: intermediate
 exerciseType: mobility
 bodyPosition: standing
-equipment: ["None"]
+equipment: ['Light kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet wider than shoulders, left foot turned out 45 degrees',
+  'Press light kettlebell overhead with right hand',
+  'Push right hip back and out',
+  'Slide left hand down left leg',
+  'Keep right arm vertical throughout',
+  'Maintain eyes on kettlebell',
+  'Return to standing by driving through hips',
+  'Complete reps before switching sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Master bodyweight version first',
+  'Keep pressing arm locked out',
+  'Move slowly with control',
+  'Don\'t force range of motion'
+]
+cautions: [
+  'Do not bend pressing arm',
+  'Avoid rounding lower back',
+  'Do not rotate torso instead of hinging',
+  'Never look away from kettlebell'
+]
+commonMistakes: [
+  'Bending pressing arm',
+  'Rounding lower back',
+  'Rotating torso instead of hinging',
+  'Looking away from kettlebell'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

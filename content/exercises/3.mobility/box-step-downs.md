@@ -1,36 +1,60 @@
 ---
 id: box-step-downs
 title: Box Step Downs
-description: Controlled step down from elevated surface, focusing on eccentric control
+description: Controlled eccentric exercise performed from an elevated surface, building single-leg strength, balance, and knee stability while improving functional movement patterns.
 category: Mobility
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
-exerciseType: mobility
+bodyPart: Legs
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Calves', 'Core stabilizers']
+difficulty: intermediate
+exerciseType: combination
 bodyPosition: standing
-equipment: ["None"]
+equipment: ['Box/platform', 'Light kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand on box/platform with one foot, other foot hanging off edge',
+  'Hold light kettlebell at chest (goblet position) for added stability challenge',
+  'Slowly lower hanging foot toward ground by bending standing leg',
+  'Control descent for 3-4 seconds',
+  'Lightly tap heel to ground (don\'t transfer weight)',
+  'Press through standing leg to return to start',
+  'Complete all reps before switching legs'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep knee tracking over toes throughout movement',
+  'Maintain upright torso position',
+  'Start with lower box height and progress',
+  'Use wall or rail for balance if needed initially'
+]
+cautions: [
+  'Do not drop too quickly (losing eccentric control)',
+  'Avoid knee caving inward',
+  'Do not lean forward excessively',
+  'Never push off bottom foot to return up'
+]
+commonMistakes: [
+  'Dropping too quickly (losing eccentric control)',
+  'Knee caving inward',
+  'Leaning forward excessively',
+  'Pushing off bottom foot to return up'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

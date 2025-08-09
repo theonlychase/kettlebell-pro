@@ -1,36 +1,61 @@
 ---
 id: toe-halo
 title: Toe Halo
-description: Circular movement around toes while in deep squat or seated position
+description: Circular mobility movement performed around the feet while maintaining deep squat or seated position, improving ankle mobility and hip flexibility.
 category: Mobility
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+bodyPart: Ankles
+targetMuscleGroups: ['Ankles', 'Hips']
+secondaryMuscleGroups: ['Core', 'Shoulders']
 difficulty: beginner
 exerciseType: mobility
-bodyPosition: standing
-equipment: ["None"]
+bodyPosition: sitting
+equipment: ['Light kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Sit in deep squat or cross-legged position',
+  'Hold light kettlebell by horns',
+  'Begin circling kettlebell around right foot',
+  'Pass kettlebell behind heel',
+  'Continue circle around to front of foot',
+  'Complete prescribed reps clockwise',
+  'Reverse direction for equal reps',
+  'Repeat pattern around left foot'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Maintain spine alignment throughout',
+  'Move kettlebell smoothly without jerking',
+  'Keep breathing steady',
+  'Adjust seated position for comfort'
+]
+cautions: [
+  'Do not round back excessively',
+  'Avoid moving too quickly',
+  'Never hold breath',
+  'Do not use too heavy weight'
+]
+commonMistakes: [
+  'Rounding back excessively',
+  'Moving too quickly',
+  'Holding breath',
+  'Using too heavy weight'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

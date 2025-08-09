@@ -1,36 +1,61 @@
 ---
 id: adduction-step-up
 title: Adduction Step Up
-description: Step up movement with emphasis on hip adduction
+description: Step-up variation emphasizing hip adduction (inward movement), targeting often-neglected inner thigh muscles while improving single-leg stability.
 category: Mobility
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
-exerciseType: mobility
+bodyPart: Legs
+targetMuscleGroups: ['Adductors', 'Quadriceps']
+secondaryMuscleGroups: ['Glutes', 'Calves', 'Hip stabilizers']
+difficulty: intermediate
+exerciseType: combination
 bodyPosition: standing
-equipment: ["None"]
+equipment: ['Box/platform', 'Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand parallel to box/platform',
+  'Hold kettlebell in outside hand',
+  'Place inside foot on box at slight angle',
+  'Drive through heel while pulling leg inward (adduction)',
+  'Step up to full extension',
+  'Emphasize squeezing inner thigh at top',
+  'Control descent back to start',
+  'Complete all reps before switching'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Focus on inward pull during ascent',
+  'Keep knee aligned with foot',
+  'Start with lower box height',
+  'Maintain upright posture'
+]
+cautions: [
+  'Do not use momentum to step up',
+  'Avoid neglecting adduction component',
+  'Do not lean too far forward',
+  'Ensure full hip extension is achieved'
+]
+commonMistakes: [
+  'Using momentum to step up',
+  'Neglecting adduction component',
+  'Leaning too far forward',
+  'Not achieving full hip extension'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

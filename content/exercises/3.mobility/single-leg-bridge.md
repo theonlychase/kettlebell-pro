@@ -1,36 +1,61 @@
 ---
 id: single-leg-bridge
 title: Single Leg Bridge
-description: Bridge position on one leg for glute activation and hip mobility
+description: Unilateral hip extension exercise that develops glute strength, hip mobility, and core stability while addressing muscle imbalances between sides.
 category: Mobility
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: beginner
-exerciseType: mobility
-bodyPosition: standing
-equipment: ["None"]
+bodyPart: Hips
+targetMuscleGroups: ['Glutes']
+secondaryMuscleGroups: ['Hamstrings', 'Core']
+difficulty: intermediate
+exerciseType: combination
+bodyPosition: lying
+equipment: ['Light kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Lie supine with one knee bent, foot flat on ground',
+  'Extend opposite leg straight or bent at 90 degrees',
+  'Place light kettlebell on hip crease of working side',
+  'Press through heel to lift hips',
+  'Create straight line from knee to shoulder',
+  'Hold top position for 2 seconds',
+  'Lower with control',
+  'Complete all reps before switching'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep core engaged to prevent back arch',
+  'Don\'t let hips rotate or drop',
+  'Press through heel, not toes',
+  'Start without weight if needed'
+]
+cautions: [
+  'Do not hyperextend lower back at top',
+  'Avoid allowing hips to rotate',
+  'Do not push through toes instead of heel',
+  'Ensure full hip extension is achieved'
+]
+commonMistakes: [
+  'Hyperextending lower back at top',
+  'Allowing hips to rotate',
+  'Pushing through toes instead of heel',
+  'Not achieving full hip extension'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

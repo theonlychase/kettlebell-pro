@@ -1,36 +1,60 @@
 ---
 id: internal-rotation
 title: Internal Rotation
-description: Arm or hip internal rotation movements to improve joint mobility
+description: Targeted joint mobility exercise focusing on internal rotation of shoulders or hips using light kettlebell resistance to improve range of motion and joint health.
 category: Mobility
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+bodyPart: Multiple
+targetMuscleGroups: ['Shoulder/hip joint capsule and rotator muscles']
+secondaryMuscleGroups: ['Supporting stabilizer muscles']
 difficulty: beginner
 exerciseType: mobility
-bodyPosition: standing
-equipment: ["None"]
+bodyPosition: multiple
+equipment: ['Light kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold light kettlebell in one hand (shoulder version)',
+  'Position elbow at 90 degrees, upper arm parallel to ground',
+  'Keep elbow stationary as pivot point',
+  'Slowly rotate forearm downward (internal rotation)',
+  'Control the descent for 2-3 seconds',
+  'Return to starting position',
+  'Complete all reps before switching arms'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Use very light weight (or bodyweight initially)',
+  'Never force painful ranges of motion',
+  'Move slowly and with complete control',
+  'Focus on joint mobility, not strength'
+]
+cautions: [
+  'Do not use too much weight',
+  'Never move through pain',
+  'Avoid compensating with other body parts',
+  'Do not rush the movement'
+]
+commonMistakes: [
+  'Using too much weight',
+  'Moving through pain',
+  'Compensating with other body parts',
+  'Rushing the movement'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
