@@ -1,36 +1,64 @@
 ---
 id: push-ups
 title: Push Ups
-description: Standard push-up movement
+description: The fundamental bodyweight pressing exercise that builds chest, shoulder, and tricep strength while developing core stability, serving as the foundation for all push-up variations and horizontal pressing patterns.
 category: Chest/Push-up Variations
 bodyPart: Upper Body
-targetMuscleGroups: ["Chest","Triceps","Shoulders"]
-secondaryMuscleGroups: ["Core"]
-difficulty: intermediate
+targetMuscleGroups: ['Chest', 'Shoulders']
+secondaryMuscleGroups: ['Triceps', 'Core']
+difficulty: beginner
 exerciseType: strength
 bodyPosition: lying
-equipment: ["Kettlebell"]
+equipment: ['None']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start in high plank position, hands shoulder-width apart',
+  'Place hands directly under shoulders',
+  'Maintain straight line from head to heels',
+  'Lower body by bending elbows to 45-degree angle',
+  'Descend until chest nearly touches floor',
+  'Press through palms to return to start',
+  'Keep core engaged throughout',
+  'Maintain neutral neck position'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep elbows at 45 degrees, not flared to 90',
+  'Engage glutes to prevent hip sag',
+  'Breathe in on descent, out on push',
+  'Can modify from knees if needed',
+  'Focus on quality over quantity'
+]
+cautions: [
+  'Do not flare elbows too wide',
+  'Avoid letting hips sag or pike up',
+  'Ensure complete range of motion',
+  'Do not drop or crane head',
+  'Avoid placing hands too far forward'
+]
+commonMistakes: [
+  'Elbows flaring too wide',
+  'Hips sagging or piking up',
+  'Incomplete range of motion',
+  'Head dropping or craning',
+  'Hands too far forward'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

@@ -1,36 +1,61 @@
 ---
 id: kettlebell-split-squat-press
 title: Kettlebell Split Squat Press
-description: Split squat combined with overhead press
+description: A compound exercise combining lower body split squat with upper body overhead press, developing total-body strength, coordination, and stability in a single movement.
 category: Squat Variations
-bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Full Body
+targetMuscleGroups: ['Quadriceps', 'Glutes', 'Shoulders']
+secondaryMuscleGroups: ['Core', 'Triceps', 'Hip stabilizers']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold kettlebell at shoulder in rack position',
+  'Step into split squat stance',
+  'Lower into split squat position',
+  'As you descend, maintain rack position',
+  'At bottom of split squat, begin pressing',
+  'Drive up from split squat while pressing overhead',
+  'Finish with arm extended, standing tall',
+  'Lower kettlebell while descending into next rep'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Coordinate press with leg drive',
+  'Keep core engaged throughout',
+  'Can perform same side or opposite side loading',
+  'Start with separate movements, then combine'
+]
+cautions: [
+  'Do not press before initiating leg drive',
+  'Avoid losing balance during press',
+  'Do not arch back excessively',
+  'Avoid poor timing between movements'
+]
+commonMistakes: [
+  'Pressing before initiating leg drive',
+  'Losing balance during press',
+  'Arching back excessively',
+  'Poor timing between movements'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

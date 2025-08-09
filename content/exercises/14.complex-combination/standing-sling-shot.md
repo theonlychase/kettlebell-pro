@@ -16,7 +16,7 @@ instructions: [
   'Shift weight to right leg, loading right hip',
   'Rotate torso to right (wind-up position)',
   'Explosively rotate left while extending arms',
-  'Release KB momentum at shoulder height (don\'t let go)',
+  "Release KB momentum at shoulder height (don\'t let go)",
   'Follow through to left hip',
   'Control deceleration and return',
   'Complete reps, then switch directions'

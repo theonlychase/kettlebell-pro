@@ -1,36 +1,61 @@
 ---
 id: sa-swing-sa-squat
-title: SA Swing SA Squat
-description: Single arm swing followed by single arm squat
+title: Single Arm Swing to Single Arm Squat
+description: A dynamic combination linking the ballistic swing with a controlled squat, both performed unilaterally to develop power, strength, and coordination while challenging anti-rotation stability.
 category: Squat Variations
-bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Full Body
+targetMuscleGroups: ['Full body']
+secondaryMuscleGroups: ['Core (anti-rotation)', 'Grip']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Perform single arm kettlebell swing',
+  'At top of swing, decelerate kettlebell',
+  'Bring to rack position smoothly',
+  'Immediately perform squat with kettlebell racked',
+  'Stand from squat',
+  'Lower kettlebell between legs',
+  'Transition directly into next swing',
+  'Maintain fluid movement throughout'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Master both movements separately first',
+  'Control transition from swing to squat',
+  'Keep core tight during unilateral loading',
+  'Start with lighter weight'
+]
+cautions: [
+  'Do not have jerky transition between movements',
+  'Avoid losing control of kettlebell',
+  'Do not rotate torso during squat',
+  'Never use too heavy weight initially'
+]
+commonMistakes: [
+  'Jerky transition between movements',
+  'Losing control of kettlebell',
+  'Rotating torso during squat',
+  'Using too heavy weight initially'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

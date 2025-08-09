@@ -1,36 +1,61 @@
 ---
 id: bell-up-kettlebell-squat
 title: Bell Up Kettlebell Squat
-description: Squat with kettlebell held overhead (bell up)
+description: An advanced squat variation with the kettlebell held in a bottoms-up position overhead, maximizing shoulder stability demands while performing lower body movement.
 category: Squat Variations
-bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Full Body
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Shoulders', 'Core', 'Grip']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Clean kettlebell to rack, then press overhead',
+  'Flip kettlebell to bottoms-up position (bell facing up)',
+  'Grip handle firmly, engaging entire arm',
+  'Keep arm locked out vertically',
+  'Perform squat while maintaining bottoms-up position',
+  'Focus intensely on balance and grip',
+  'Drive through heels to stand',
+  'Complete reps before switching arms'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Start with very light weight (8-12kg max)',
+  'Practice bottoms-up hold before adding squat',
+  'Keep eyes forward, not on kettlebell',
+  'Have clear space in case of drops'
+]
+cautions: [
+  'Do not use too heavy weight',
+  'Avoid looking up at kettlebell',
+  'Do not allow arm to drift forward/back',
+  'Never rush the movement'
+]
+commonMistakes: [
+  'Using too heavy weight',
+  'Looking up at kettlebell',
+  'Allowing arm to drift forward/back',
+  'Rushing the movement'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

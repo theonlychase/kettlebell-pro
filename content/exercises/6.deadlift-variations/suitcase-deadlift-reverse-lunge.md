@@ -1,36 +1,61 @@
 ---
 id: suitcase-deadlift-reverse-lunge
 title: Suitcase Deadlift Reverse Lunge
-description: Deadlift followed by reverse lunge, suitcase style
+description: A complex unilateral exercise combining a single-arm deadlift with a reverse lunge, challenging anti-lateral flexion core strength while developing lower body power and coordination.
 category: Deadlift Variations
-bodyPart: Legs
-targetMuscleGroups: ["Hamstrings","Glutes","Lower back"]
-secondaryMuscleGroups: ["Quadriceps","Core"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Full Body
+targetMuscleGroups: ['Glutes', 'Hamstrings', 'Quadriceps']
+secondaryMuscleGroups: ['Core (anti-lateral flexion)', 'Grip']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Place kettlebell beside right foot',
+  'Hinge and grip with right hand (suitcase position)',
+  'Perform deadlift, standing tall with kettlebell at side',
+  'Keep shoulders level despite unilateral load',
+  'Step right leg back into reverse lunge',
+  'Lower until both knees at 90 degrees',
+  'Drive through front heel to stand',
+  'Return to start position and repeat sequence'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Resist leaning away from loaded side',
+  'Keep core extremely engaged',
+  'Maintain smooth transitions between movements',
+  'Can alternate legs or complete all reps on one side'
+]
+cautions: [
+  'Do not tilt toward weighted side',
+  'Avoid losing neutral spine during transitions',
+  'Do not use momentum between movements',
+  'Ensure adequate depth on lunge'
+]
+commonMistakes: [
+  'Tilting toward weighted side',
+  'Losing neutral spine during transitions',
+  'Using momentum between movements',
+  'Inadequate depth on lunge'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

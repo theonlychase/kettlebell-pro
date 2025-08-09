@@ -1,36 +1,61 @@
 ---
 id: bw-squats
-title: BW Squats
-description: Bodyweight squats for movement preparation
+title: Bodyweight Squats
+description: Fundamental movement pattern performed without external load to rehearse proper squat mechanics, activate lower body muscles, and prepare joints for loaded training.
 category: Movement Prep
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+bodyPart: Lower Body
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Core', 'Calves']
 difficulty: beginner
 exerciseType: mobility
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['None']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet shoulder-width apart, toes slightly out',
+  'Extend arms forward for counterbalance',
+  'Initiate movement by pushing hips back',
+  'Descend by bending knees and hips simultaneously',
+  'Lower until thighs parallel to ground (or maximum depth)',
+  'Keep chest up and spine neutral',
+  'Drive through heels to return to standing',
+  'Fully extend hips at top'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep knees tracking over toes',
+  'Maintain weight distribution over mid-foot',
+  'Control descent speed (2-3 seconds)',
+  'Breathe in on descent, out on ascent'
+]
+cautions: [
+  'Do not allow knees to cave inward (valgus collapse)',
+  'Avoid letting heels lift off ground',
+  'Do not lean forward excessively',
+  'Ensure complete depth, avoid quarter squatting'
+]
+commonMistakes: [
+  'Knees caving inward (valgus collapse)',
+  'Heels lifting off ground',
+  'Excessive forward lean',
+  'Incomplete depth or quarter squatting'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

@@ -1,36 +1,61 @@
 ---
 id: kettlebell-heels-elevated-squat
 title: Kettlebell Heels Elevated Squat
-description: Squat with heels elevated on platform
+description: A squat variation with heels elevated on a platform or weight plates, increasing quadriceps emphasis while allowing deeper squat depth for those with limited ankle mobility.
 category: Squat Variations
 bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
+targetMuscleGroups: ['Quadriceps (emphasized)', 'Glutes']
+secondaryMuscleGroups: ['Core', 'Calves']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell', 'Platform/plates']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Place 1-2 inch platform under heels',
+  'Hold kettlebell in goblet or rack position',
+  'Stand with feet shoulder-width apart',
+  'Keep weight balanced despite elevation',
+  'Descend into deep squat position',
+  'Allow knees to track forward naturally',
+  'Achieve greater depth than flat-foot squat',
+  'Drive through heels to return to standing'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Start with lower heel elevation (1 inch)',
+  'Maintain balance throughout movement',
+  'Focus on increased quadriceps activation',
+  'Can help those with ankle mobility limitations'
+]
+cautions: [
+  'Do not use excessive heel elevation',
+  'Avoid losing balance on platform',
+  'Do not allow knees to cave inward',
+  'Never neglect glute activation despite quad emphasis'
+]
+commonMistakes: [
+  'Using excessive heel elevation',
+  'Losing balance on platform',
+  'Allowing knees to cave inward',
+  'Neglecting glute activation despite quad emphasis'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

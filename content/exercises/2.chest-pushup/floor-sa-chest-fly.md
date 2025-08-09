@@ -1,40 +1,64 @@
 ---
 id: floor-sa-chest-fly
-title: Floor SA Chest Fly
-description: Single arm chest fly movement from floor
+title: Floor Single Arm Chest Fly
+description: A unilateral horizontal adduction exercise performed on the floor, isolating the chest muscles while creating anti-rotation core demands and allowing for safe range of motion limitation.
 category: Chest/Push-up Variations
 bodyPart: Upper Body
-targetMuscleGroups: ['Chest', 'Triceps', 'Shoulders']
-secondaryMuscleGroups: ['Core']
+targetMuscleGroups: ['Chest']
+secondaryMuscleGroups: ['Front deltoids', 'Core']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: lying
 equipment: ['Kettlebell']
 instructions: [
-  'Lie on your back on the floor with knees bent and feet flat',
-  'Hold the kettlebell in one hand with arm extended above your chest',
-  'Slowly lower the kettlebell out to the side in a wide arc',
-  'Keep a slight bend in your elbow throughout the movement',
-  'Lower until you feel a stretch in your chest, but do not let your arm touch the floor',
-  'Reverse the movement to bring the kettlebell back to starting position',
-  'Complete all reps on one side before switching'
+  'Lie supine with knees bent',
+  'Hold light KB in right hand',
+  'Press KB up over chest',
+  'Keep slight bend in elbow',
+  'Lower KB out to side in arc',
+  'Stop when elbow touches floor',
+  'Return in same arc pattern',
+  'Keep movement controlled throughout'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Keep your core engaged to maintain stability'
+  'Use much lighter weight than press',
+  "Don't go past floor level",
+  'Maintain consistent elbow angle',
+  'Keep opposite arm out for balance',
+  'Control the negative portion'
 ]
-videoUrl: 'https://www.youtube.com/embed/_c83yehyIaM?si=9bWuRlv8byBC0qPQ'
+cautions: [
+  'Do not use too heavy weight',
+  'Avoid straightening arm completely',
+  'Do not turn into a press movement',
+  'Avoid allowing torso rotation',
+  'Never go too deep/hyperextend'
+]
+commonMistakes: [
+  'Using too heavy weight',
+  'Straightening arm completely',
+  'Turning into a press movement',
+  'Allowing torso rotation',
+  'Going too deep/hyperextending'
+]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
 
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

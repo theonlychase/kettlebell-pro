@@ -1,36 +1,61 @@
 ---
 id: scapular-push-ups
 title: Scapular Push Ups
-description: Push-up position focusing on scapular protraction/retraction
+description: Isolated scapular movement exercise that strengthens serratus anterior and improves shoulder blade control, crucial for overhead stability and pressing movements.
 category: Movement Prep
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+bodyPart: Upper Body
+targetMuscleGroups: ['Serratus anterior']
+secondaryMuscleGroups: ['Core', 'Shoulders']
 difficulty: beginner
 exerciseType: mobility
-bodyPosition: standing
-equipment: ["Kettlebell"]
+bodyPosition: lying
+equipment: ['None']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Assume push-up position with hands under shoulders',
+  'Keep arms completely straight throughout',
+  'Allow shoulder blades to come together (retraction)',
+  'Push through palms to spread shoulder blades apart (protraction)',
+  'Move only shoulder blades, not elbows',
+  'Perform controlled 2-second reps',
+  'Maintain neutral spine throughout',
+  'Complete 15-20 repetitions'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep core engaged to prevent sagging',
+  'Focus on scapular movement only',
+  "Don't bend elbows at any point",
+  'Can perform from knees if needed'
+]
+cautions: [
+  'Do not bend elbows during movement',
+  'Avoid allowing hips to sag',
+  'Do not move too quickly',
+  'Ensure full range of motion'
+]
+commonMistakes: [
+  'Bending elbows during movement',
+  'Allowing hips to sag',
+  'Moving too quickly',
+  'Limited range of motion'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

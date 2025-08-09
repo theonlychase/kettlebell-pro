@@ -1,36 +1,61 @@
 ---
 id: staggered-rdl-clean
 title: Staggered RDL Clean
-description: Romanian deadlift in staggered stance leading to clean
+description: A posterior chain exercise combining a staggered-stance Romanian deadlift with an explosive clean, developing unilateral hip strength and power production.
 category: Squat Variations
-bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Full Body
+targetMuscleGroups: ['Hamstrings', 'Glutes']
+secondaryMuscleGroups: ['Lower back', 'Traps', 'Core']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold kettlebell in right hand',
+  'Place left foot slightly forward, right foot back',
+  'Keep 70% weight on front foot',
+  'Hinge at hips, lowering kettlebell',
+  'Maintain slight knee bend in front leg',
+  'Feel stretch in front leg hamstring',
+  'Drive hips forward explosively',
+  'Clean kettlebell to rack position'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep back flat throughout',
+  "Don't round shoulders forward",
+  'Generate power from hip drive',
+  'Master RDL before adding clean'
+]
+cautions: [
+  'Do not bend knee too much (becomes squat)',
+  'Avoid rounding back during hinge',
+  'Do not use arms to clean instead of hips',
+  'Never lose staggered stance position'
+]
+commonMistakes: [
+  'Bending knee too much (becomes squat)',
+  'Rounding back during hinge',
+  'Using arms to clean instead of hips',
+  'Losing staggered stance position'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

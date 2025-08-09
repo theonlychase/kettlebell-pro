@@ -1,36 +1,61 @@
 ---
 id: kettlebell-goblet-squat
 title: Kettlebell Goblet Squat
-description: Squat holding kettlebell at chest level
+description: The most accessible loaded squat variation, holding the kettlebell at chest level to naturally encourage proper squat mechanics while building lower body strength and mobility.
 category: Squat Variations
 bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
-difficulty: intermediate
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Core', 'Upper back']
+difficulty: beginner
 exerciseType: strength
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold kettlebell by horns at chest level',
+  'Keep elbows pointing down, close to body',
+  'Stand with feet slightly wider than shoulders',
+  'Toes turned out 20-30 degrees',
+  'Descend by pushing hips back and down',
+  'Keep chest up, using kettlebell as counterbalance',
+  'Squat to maximum depth with good form',
+  'Drive through heels to return to standing'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Use kettlebell weight to counterbalance',
+  'Keep elbows inside knees at bottom',
+  'Maintain contact between arms and torso',
+  'Can pause at bottom for mobility work'
+]
+cautions: [
+  'Do not hold kettlebell too far from body',
+  'Avoid allowing elbows to flare wide',
+  'Do not rise with hips first',
+  'Ensure complete depth'
+]
+commonMistakes: [
+  'Holding kettlebell too far from body',
+  'Allowing elbows to flare wide',
+  'Rising with hips first',
+  'Incomplete depth'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

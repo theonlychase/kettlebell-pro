@@ -1,36 +1,61 @@
 ---
 id: ipsilateral-split-squat
 title: Ipsilateral Split Squat
-description: Split squat with kettlebell on same side as front leg
+description: A split squat variation where the kettlebell is held on the same side as the front leg, creating unique stability challenges and addressing unilateral strength imbalances.
 category: Squat Variations
 bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Core (anti-lateral flexion)', 'Hip stabilizers']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold kettlebell in right hand at side',
+  'Step right foot forward into split stance',
+  'Left foot back, heel elevated',
+  'Lower into split squat, back knee toward ground',
+  'Keep torso upright, resisting lean',
+  'Front knee tracks over toes',
+  'Drive through front heel to stand',
+  'Complete all reps before switching'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Resist tendency to lean toward weighted side',
+  'Keep shoulders level throughout',
+  'Maintain 90-degree angles at bottom',
+  'Can hold kettlebell in rack for variation'
+]
+cautions: [
+  'Do not lean toward loaded side',
+  'Avoid stance too narrow (losing balance)',
+  'Do not let back leg do too much work',
+  'Never allow front knee to drift inward'
+]
+commonMistakes: [
+  'Leaning toward loaded side',
+  'Stance too narrow (losing balance)',
+  'Back leg doing too much work',
+  'Front knee drifting inward'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

@@ -1,36 +1,61 @@
 ---
 id: kettlebell-figure-8-squat
 title: Kettlebell Figure 8 Squat
-description: Squat while passing kettlebell in figure-8 pattern
+description: A coordination-intensive exercise combining a squat with passing the kettlebell between and around legs in a figure-8 pattern, enhancing mobility, grip strength, and movement control.
 category: Squat Variations
-bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
+bodyPart: Full Body
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Grip', 'Core', 'Hip mobility']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet wider than shoulders',
+  'Hold kettlebell in right hand',
+  'Squat down to parallel or below',
+  'Pass kettlebell through legs to left hand',
+  'Bring left hand around outside of left leg',
+  'Pass back through legs to right hand',
+  'Continue figure-8 pattern while maintaining squat',
+  'Can perform with continuous squatting or static hold'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep core engaged throughout movement',
+  'Maintain wide stance for stability',
+  'Focus on smooth hand-offs',
+  'Start with lighter kettlebell'
+]
+cautions: [
+  'Do not rush the passing movements',
+  'Avoid losing squat position during passes',
+  'Do not allow knees to cave inward',
+  'Never drop or throw the kettlebell'
+]
+commonMistakes: [
+  'Rushing the passing movements',
+  'Losing squat position during passes',
+  'Allowing knees to cave inward',
+  'Dropping or throwing the kettlebell'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

@@ -1,36 +1,61 @@
 ---
 id: kettlebell-two-hand-row-squat
 title: Kettlebell Two Hand Row Squat
-description: Combination of rowing and squatting movements
+description: A combination movement linking squatting with horizontal pulling, creating a full-body exercise that improves coordination while strengthening both lower body and back muscles.
 category: Squat Variations
-bodyPart: Legs
-targetMuscleGroups: ["Quadriceps","Glutes","Core"]
-secondaryMuscleGroups: ["Hamstrings","Calves"]
+bodyPart: Full Body
+targetMuscleGroups: ['Quadriceps', 'Glutes', 'Lats']
+secondaryMuscleGroups: ['Rhomboids', 'Biceps', 'Core']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold kettlebell with both hands, arms extended',
+  'Stand with feet shoulder-width apart',
+  'Begin squatting down',
+  'As you descend, row kettlebell to chest',
+  'Keep elbows close to body during row',
+  'At bottom of squat, kettlebell should be at chest',
+  'Extend arms as you drive up from squat',
+  'Coordinate timing of row with squat descent'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep back straight throughout',
+  "Don't let kettlebell pull you forward",
+  'Maintain smooth, coordinated movement',
+  'Start with lighter weight to learn pattern'
+]
+cautions: [
+  'Do not have uncoordinated timing between row and squat',
+  'Avoid rounding back during movement',
+  'Do not use arms only for row (not engaging back)',
+  'Ensure complete squat depth'
+]
+commonMistakes: [
+  'Uncoordinated timing between row and squat',
+  'Rounding back during movement',
+  'Using arms only for row (not engaging back)',
+  'Incomplete squat depth'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

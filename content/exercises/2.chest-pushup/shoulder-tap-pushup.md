@@ -1,36 +1,64 @@
 ---
 id: shoulder-tap-pushup
-title: Shoulder Tap - Pushup
-description: Push-up with shoulder tap component
+title: Shoulder Tap Pushup
+description: A dynamic push-up variation that combines pressing with anti-rotation core work by adding shoulder taps at the top position, building stability and coordination while maintaining time under tension.
 category: Chest/Push-up Variations
 bodyPart: Upper Body
-targetMuscleGroups: ["Chest","Triceps","Shoulders"]
-secondaryMuscleGroups: ["Core"]
+targetMuscleGroups: ['Chest', 'Core']
+secondaryMuscleGroups: ['Shoulders', 'Triceps']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: combination
 bodyPosition: lying
-equipment: ["Kettlebell"]
+equipment: ['None']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start in push-up position',
+  'Perform one complete push-up',
+  'At top position, lift right hand',
+  'Tap left shoulder quickly',
+  'Return right hand to floor',
+  'Lift left hand, tap right shoulder',
+  'Return to start position',
+  'Perform next push-up and repeat'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Minimize hip rotation during taps',
+  'Keep taps quick and controlled',
+  'Maintain wide base with feet',
+  "Don't rush the push-up portion",
+  'Keep core extremely tight'
+]
+cautions: [
+  'Do not allow excessive hip swaying during taps',
+  'Avoid rushing through push-ups',
+  'Ensure complete push-up range',
+  'Do not rotate torso with taps',
+  'Maintain proper foot position'
+]
+commonMistakes: [
+  'Excessive hip swaying during taps',
+  'Rushing through push-ups',
+  'Incomplete push-up range',
+  'Rotating torso with taps',
+  'Narrow foot position'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

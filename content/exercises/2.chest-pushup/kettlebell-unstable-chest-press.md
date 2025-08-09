@@ -1,36 +1,64 @@
 ---
 id: kettlebell-unstable-chest-press
 title: Kettlebell Unstable Chest Press
-description: Chest press with kettlebell creating instability
+description: A chest press variation creating instability by using the kettlebell in bottoms-up position or with bands/chains, forcing greater muscle recruitment and improving stabilizer strength while building pressing power.
 category: Chest/Push-up Variations
 bodyPart: Upper Body
-targetMuscleGroups: ["Chest","Triceps","Shoulders"]
-secondaryMuscleGroups: ["Core"]
-difficulty: intermediate
+targetMuscleGroups: ['Chest']
+secondaryMuscleGroups: ['Shoulders', 'Grip', 'Stabilizers']
+difficulty: advanced
 exerciseType: strength
 bodyPosition: lying
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Lie supine on floor or bench',
+  'Hold KB in bottoms-up position (bell up)',
+  'Grip handle firmly at chest level',
+  'Press straight up maintaining bottoms-up',
+  'Focus intensely on stability',
+  'Lower with extreme control',
+  "Don't let KB flip over",
+  'Complete reps or switch arms'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Start with very light weight (8kg max)',
+  'Have spotter or clear space',
+  'Stop if grip fatigues',
+  'Focus on control over reps',
+  'Can use two KBs for bilateral'
+]
+cautions: [
+  'Do not use too heavy weight',
+  'Avoid losing bottoms-up position',
+  'Do not press at angle instead of vertical',
+  'Avoid death grip causing premature fatigue',
+  'Ensure proper wrist alignment'
+]
+commonMistakes: [
+  'Using too heavy weight',
+  'Losing bottoms-up position',
+  'Pressing at angle instead of vertical',
+  'Death grip causing premature fatigue',
+  'Poor wrist alignment'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

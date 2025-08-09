@@ -1,36 +1,64 @@
 ---
 id: ipsilateral-deadlift
 title: Ipsilateral Deadlift
-description: Deadlift with weight on same side as working leg
+description: A single-leg deadlift variation where the weight is held on the same side as the standing leg, creating unique balance and stability challenges while strengthening the posterior chain unilaterally.
 category: Deadlift Variations
-bodyPart: Legs
-targetMuscleGroups: ["Hamstrings","Glutes","Lower back"]
-secondaryMuscleGroups: ["Quadriceps","Core"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Posterior Chain
+targetMuscleGroups: ['Hamstrings', 'Glutes (unilateral)']
+secondaryMuscleGroups: ['Core', 'Ankle stabilizers']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Hold kettlebell in right hand at side',
+  'Stand on right leg with slight knee bend',
+  'Begin hinging at hip, extending left leg behind',
+  'Lower kettlebell toward ground beside right foot',
+  'Keep hips square to ground throughout',
+  'Maintain straight line from head to extended heel',
+  'Feel stretch in right hamstring',
+  'Drive through right heel to return to standing'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Start with bodyweight to learn balance',
+  'Keep standing knee soft, not locked',
+  'Move slowly with complete control',
+  'Use wall or support initially if needed',
+  'Focus on hip stability over range of motion'
+]
+cautions: [
+  'Do not open hip of lifted leg',
+  'Avoid rotating torso toward weighted side',
+  'Do not bend standing knee excessively',
+  'Never reach with arm instead of hinging',
+  'Avoid moving too quickly'
+]
+commonMistakes: [
+  'Opening hip of lifted leg',
+  'Rotating torso toward weighted side',
+  'Bending standing knee excessively',
+  'Reaching with arm instead of hinging',
+  'Moving too quickly'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

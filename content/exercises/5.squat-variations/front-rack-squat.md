@@ -1,51 +1,61 @@
 ---
 id: front-rack-squat
 title: Front Rack Squat
-description: Squat with kettlebell in front rack position
+description: A fundamental squat variation with kettlebells held in the rack position, demanding greater core stability and upper back strength while maintaining an upright torso throughout the movement.
 category: Squat Variations
 bodyPart: Legs
-targetMuscleGroups: ['Quadriceps', 'Glutes', 'Core']
-secondaryMuscleGroups: ['Hamstrings', 'Calves', 'Upper back']
+targetMuscleGroups: ['Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Core', 'Upper back', 'Shoulders']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: standing
 equipment: ['Kettlebell']
 instructions: [
-  'Clean the kettlebell to the front rack position on one side',
-  'Keep your elbow close to your body and the kettlebell resting on your forearm',
-  'Stand with feet shoulder-width apart, toes slightly turned out',
-  'Initiate the squat by pushing your hips back and bending your knees',
-  'Descend until your thighs are parallel to the floor or as low as mobility allows',
-  'Keep your chest up and core engaged throughout the movement',
-  'Drive through your heels to return to the starting position',
-  'Complete all reps on one side before switching to the other side'
+  'Clean one or two kettlebells to rack position',
+  'Rest kettlebells on outside of forearms, elbows tucked',
+  'Stand with feet shoulder-width apart, toes slightly out',
+  'Brace core and maintain tall chest',
+  'Initiate squat by pushing hips back and down',
+  'Descend until thighs parallel or below',
+  'Drive through heels to stand, maintaining rack position',
+  'Fully extend hips at top without losing rack'
 ]
 tips: [
-  'Keep the kettlebell secure in the front rack position',
-  'Maintain an upright torso throughout the movement',
-  'Focus on pushing the floor away with your feet',
-  'Keep your knees tracking over your toes'
+  'Keep elbows tight to ribs throughout',
+  'Maintain vertical forearms in rack position',
+  "Don't let kettlebells pull you forward",
+  'Focus on keeping torso more upright than back squat'
 ]
 cautions: [
-  'Do not let your knees cave inward',
-  'Avoid rounding your back',
-  'Do not let the kettlebell pull you forward'
+  'Do not let elbows flare out, losing rack position',
+  'Avoid excessive forward lean',
+  'Do not bend wrists backward painfully',
+  'Never rise with hips first (good morning squat)'
+]
+commonMistakes: [
+  'Elbows flaring out, losing rack position',
+  'Excessive forward lean',
+  'Wrists bent backward painfully',
+  'Rising with hips first (good morning squat)'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
 
+::::instructions{:items='instructions'}
+::::
 
-## Cautions
+## Tips & Safety Guidelines
 
-:::cautions{:items='cautions'}
-:::
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
