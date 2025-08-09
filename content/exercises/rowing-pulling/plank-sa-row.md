@@ -1,36 +1,65 @@
 ---
 id: plank-sa-row
-title: Plank SA Row
-description: Single arm row from plank position
+title: Plank Single Arm Row
+description: A challenging exercise combining plank stability with unilateral rowing, developing anti-rotation core strength while building back muscles and testing full-body stability.
 category: Rowing/Pulling Movements
-bodyPart: Upper Body
-targetMuscleGroups: ["Back","Biceps"]
-secondaryMuscleGroups: ["Shoulders","Core"]
-difficulty: intermediate
-exerciseType: strength
-bodyPosition: standing
-equipment: ["Kettlebell"]
+bodyPart: Full Body
+targetMuscleGroups: ['Lats', 'Core']
+secondaryMuscleGroups: ['Rhomboids', 'Shoulders', 'Glutes']
+difficulty: advanced
+exerciseType: combination
+bodyPosition: plank
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start in plank with KB in right hand',
+  'Position feet wider than shoulders for stability',
+  'Maintain rigid plank position',
+  'Row right KB to ribcage',
+  'Keep hips level (minimize rotation)',
+  'Lower KB with control',
+  'Complete reps on right',
+  'Switch to left side'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Master plank before adding row',
+  'Keep hips square to ground',
+  'Use appropriate weight for stability',
+  'Widen feet for more stability',
+  'Stop if lower back strains'
 ]
+cautions: [
+  'Avoid excessive hip rotation',
+  'Do not let hips sag',
+  'Avoid rushing the movement',
+  'Do not use too heavy weight',
+  'Maintain proper plank alignment'
+]
+commonMistakes: [
+  'Excessive hip rotation',
+  'Sagging hips',
+  'Rushing the movement',
+  'Using too heavy weight',
+  'Poor plank alignment'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

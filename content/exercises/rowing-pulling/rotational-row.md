@@ -1,36 +1,65 @@
 ---
 id: rotational-row
 title: Rotational Row
-description: Row with rotational component
+description: A dynamic rowing exercise incorporating torso rotation, developing rotational power and strength while building back muscles and improving athletic movement patterns through the transverse plane.
 category: Rowing/Pulling Movements
-bodyPart: Upper Body
-targetMuscleGroups: ["Back","Biceps"]
-secondaryMuscleGroups: ["Shoulders","Core"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Full Body
+targetMuscleGroups: ['Lats', 'Obliques', 'Core']
+secondaryMuscleGroups: ['Rhomboids', 'Biceps', 'Hips']
+difficulty: advanced
+exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet shoulder-width apart',
+  'Hold KB in right hand at right hip',
+  'Rotate torso to right (wind up)',
+  'Explosively rotate left while rowing',
+  'Row KB to left ribs during rotation',
+  'Control return with reverse rotation',
+  'Reset at starting position',
+  'Complete reps, then switch sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Rotate from hips and core',
+  'Keep spine neutral',
+  'Control rotational speed',
+  'Do not over-rotate',
+  'Start with lighter weight'
 ]
+cautions: [
+  'Do not rotate from lower back',
+  'Avoid poor timing of row and rotation',
+  'Do not use too much momentum',
+  'Avoid incomplete rotation',
+  'Maintain proper foot positioning'
+]
+commonMistakes: [
+  'Rotating from lower back',
+  'Poor timing of row and rotation',
+  'Using too much momentum',
+  'Incomplete rotation',
+  'Poor foot positioning'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

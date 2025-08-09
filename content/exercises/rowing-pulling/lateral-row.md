@@ -1,36 +1,65 @@
 ---
 id: lateral-row
 title: Lateral Row
-description: Row movement in lateral direction
+description: A rowing variation performed with lateral resistance or in a lateral position, targeting the back muscles from a unique angle while engaging lateral chain stabilizers and improving multi-directional strength.
 category: Rowing/Pulling Movements
 bodyPart: Upper Body
-targetMuscleGroups: ["Back","Biceps"]
-secondaryMuscleGroups: ["Shoulders","Core"]
+targetMuscleGroups: ['Lats', 'Obliques']
+secondaryMuscleGroups: ['Rhomboids', 'Core', 'Legs']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand perpendicular to KB placement',
+  'Assume wide athletic stance',
+  'Reach across body to grip KB',
+  'Maintain slight squat position',
+  'Row KB laterally across body',
+  'Keep torso relatively stable',
+  'Control return to start',
+  'Complete reps, then switch sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep knees bent throughout',
+  'Do not over-rotate spine',
+  'Maintain athletic position',
+  'Control lateral momentum',
+  'Focus on lat engagement'
 ]
+cautions: [
+  'Do not stand too upright',
+  'Avoid excessive torso rotation',
+  'Maintain proper lateral path',
+  'Do not use legs to initiate',
+  'Avoid losing athletic stance'
+]
+commonMistakes: [
+  'Standing too upright',
+  'Excessive torso rotation',
+  'Poor lateral path',
+  'Using legs to initiate',
+  'Losing athletic stance'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

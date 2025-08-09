@@ -1,36 +1,65 @@
 ---
 id: sa-cross-body-row
-title: SA Cross Body Row
-description: Single arm row across the body
+title: Single Arm Cross Body Row
+description: A rowing variation where the kettlebell travels across the body rather than straight up, creating rotational demands and targeting the back muscles from a unique angle while challenging core stability.
 category: Rowing/Pulling Movements
 bodyPart: Upper Body
-targetMuscleGroups: ["Back","Biceps"]
-secondaryMuscleGroups: ["Shoulders","Core"]
+targetMuscleGroups: ['Lats', 'Obliques']
+secondaryMuscleGroups: ['Rhomboids', 'Core', 'Biceps']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet shoulder-width apart',
+  'Hold kettlebell in right hand',
+  'Hinge forward slightly',
+  'Start with KB by right hip',
+  'Row across body toward left ribs',
+  'Allow slight torso rotation',
+  'Control return to start position',
+  'Complete reps, then switch sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Control rotational component',
+  'Do not over-rotate spine',
+  'Keep movement smooth',
+  'Maintain hip hinge',
+  'Focus on lat and oblique engagement'
 ]
+cautions: [
+  'Avoid excessive rotation',
+  'Do not stand too upright',
+  'Avoid using momentum',
+  'Maintain proper cross-body path',
+  'Do not lose core tension'
+]
+commonMistakes: [
+  'Excessive rotation',
+  'Standing too upright',
+  'Using momentum',
+  'Poor cross-body path',
+  'Losing core tension'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

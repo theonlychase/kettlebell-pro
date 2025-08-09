@@ -1,36 +1,65 @@
 ---
 id: split-stance-sa-rowpress
-title: Split Stance SA Row/Press
-description: Single arm row/press combo in split stance
+title: Split Stance Single Arm Row/Press
+description: A compound movement combining horizontal pulling with vertical pressing from a split stance, developing full upper body strength while challenging stability and coordination through opposing movement patterns.
 category: Rowing/Pulling Movements
-bodyPart: Upper Body
-targetMuscleGroups: ["Back","Biceps"]
-secondaryMuscleGroups: ["Shoulders","Core"]
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Full Body
+targetMuscleGroups: ['Back', 'Shoulders']
+secondaryMuscleGroups: ['Core', 'Legs', 'Biceps', 'Triceps']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Assume split stance (right foot forward)',
+  'Hold kettlebell in left hand',
+  'Hinge forward at hips, maintaining split stance',
+  'Row kettlebell to hip/ribs',
+  'At top of row, transition to upright position',
+  'Press kettlebell overhead',
+  'Lower to shoulder, then return to row start',
+  'Complete reps, then switch stance and arm'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Maintain stable split stance throughout',
+  'Keep core engaged during transitions',
+  'Do not rotate torso during row',
+  'Control movement between patterns',
+  'Use moderate weight initially'
 ]
+cautions: [
+  'Do not lose split stance position',
+  'Avoid rotating during row or press',
+  'Do not have poor timing between movements',
+  'Avoid using momentum instead of control',
+  'Do not inadequately hip hinge for row'
+]
+commonMistakes: [
+  'Losing split stance position',
+  'Rotating during row or press',
+  'Poor transition between movements',
+  'Using momentum instead of control',
+  'Inadequate hip hinge for row'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

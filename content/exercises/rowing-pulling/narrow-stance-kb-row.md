@@ -1,36 +1,65 @@
 ---
 id: narrow-stance-kb-row
 title: Narrow Stance KB Row
-description: Row movement in narrow stance
+description: A rowing exercise performed with feet close together, increasing balance demands and core activation while eliminating the wide base stability typically used in rowing movements.
 category: Rowing/Pulling Movements
 bodyPart: Upper Body
-targetMuscleGroups: ["Back","Biceps"]
-secondaryMuscleGroups: ["Shoulders","Core"]
+targetMuscleGroups: ['Lats', 'Rhomboids']
+secondaryMuscleGroups: ['Core', 'Erector spinae', 'Glutes']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet together or 2-3 inches apart',
+  'Hold kettlebell in one or both hands',
+  'Hinge forward maintaining narrow stance',
+  'Keep knees slightly bent',
+  'Row kettlebell to ribcage',
+  'Focus on balance throughout movement',
+  'Lower with control',
+  'Maintain narrow stance entire set'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Start with lighter weight',
+  'Focus on balance and control',
+  'Keep core extra engaged',
+  'Can hold wall for initial practice',
+  'Progress stance width gradually'
 ]
+cautions: [
+  'Do not widen stance during set',
+  'Avoid excessive torso movement',
+  'Maintain proper hip hinge position',
+  'Do not use too heavy weight',
+  'Avoid losing balance repeatedly'
+]
+commonMistakes: [
+  'Widening stance during set',
+  'Excessive torso movement',
+  'Poor hip hinge position',
+  'Using too heavy weight',
+  'Losing balance repeatedly'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
