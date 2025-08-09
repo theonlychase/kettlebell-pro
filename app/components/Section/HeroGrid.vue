@@ -1,28 +1,7 @@
-<template>
-  <svg
-    :width="gridWidth"
-    :height="gridHeight"
-    :class="svgClass"
-  >
-    <rect
-      v-for="(_, index) in totalSquares"
-      :key="index"
-      :x="getX(index)"
-      :y="getY(index)"
-      :width="width"
-      :height="height"
-      :class="getRectClass(index)"
-      @mouseenter="handleMouseEnter(index)"
-      @mouseleave="handleMouseLeave"
-    />
-  </svg>
-</template>
-
 <script lang="ts" setup>
-import { cn } from '@/lib/utils'
-import { ref, computed, type HTMLAttributes } from 'vue'
+import { type HTMLAttributes } from 'vue'
 
-interface InteractiveGridPatternProps {
+interface HeroGridProps {
   className?: HTMLAttributes['class']
   squaresClassName?: HTMLAttributes['class']
   width?: number
@@ -30,7 +9,7 @@ interface InteractiveGridPatternProps {
   squares?: [number, number]
 }
 
-const props = withDefaults(defineProps<InteractiveGridPatternProps>(), {
+const props = withDefaults(defineProps<HeroGridProps>(), {
   width: 40,
   height: 40,
   squares: () => [24, 24],
@@ -74,3 +53,23 @@ function handleMouseLeave() {
   hoveredSquare.value = null
 }
 </script>
+
+<template>
+  <svg
+    :width="gridWidth"
+    :height="gridHeight"
+    :class="svgClass"
+  >
+    <rect
+      v-for="(_, index) in totalSquares"
+      :key="index"
+      :x="getX(index)"
+      :y="getY(index)"
+      :width="width"
+      :height="height"
+      :class="getRectClass(index)"
+      @mouseenter="handleMouseEnter(index)"
+      @mouseleave="handleMouseLeave"
+    />
+  </svg>
+</template>
