@@ -1,36 +1,65 @@
 ---
 id: sa-hike-swing-hike-clean
-title: SA Hike Swing Hike Clean
-description: Single arm swing with hiking motion into clean
+title: Single Arm Hike Swing Hike Clean
+description: A three-phase ballistic sequence that combines hiking mechanics with swinging and cleaning, teaching proper loading positions while developing explosive power through multiple movement patterns.
 category: Swings & Ballistic
 bodyPart: Full Body
-targetMuscleGroups: ["Glutes","Hamstrings","Core"]
-secondaryMuscleGroups: ["Shoulders","Back"]
-difficulty: intermediate
+targetMuscleGroups: ['Posterior chain']
+secondaryMuscleGroups: ['Core', 'Shoulders', 'Grip']
+difficulty: advanced
 exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start with kettlebell slightly in front',
+  'Hike kettlebell back aggressively between legs',
+  'Drive hips forward for single arm swing',
+  'Let kettlebell return between legs',
+  'On next hip drive, redirect up into clean',
+  'Catch in rack position with control',
+  'Lower back to start position',
+  'Repeat sequence: hike-swing-hike-clean'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Each movement should be distinct',
+  'Do not rush transitions',
+  'Focus on hip power for all movements',
+  'Keep lat engaged on working side',
+  'Practice components separately first'
 ]
+cautions: [
+  'Do not blend movements together',
+  'Avoid poor hiking position',
+  'Do not use arm to muscle the clean',
+  'Avoid inconsistent power output',
+  'Do not lose neutral spine'
+]
+commonMistakes: [
+  'Blending movements together',
+  'Poor hiking position',
+  'Using arm to muscle the clean',
+  'Inconsistent power output',
+  'Losing neutral spine'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

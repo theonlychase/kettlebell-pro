@@ -1,36 +1,65 @@
 ---
 id: kettlebell-swing-goblet-squat
 title: Kettlebell Swing Goblet Squat
-description: Swing movement combined with goblet squat
+description: A hybrid exercise combining the explosive hip drive of a swing with the controlled strength of a goblet squat, building both power and strength while improving movement transitions and full-body coordination.
 category: Swings & Ballistic
 bodyPart: Full Body
-targetMuscleGroups: ["Glutes","Hamstrings","Core"]
-secondaryMuscleGroups: ["Shoulders","Back"]
-difficulty: intermediate
-exerciseType: power
+targetMuscleGroups: ['Glutes', 'Hamstrings', 'Quadriceps']
+secondaryMuscleGroups: ['Core', 'Shoulders', 'Cardiovascular system']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Perform a standard two-handed kettlebell swing',
+  'At the top of the swing, decelerate the kettlebell',
+  'Guide kettlebell to chest, catching in goblet position',
+  'Immediately descend into a full goblet squat',
+  'Drive up from squat to standing',
+  'Lower kettlebell between legs',
+  'Transition directly into next swing',
+  'Maintain fluid movement throughout sequence'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Master both movements separately first',
+  'Control the transition from swing to squat',
+  'Do not rush the goblet squat portion',
+  'Keep core engaged throughout',
+  'Use moderate weight initially'
 ]
+cautions: [
+  'Avoid poor transition control (kettlebell crashes into chest)',
+  'Do not rush through squat portion',
+  'Avoid losing hip hinge on swings after squats',
+  'Do not use too heavy weight for complex movement',
+  'Maintain consistent swing height'
+]
+commonMistakes: [
+  'Poor transition control (kettlebell crashes into chest)',
+  'Rushing through squat portion',
+  'Losing hip hinge on swings after squats',
+  'Using too heavy weight for complex movement',
+  'Inconsistent swing height'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

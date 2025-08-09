@@ -1,36 +1,65 @@
 ---
 id: sa-swing-dead-snatch
-title: SA Swing Dead Snatch
-description: Single arm swing transitioning to snatch
+title: Single Arm Swing Dead Snatch
+description: A combination exercise alternating between continuous swings and dead stop snatches, contrasting dynamic rhythm with static start power while building varied movement capacity.
 category: Swings & Ballistic
 bodyPart: Full Body
-targetMuscleGroups: ["Glutes","Hamstrings","Core"]
-secondaryMuscleGroups: ["Shoulders","Back"]
-difficulty: intermediate
+targetMuscleGroups: ['Full body']
+secondaryMuscleGroups: ['Cardiovascular system', 'Grip']
+difficulty: advanced
 exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Perform 2-3 single arm swings',
+  'On last swing, let kettlebell return to ground',
+  'Full stop, reset grip and position',
+  'Explosively snatch from dead position',
+  'Lower kettlebell between legs',
+  'Immediately begin swing series',
+  'Continue alternating pattern',
+  'Maintain quality on both movements'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Do not rush transition points',
+  'Maintain consistent swing height',
+  'Full reset for dead snatch',
+  'Keep movement quality high',
+  'Use moderate weight'
 ]
+cautions: [
+  'Avoid poor transitions between movements',
+  'Do not have inconsistent rep patterns',
+  'Avoid not fully stopping for dead snatch',
+  'Do not let fatigue affect form',
+  'Avoid using too heavy weight'
+]
+commonMistakes: [
+  'Poor transitions between movements',
+  'Inconsistent rep patterns',
+  'Not fully stopping for dead snatch',
+  'Fatigue affecting form',
+  'Using too heavy weight'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

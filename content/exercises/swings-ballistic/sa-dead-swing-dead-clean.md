@@ -1,36 +1,65 @@
 ---
 id: sa-dead-swing-dead-clean
-title: SA Dead Swing Dead Clean
-description: Single arm swing from dead stop into clean
+title: Single Arm Dead Swing Dead Clean
+description: A power development exercise starting from a complete stop (dead position) for each rep, eliminating the stretch reflex and forcing pure concentric power production for both swings and cleans.
 category: Swings & Ballistic
 bodyPart: Full Body
-targetMuscleGroups: ["Glutes","Hamstrings","Core"]
-secondaryMuscleGroups: ["Shoulders","Back"]
+targetMuscleGroups: ['Glutes', 'Hamstrings']
+secondaryMuscleGroups: ['Core', 'Traps', 'Shoulders']
 difficulty: intermediate
 exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Place kettlebell between feet',
+  'Hinge and grip with one hand',
+  'Pre-tension body, engage lats',
+  'Explosively drive hips for swing',
+  'Let kettlebell float to chest height',
+  'Return to ground with control',
+  'Reset completely (dead stop)',
+  'Next rep: explosive clean from dead position'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Full reset between each rep',
+  'Do not use bounce or momentum',
+  'Focus on explosive first pull',
+  'Maintain back position',
+  'Build tension before each pull'
 ]
+cautions: [
+  'Do not perform touch-and-go reps',
+  'Avoid rounding back on pickup',
+  'Do not use momentum from previous rep',
+  'Maintain consistent starting position',
+  'Avoid poor lat engagement'
+]
+commonMistakes: [
+  'Not fully resetting (touch-and-go)',
+  'Rounding back on pickup',
+  'Using momentum from previous rep',
+  'Inconsistent starting position',
+  'Poor lat engagement'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

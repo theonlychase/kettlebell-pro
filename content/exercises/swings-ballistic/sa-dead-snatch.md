@@ -1,36 +1,65 @@
 ---
 id: sa-dead-snatch
-title: SA Dead Snatch
-description: Single arm snatch from dead stop position
+title: Single Arm Dead Snatch
+description: An explosive overhead movement from a complete stop, developing maximum power production without momentum while building shoulder stability and full-body coordination.
 category: Swings & Ballistic
 bodyPart: Full Body
-targetMuscleGroups: ["Glutes","Hamstrings","Core"]
-secondaryMuscleGroups: ["Shoulders","Back"]
-difficulty: intermediate
+targetMuscleGroups: ['Full body']
+secondaryMuscleGroups: ['Shoulders', 'Core', 'Grip']
+difficulty: advanced
 exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Place kettlebell between feet',
+  'Hinge and grip with one hand',
+  'Pack shoulder, engage lat',
+  'Drive hips forward explosively',
+  'Pull elbow high as kettlebell rises',
+  'Punch through as kettlebell passes face',
+  'Catch overhead with locked arm',
+  'Lower to ground with control, full reset'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Each rep starts from complete stop',
+  'Do not muscle with arm',
+  'Smooth transition around hand',
+  'Keep kettlebell path close to body',
+  'Build power from ground up'
 ]
+cautions: [
+  'Do not use momentum between reps',
+  'Avoid wide arc path (inefficient)',
+  'Do not press out at top',
+  'Avoid poor timing of punch through',
+  'Do not have inadequate hip drive'
+]
+commonMistakes: [
+  'Using momentum between reps',
+  'Wide arc path (inefficient)',
+  'Pressing out at top',
+  'Poor timing of punch through',
+  'Inadequate hip drive'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
