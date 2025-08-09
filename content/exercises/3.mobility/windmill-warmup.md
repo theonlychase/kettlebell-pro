@@ -24,7 +24,7 @@ tips: [
   'Master bodyweight version first',
   'Keep pressing arm locked out',
   'Move slowly with control',
-  'Don\'t force range of motion'
+  "Don't force range of motion"
 ]
 cautions: [
   'Do not bend pressing arm',

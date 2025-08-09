@@ -1,49 +1,65 @@
 ---
 id: bear-hug-kickstand
 title: Bear Hug Kickstand
-description: Bear hug hold with kickstand position
+description: An isometric hold exercise where the kettlebell is held in a "bear hug" position at chest level while maintaining a kickstand (B-stance) position, building anterior core strength, grip endurance, and unilateral leg stability simultaneously.
 category: Carries & Holds
 bodyPart: Core
-targetMuscleGroups: ['Core', 'Shoulders']
-secondaryMuscleGroups: ['Back', 'Legs']
+targetMuscleGroups: ['Core', 'Grip']
+secondaryMuscleGroups: ['Shoulders', 'Legs', 'Upper back']
 difficulty: intermediate
 exerciseType: endurance
 bodyPosition: standing
 equipment: ['Kettlebell']
 instructions: [
-  'Stand with your feet together and your arms by your sides.',
-  'Take a small step back and lift your rearmost heel off the floor. Your back leg provides balance and support, but most of your weight should be on your front leg.',
-  'Bend your legs and squat down until your front thigh is roughly parallel to the floor. Raise your arms to the front for balance if required. Try to keep your torso upright.',
-  'Drive your front foot into the floor and stand back up.',
-  'Continue for the desired number of reps.',
-  'Switch sides and repeat.'
+  'Hold kettlebell upside down by the bell (not handle)',
+  'Hug KB tight to chest with both arms wrapped around',
+  'Set up kickstand position: left foot forward, right toe back',
+  'Keep 80% weight on front foot',
+  'Maintain tall posture with shoulders back',
+  'Hold position for 20-60 seconds',
+  'Keep breathing steady throughout hold',
+  'Switch stance halfway through or on next set'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Squeeze KB tight to maintain grip',
+  "Don't round shoulders forward",
+  'Keep majority of weight on front leg',
+  'Breathe normally despite chest compression',
+  'Choose appropriate weight for grip strength'
+]
+cautions: [
+  'Do not allow posture to deteriorate',
+  'Avoid shifting too much weight to back foot',
+  'Never hold breath during exercise',
+  'Do not lose grip on smooth bell',
+  'Avoid rounding upper back'
+]
+commonMistakes: [
+  'Allowing posture to deteriorate',
+  'Shifting too much weight to back foot',
+  'Holding breath during exercise',
+  'Losing grip on smooth bell',
+  'Rounding upper back'
 ]
 videoUrl: 'https://www.youtube.com/embed/0on0IkOBe_w'
 ---
 
-## Video
+## Exercise Details
+
+::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::
+
+## Video Demonstration
 
 ::custom-video{:title='title' :url='videoUrl'}
 ::
 
-## Instructions
+## Step-by-Step Instructions
 
 ::instructions{:items='instructions'}
 ::
 
+## Tips & Safety Guidelines
 
-
-## Exercise Details
-
-:::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
-:::
-
-## Tips & Safety
-
-:::exercise-tips{:tips='tips'}
-:::
+::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::

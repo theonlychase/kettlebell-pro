@@ -15,7 +15,7 @@ instructions: [
   'Hold light kettlebell at chest (goblet position) for added stability challenge',
   'Slowly lower hanging foot toward ground by bending standing leg',
   'Control descent for 3-4 seconds',
-  'Lightly tap heel to ground (don\'t transfer weight)',
+  "Lightly tap heel to ground (don't transfer weight)",
   'Press through standing leg to return to start',
   'Complete all reps before switching legs'
 ]

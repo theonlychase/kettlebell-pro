@@ -1,36 +1,64 @@
 ---
 id: pushup-hold
 title: Pushup Hold
-description: Static hold in push-up position
+description: An isometric exercise maintaining the bottom position of a push-up, building strength in the most challenging portion of the movement while developing muscular endurance and mental toughness.
 category: Carries & Holds
-bodyPart: Core
-targetMuscleGroups: ["Core","Shoulders"]
-secondaryMuscleGroups: ["Back","Legs"]
+bodyPart: Upper Body
+targetMuscleGroups: ['Chest', 'Shoulders']
+secondaryMuscleGroups: ['Triceps', 'Core']
 difficulty: intermediate
 exerciseType: endurance
-bodyPosition: standing
-equipment: ["Kettlebell"]
+bodyPosition: lying
+equipment: ['Kettlebell (optional)']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Set up in push-up position',
+  'Lower to bottom position (chest 1-2 inches from floor)',
+  'Hold position with elbows at 45 degrees',
+  'Maintain rigid plank alignment',
+  'Keep breathing steady',
+  'Hold for 10-30 seconds',
+  'Press up to complete or drop to knees',
+  'Can use KBs for deeper position'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  "Don't let hips sag",
+  'Keep elbows from flaring wide',
+  'Breathe normally throughout',
+  'Start with shorter holds',
+  'Can modify from knees'
+]
+cautions: [
+  'Never hold breath',
+  'Avoid hips sagging or rising',
+  'Do not let elbows flare to 90 degrees',
+  'Ensure complete depth',
+  'Never exceed capacity'
+]
+commonMistakes: [
+  'Holding breath',
+  'Hips sagging or rising',
+  'Elbows flaring to 90 degrees',
+  'Incomplete depth',
+  'Exceeding capacity'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

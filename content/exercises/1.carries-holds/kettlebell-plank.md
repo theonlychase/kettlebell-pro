@@ -1,36 +1,63 @@
 ---
 id: kettlebell-plank
 title: Kettlebell Plank
-description: Plank position with kettlebell
+description: A plank variation incorporating kettlebell placement for added instability or weighted resistance, increasing core activation and shoulder stability demands while building isometric strength.
 category: Carries & Holds
 bodyPart: Core
-targetMuscleGroups: ["Core","Shoulders"]
-secondaryMuscleGroups: ["Back","Legs"]
+targetMuscleGroups: ['Core']
+secondaryMuscleGroups: ['Shoulders', 'Glutes', 'Back']
 difficulty: intermediate
 exerciseType: endurance
-bodyPosition: standing
-equipment: ["Kettlebell"]
+bodyPosition: lying
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Assume standard plank position',
+  'Have partner place KB on lower back',
+  'Maintain perfectly flat back',
+  'Hold position without allowing KB to roll',
+  'Keep hips level and spine neutral',
+  'Hold for 20-60 seconds',
+  'Have partner remove KB safely'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Start with lighter weight or shorter holds',
+  'Keep breathing steady',
+  'Stop if lower back strains',
+  'Ensure KB is stable if on back',
+  'Progress gradually with time/load'
+]
+cautions: [
+  'Do not let hips sag or pike',
+  'Never hold breath',
+  'Avoid poor KB placement on back',
+  'Do not use unstable KB positioning',
+  'Never exceed capacity too quickly'
+]
+commonMistakes: [
+  'Hips sagging or piking',
+  'Holding breath',
+  'Poor KB placement on back',
+  'Unstable KB positioning',
+  'Exceeding capacity too quickly'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

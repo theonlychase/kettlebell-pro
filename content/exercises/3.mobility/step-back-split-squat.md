@@ -24,7 +24,7 @@ tips: [
   'Step back far enough to achieve 90-degree angles',
   'Keep weight on front leg',
   'Control the descent',
-  'Don\'t let front knee drift inward'
+  "Don't let front knee drift inward"
 ]
 cautions: [
   'Do not step back too short',

@@ -10,29 +10,33 @@ const props = withDefaults(defineProps<Props>(), {
   title: 'Tips & Safety',
 })
 
-const items = computed(() => {
-  return [
-    {
-      label: 'Pro Tips',
-      icon: 'i-lucide-check-circle',
-      content: props.tips,
-    },
-    {
-      label: 'Safety Cautions',
-      icon: 'i-lucide-alert-triangle',
-      content: props.cautions,
-    },
-    {
-      label: 'Common Mistakes to Avoid',
-      icon: 'i-lucide-x-circle',
-      content: props.commonMistakes,
-    },
-  ]
-})
+const items = ref([
+  {
+    label: 'Pro Tips',
+    icon: 'i-lucide-check-circle',
+    content: props.tips,
+    value: 'tips',
+  },
+  {
+    label: 'Safety Cautions',
+    icon: 'i-lucide-alert-triangle',
+    content: props.cautions,
+    value: 'safety',
+  },
+  {
+    label: 'Common Mistakes to Avoid',
+    icon: 'i-lucide-x-circle',
+    content: props.commonMistakes,
+    value: 'avoid',
+  },
+])
+
+const active = ref(['tips'])
 </script>
 
 <template>
   <UPageAccordion
+    v-model="active"
     :items="items"
   >
     <template #leading="{ item }">

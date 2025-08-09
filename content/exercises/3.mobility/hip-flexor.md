@@ -21,7 +21,7 @@ instructions: [
   'Perform 8-10 dynamic reps per side'
 ]
 tips: [
-  'Don\'t arch lower back excessively',
+  "Don't arch lower back excessively",
   'Keep front knee behind toes',
   'Engage core to protect spine',
   'Use padding under rear knee if needed'

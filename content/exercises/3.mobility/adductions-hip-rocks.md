@@ -22,7 +22,7 @@ instructions: [
 ]
 tips: [
   'Keep both feet flat on ground',
-  'Don\'t force range of motion',
+  "Don't force range of motion",
   'Move smoothly without bouncing',
   'Keep knees tracking over toes'
 ]

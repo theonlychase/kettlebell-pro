@@ -22,7 +22,7 @@ instructions: [
 ]
 tips: [
   'Keep core engaged to prevent back arch',
-  'Don\'t let hips rotate or drop',
+  "Don't let hips rotate or drop",
   'Press through heel, not toes',
   'Start without weight if needed'
 ]
