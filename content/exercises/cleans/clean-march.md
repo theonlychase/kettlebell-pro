@@ -1,36 +1,65 @@
 ---
 id: clean-march
 title: Clean March
-description: Clean movement combined with marching in place
+description: A coordination exercise combining cleans with marching in place, developing rhythm, timing, and unilateral stability while building work capacity and hip flexor strength.
 category: Kettlebell Cleans
 bodyPart: Full Body
-targetMuscleGroups: ["Full Body"]
-secondaryMuscleGroups: []
+targetMuscleGroups: ['Full body', 'Hip flexors']
+secondaryMuscleGroups: ['Core', 'Cardiovascular system']
 difficulty: intermediate
-exerciseType: power
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Clean kettlebell to rack (either arm)',
+  'Begin marching in place',
+  'Drive knees to hip height',
+  'Maintain rack position while marching',
+  'March for 5-10 steps',
+  'Lower kettlebell between legs',
+  'Re-clean on same or opposite side',
+  'Continue pattern: clean, march, lower'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep torso stable while marching',
+  'Do not lean away from weight',
+  'Maintain consistent march tempo',
+  'Keep rack position solid',
+  'Focus on hip flexor drive'
 ]
+cautions: [
+  'Do not lose rack during march',
+  'Avoid leaning to compensate',
+  'Do not have inconsistent knee height',
+  'Avoid poor clean technique when fatigued',
+  'Do not rush transitions'
+]
+commonMistakes: [
+  'Losing rack during march',
+  'Leaning to compensate',
+  'Inconsistent knee height',
+  'Poor clean technique when fatigued',
+  'Rushing transitions'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

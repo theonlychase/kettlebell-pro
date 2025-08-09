@@ -1,36 +1,65 @@
 ---
 id: kneeling-kb-clean-press
 title: Kneeling KB Clean Press
-description: Clean to press from kneeling position
+description: A clean and press performed from a kneeling position, eliminating lower body momentum and focusing on upper body power and core stability while teaching proper arm mechanics.
 category: Kettlebell Cleans
-bodyPart: Full Body
-targetMuscleGroups: ["Full Body"]
-secondaryMuscleGroups: []
+bodyPart: Upper Body
+targetMuscleGroups: ['Shoulders', 'Core']
+secondaryMuscleGroups: ['Upper back', 'Triceps', 'Glutes']
 difficulty: intermediate
-exerciseType: power
+exerciseType: combination
 bodyPosition: kneeling
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Kneel on both knees, kettlebell in front',
+  'Hinge at hips to reach kettlebell',
+  'Clean to rack using hip snap (limited range)',
+  'Stabilize in tall kneeling position',
+  'Press kettlebell overhead',
+  'Lock out with bicep by ear',
+  'Lower to rack, then to ground',
+  'Reset completely between reps'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Use padding under knees',
+  'Keep glutes engaged throughout',
+  'Do not lean back during press',
+  'Focus on explosive hip snap for clean',
+  'Maintain tall kneeling posture'
 ]
+cautions: [
+  'Do not use lower back instead of hips',
+  'Avoid leaning back during press',
+  'Do not have poor rack position',
+  'Avoid insufficient hip drive for clean',
+  'Do not allow torso rotation'
+]
+commonMistakes: [
+  'Using lower back instead of hips',
+  'Leaning back during press',
+  'Poor rack position',
+  'Insufficient hip drive for clean',
+  'Allowing torso rotation'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

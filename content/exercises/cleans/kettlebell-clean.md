@@ -1,36 +1,65 @@
 ---
 id: kettlebell-clean
 title: Kettlebell Clean
-description: Standard kettlebell clean movement
+description: The fundamental ballistic movement that transitions a kettlebell from ground to rack position using explosive hip power, essential for loading the rack position efficiently and safely.
 category: Kettlebell Cleans
 bodyPart: Full Body
-targetMuscleGroups: ["Full Body"]
-secondaryMuscleGroups: []
+targetMuscleGroups: ['Posterior chain']
+secondaryMuscleGroups: ['Core', 'Shoulders', 'Grip']
 difficulty: intermediate
 exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand over kettlebell, feet hip-width apart',
+  'Hinge and grip handle with one hand',
+  'Hike kettlebell back between legs',
+  'Drive hips forward explosively',
+  'Keep elbow close to body as KB rises',
+  'Guide kettlebell around hand (not flip over)',
+  'Catch softly in rack position',
+  'Elbow on hip, wrist straight, KB on forearm'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Power from hips, not arms',
+  'Keep kettlebell path close to body',
+  'Tame the arc - do not let it swing wide',
+  'Smooth transition around hand',
+  'Practice with lighter weight first'
 ]
+cautions: [
+  'Do not muscle with arm (reverse curl)',
+  'Avoid banging forearm (poor hand insertion)',
+  'Do not allow wide arc path away from body',
+  'Avoid gripping too tight throughout',
+  'Do not have poor rack position finish'
+]
+commonMistakes: [
+  'Muscling with arm (reverse curl)',
+  'Banging forearm (poor hand insertion)',
+  'Wide arc path away from body',
+  'Gripping too tight throughout',
+  'Poor rack position finish'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

@@ -1,36 +1,65 @@
 ---
 id: adduction-clean-press
 title: Adduction Clean Press
-description: Clean with adduction movement into press
+description: A clean and press variation emphasizing hip adduction during the movement, targeting often-neglected inner thigh muscles while developing full-body power and coordination.
 category: Kettlebell Cleans
 bodyPart: Full Body
-targetMuscleGroups: ["Full Body"]
-secondaryMuscleGroups: []
-difficulty: intermediate
+targetMuscleGroups: ['Adductors', 'Shoulders']
+secondaryMuscleGroups: ['Core', 'Posterior chain']
+difficulty: advanced
 exerciseType: power
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with kettlebell outside right foot',
+  'Step right foot out slightly (mini lateral lunge)',
+  'Clean kettlebell while pulling right leg back to center',
+  'Use adduction force to assist clean',
+  'Finish in rack with feet together',
+  'Press overhead from stable position',
+  'Lower to rack, then to start position',
+  'Repeat pattern with adduction emphasis'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Coordinate adduction with hip drive',
+  'Do not let knee collapse inward',
+  'Keep movement controlled',
+  'Focus on inner thigh engagement',
+  'Start with lighter weight'
 ]
+cautions: [
+  'Avoid poor timing of adduction',
+  'Do not use only arm for clean',
+  'Avoid losing balance during pull',
+  'Avoid excessive lateral lean',
+  'Do not forget adduction component'
+]
+commonMistakes: [
+  'Poor timing of adduction',
+  'Using only arm for clean',
+  'Losing balance during pull',
+  'Excessive lateral lean',
+  'Forgetting adduction component'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

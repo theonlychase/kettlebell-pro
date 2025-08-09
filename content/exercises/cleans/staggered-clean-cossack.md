@@ -1,36 +1,65 @@
 ---
 id: staggered-clean-cossack
 title: Staggered Clean Cossack
-description: Clean in staggered stance followed by cossack squat
+description: A complex movement starting from a staggered stance clean and transitioning into a cossack squat, combining unilateral power development with extreme hip mobility demands.
 category: Kettlebell Cleans
 bodyPart: Full Body
-targetMuscleGroups: ["Full Body"]
-secondaryMuscleGroups: []
-difficulty: intermediate
-exerciseType: power
+targetMuscleGroups: ['Legs', 'Hips', 'Posterior chain']
+secondaryMuscleGroups: ['Core', 'Shoulders', 'Adductors']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Set up in staggered stance (left foot forward)',
+  'Kettlebell starts between feet',
+  'Clean with emphasis on back leg drive',
+  'Stabilize in rack position',
+  'Step left foot out wide',
+  'Shift into cossack squat on left',
+  'Drive back to center',
+  'Return to staggered stance and repeat'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Maintain staggered stance during clean',
+  'Smooth transition to wide stance',
+  'Keep torso upright in cossack',
+  'Control descent into squat',
+  'Start with light weight'
 ]
+cautions: [
+  'Do not lose staggered position during clean',
+  'Avoid poor transition timing',
+  'Ensure sufficient cossack depth',
+  'Avoid knee collapse in deep squat',
+  'Do not rush between positions'
+]
+commonMistakes: [
+  'Losing staggered position during clean',
+  'Poor transition timing',
+  'Insufficient cossack depth',
+  'Knee collapse in deep squat',
+  'Rushing between positions'
+]
+videoUrl: ''
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
