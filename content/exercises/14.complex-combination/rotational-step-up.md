@@ -1,36 +1,65 @@
 ---
 id: rotational-step-up
 title: Rotational Step Up
-description: Step up with rotation
+description: A complex lower body exercise combining vertical stepping with horizontal rotation, developing functional strength and power while improving balance and coordination through multiple planes of movement.
 category: Complex/Combination Movements
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Legs
+targetMuscleGroups: ['Quadriceps', 'Glutes', 'Core']
+secondaryMuscleGroups: ['Obliques', 'Calves', 'Hip stabilizers']
+difficulty: advanced
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Box/platform', 'Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand beside box/platform with KB at chest',
+  'Place inside foot on box',
+  'Drive through heel to step up',
+  'As you reach top position, rotate torso away from box',
+  'Complete 90-180 degree rotation',
+  'Pause briefly in rotated position',
+  'Return to center while maintaining balance',
+  'Step down with control',
+  'Complete reps, then switch sides'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Master basic step-up first',
+  'Keep knee tracking over toes',
+  'Control rotation at top',
+  'Use appropriate box height',
+  'Focus on balance throughout'
+]
+cautions: [
+  'Do not rotate during ascent (not at top)',
+  'Avoid knee valgus collapse',
+  'Do not have poor balance in rotation',
+  'Never use momentum to step up',
+  'Avoid excessive/uncontrolled rotation'
+]
+commonMistakes: [
+  'Rotating during ascent (not at top)',
+  'Knee valgus collapse',
+  'Poor balance in rotation',
+  'Using momentum to step up',
+  'Excessive/uncontrolled rotation'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

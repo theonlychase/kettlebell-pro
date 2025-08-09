@@ -1,36 +1,65 @@
 ---
 id: dual-rack-march
 title: Dual Rack March
-description: Marching with dual rack hold
+description: A loaded carry variation with two kettlebells in rack position while marching in place, creating intense anterior core loading while developing hip flexor strength, shoulder stability, and breathing capacity under load.
 category: Complex/Combination Movements
-bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
-difficulty: intermediate
-exerciseType: strength
+bodyPart: Core
+targetMuscleGroups: ['Core', 'Hip flexors']
+secondaryMuscleGroups: ['Shoulders', 'Upper back', 'Quads']
+difficulty: advanced
+exerciseType: endurance
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Clean two kettlebells to rack position',
+  'Position elbows tight against ribs',
+  'Stand tall with feet hip-width apart',
+  'Begin controlled marching in place',
+  'Drive right knee to hip height',
+  'Lower with control',
+  'Immediately lift left knee',
+  'Maintain upright posture throughout',
+  'Continue for time or prescribed reps'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep breathing despite rack pressure',
+  "Don't lean back to compensate",
+  'Maintain consistent march height',
+  'Keep core maximally engaged',
+  'Start with lighter weights'
+]
+cautions: [
+  'Never hold breath',
+  'Avoid excessive backward lean',
+  'Do not lose rack position',
+  'Avoid inconsistent knee height',
+  'Maintain proper posture/alignment'
+]
+commonMistakes: [
+  'Holding breath',
+  'Excessive backward lean',
+  'Losing rack position',
+  'Inconsistent knee height',
+  'Poor posture/alignment'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

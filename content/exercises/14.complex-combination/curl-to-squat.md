@@ -1,36 +1,65 @@
 ---
 id: curl-to-squat
 title: Curl to Squat
-description: Bicep curl transitioning to squat movement
+description: A compound exercise linking bicep curls with squats in a continuous flow, building upper and lower body strength while improving coordination and creating metabolic demand through full-body engagement.
 category: Complex/Combination Movements
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+targetMuscleGroups: ['Biceps', 'Quadriceps', 'Glutes']
+secondaryMuscleGroups: ['Core', 'Hamstrings', 'Forearms']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Stand with feet shoulder-width apart',
+  'Hold kettlebell by handle with both hands, arms extended',
+  'Perform bicep curl bringing KB to chest',
+  'As KB reaches chest, initiate squat descent',
+  'Keep KB at chest throughout squat',
+  'Drive through heels to stand',
+  'Lower KB with control as you rise',
+  'Arms fully extend as you reach standing',
+  'Flow directly into next rep'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Coordinate timing of curl and squat',
+  'Keep core engaged throughout',
+  "Don't rush the movements",
+  'Maintain neutral spine',
+  'Use moderate weight for control'
+]
+cautions: [
+  'Avoid poor timing between movements',
+  'Do not use momentum instead of control',
+  'Ensure complete squat depth',
+  'Do not swing the curl',
+  'Never lose posture in transition'
+]
+commonMistakes: [
+  'Poor timing between movements',
+  'Using momentum instead of control',
+  'Incomplete squat depth',
+  'Swinging the curl',
+  'Losing posture in transition'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

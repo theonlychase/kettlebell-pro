@@ -1,36 +1,64 @@
 ---
 id: kneeling-tricep-ext
-title: Kneeling Tricep Ext
-description: Tricep extension from kneeling position
+title: Kneeling Tricep Extension
+description: An overhead tricep extension performed from a kneeling position, isolating the triceps while demanding core stability and shoulder mobility, removing the ability to use leg drive or momentum.
 category: Curls & Extensions
 bodyPart: Arms
-targetMuscleGroups: ["Biceps","Triceps"]
-secondaryMuscleGroups: ["Forearms"]
+targetMuscleGroups: ['Triceps']
+secondaryMuscleGroups: ['Core', 'Shoulders']
 difficulty: intermediate
 exerciseType: strength
 bodyPosition: kneeling
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Kneel on both knees, hip-width apart',
+  'Hold kettlebell by horns or handle overhead',
+  'Start with arms fully extended, biceps by ears',
+  'Keep elbows stationary and pointed forward',
+  'Lower kettlebell behind head by bending elbows',
+  'Descend until forearms parallel to ground',
+  'Press back to start using triceps only',
+  'Maintain tall kneeling posture throughout'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Keep elbows from flaring outward',
+  "Don't arch lower back",
+  'Control the descent',
+  'Keep core engaged',
+  'Use appropriate weight for control'
+]
+cautions: [
+  'Do not let elbows drift apart',
+  'Avoid using shoulder movement',
+  'Do not hyperextend lower back',
+  'Never use incomplete range of motion',
+  'Avoid moving too quickly'
+]
+commonMistakes: [
+  'Elbows drifting apart',
+  'Using shoulder movement',
+  'Hyperextending lower back',
+  'Incomplete range of motion',
+  'Moving too quickly'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::

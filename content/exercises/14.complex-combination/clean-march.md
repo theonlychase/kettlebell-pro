@@ -1,36 +1,65 @@
 ---
 id: clean-march
 title: Clean March
-description: Clean movement with marching component
+description: A combination exercise alternating between explosive cleans and controlled marching, developing power, hip flexor strength, and stability while building work capacity and coordination.
 category: Complex/Combination Movements
 bodyPart: Full Body
-targetMuscleGroups: ["Core"]
-secondaryMuscleGroups: []
+targetMuscleGroups: ['Full body', 'Hip flexors']
+secondaryMuscleGroups: ['Core', 'Shoulders', 'Cardiovascular']
 difficulty: intermediate
-exerciseType: strength
+exerciseType: combination
 bodyPosition: standing
-equipment: ["Kettlebell"]
+equipment: ['Kettlebell']
 instructions: [
-  'Set up in the starting position as described',
-  'Perform the movement with control and proper form',
-  'Focus on the target muscle groups throughout the exercise',
-  'Complete the prescribed repetitions or duration',
-  'Return to starting position with control'
+  'Start with kettlebell between feet',
+  'Perform single arm clean to rack position',
+  'Stabilize in rack position',
+  'Begin marching in place (5-10 steps)',
+  'Drive knees to hip height',
+  'Keep torso upright, resist lean',
+  'After prescribed marches, lower KB',
+  'Immediately re-clean (same or opposite arm)',
+  'Continue pattern: clean-march-clean'
 ]
 tips: [
-  'Maintain proper form throughout the movement',
-  'Focus on controlled movement rather than speed',
-  'Engage your core throughout the exercise'
+  'Maintain solid rack position during march',
+  "Don't lean away from loaded side",
+  'Keep marching rhythm consistent',
+  'Focus on hip flexor drive',
+  'Use moderate weight'
+]
+cautions: [
+  'Do not lose rack position during march',
+  'Avoid compensatory lean',
+  'Do not use inconsistent march height',
+  'Avoid poor clean technique when fatigued',
+  'Never rush transitions'
+]
+commonMistakes: [
+  'Losing rack position during march',
+  'Compensatory lean',
+  'Inconsistent march height',
+  'Poor clean technique when fatigued',
+  'Rushing transitions'
 ]
 ---
 
-## Video
+## Exercise Details
 
-::custom-video{:title='title' :url='videoUrl'}
-::
+::::exercise-metadata{:difficulty='difficulty' :exerciseType='exerciseType' :bodyPosition='bodyPosition' :targetMuscleGroups='targetMuscleGroups' :secondaryMuscleGroups='secondaryMuscleGroups' :equipment='equipment' :bodyPart='bodyPart' :category='category'}
+::::
 
-## Instructions
+## Video Demonstration
 
-::instructions{:items='instructions'}
-::
+::::custom-video{:title='title' :url='videoUrl'}
+::::
 
+## Step-by-Step Instructions
+
+::::instructions{:items='instructions'}
+::::
+
+## Tips & Safety Guidelines
+
+::::exercise-tips{:tips='tips' :cautions='cautions' :commonMistakes='commonMistakes'}
+::::
