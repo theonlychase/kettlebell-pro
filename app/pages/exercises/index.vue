@@ -26,23 +26,25 @@ useSeoMeta({
   description,
   ogDescription: description,
 })
+const stickyElements = ref<NodeListOf<HTMLElement> | null>(null)
 
 const { y } = useWindowScroll()
 onMounted(() => {
-  const stickyElements = document.querySelectorAll('[data-track-sticky]') as NodeListOf<HTMLElement>
-  watch(y, () => {
-    stickyElements.forEach((el) => {
-      const rect = el.getBoundingClientRect()
-      const topComputed = Number.parseInt(window.getComputedStyle(el).top || '0', 10)
-      if (rect.top <= topComputed) {
-        el.dataset.stuck = ''
-      }
-      else {
-        delete el.dataset.stuck
-      }
-    })
-  }, { immediate: true })
+  stickyElements.value = document.querySelectorAll('[data-track-sticky]') as NodeListOf<HTMLElement>
 })
+
+watch(y, () => {
+  stickyElements.value?.forEach((el) => {
+    const rect = el.getBoundingClientRect()
+    const topComputed = Number.parseInt(window.getComputedStyle(el).top || '0', 10)
+    if (rect.top <= topComputed) {
+      el.dataset.stuck = ''
+    }
+    else {
+      delete el.dataset.stuck
+    }
+  })
+}, { immediate: true })
 
 // Helper functions for exercise metadata display
 // function getDifficultyColor(difficulty: string): string {
@@ -123,7 +125,7 @@ onMounted(() => {
     >
       <div
         data-track-sticky
-        class="group mb-4 sm:mb-6 lg:mb-8 sticky top-[calc(var(--ui-header-height)-1px)] bg-default/75 backdrop-blur z-[1]"
+        class="group not-group-[[data-stuck]]:mb-4 sm:not-group-[[data-stuck]]:mb-6 lg:not-group-[[data-stuck]]:mb-8 sticky top-[calc(var(--ui-header-height)-1px)] bg-default/75 backdrop-blur z-[1]"
       >
         <div class="relative border-y border-default py-4 group-[[data-stuck]]:bg-muted sm:not-group-[[data-stuck]]:py-6 lg:not-group-[[data-stuck]]:py-8 transition-all duration-300">
           <UContainer>
