@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-og-image',
     '@vueuse/nuxt',
+    '@nuxtjs/supabase',
   ],
 
   $development: {
