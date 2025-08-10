@@ -37,6 +37,7 @@ watch(y, () => {
   stickyElements.value?.forEach((el) => {
     const rect = el.getBoundingClientRect()
     const topComputed = Number.parseInt(window.getComputedStyle(el).top || '0', 10)
+
     if (rect.top <= topComputed) {
       el.dataset.stuck = ''
     }
@@ -125,7 +126,7 @@ watch(y, () => {
     >
       <div
         data-track-sticky
-        class="group not-group-[[data-stuck]]:mb-4 sm:not-group-[[data-stuck]]:mb-6 lg:not-group-[[data-stuck]]:mb-8 sticky top-[calc(var(--ui-header-height)-1px)] bg-default/75 backdrop-blur z-[1]"
+        class="group not-group-[[data-stuck]]:mb-4 sm:not-group-[[data-stuck]]:mb-6 lg:not-group-[[data-stuck]]:mb-8  sticky top-[calc(var(--ui-header-height)-1px)] bg-default/75 backdrop-blur z-[1]"
       >
         <div class="relative border-y border-default py-4 group-[[data-stuck]]:bg-muted sm:not-group-[[data-stuck]]:py-6 lg:not-group-[[data-stuck]]:py-8 transition-all duration-300">
           <UContainer>
@@ -134,7 +135,7 @@ watch(y, () => {
                 <div class="flex items-center">
                   <h2 class="relative text-pretty font-bold text-highlighted text-base sm:not-group-[[data-stuck]]:text-xl lg:not-group-[[data-stuck]]:text-2xl transition-all duration-300">
                     <a
-                      :href="`#${category.title}`"
+                      :href="`#${category.slug}`"
                       class="group lg:not-group-[[data-stuck]]:ps-2 lg:not-group-[[data-stuck]]:-ms-2"
                     >
                       <span class="absolute -ms-8 top-1 opacity-0 group-hover:opacity-100 group-focus:opacity-100 p-1 bg-elevated hover:text-primary rounded-md hidden lg:not-group-[[data-stuck]]:flex text-muted transition">
@@ -167,9 +168,9 @@ watch(y, () => {
       <UContainer>
         <UPageGrid
           v-if="category.children?.length"
-          :id="category.title"
+          :id="category.slug"
           :key="category.title"
-          class="xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 pb-24 scroll-mt-[calc(97px+var(--ui-header-height))] sm:scroll-mt-[calc(133px+var(--ui-header-height))] lg:scroll-mt-[calc(165px+var(--ui-header-height))]"
+          class="xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 pb-24 scroll-mt-[calc(97px+var(--ui-header-height))] sm:scroll-mt-[calc(133px+var(--ui-header-height))] lg:scroll-mt-[calc(97px+var(--ui-header-height))]"
         >
           <UCard
             v-for="child in category.children"
