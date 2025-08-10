@@ -95,5 +95,15 @@ export default defineNuxtConfig({
     provider: 'iconify',
   },
 
+  supabase: {
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      include: [
+        '/account(/*)?',
+      ],
+    },
+  },
+
   uiPro: { license: process.env.NUXT_UI_PRO_LICENSE },
 })
