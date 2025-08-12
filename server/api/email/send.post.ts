@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
       from: `Kettlebell Pro <chase@updates.kettlebellpro.fit>`,
       to: [email],
       subject: 'Thanks for subscribing!',
-      html: '<strong>It works!</strong>',
+      html: subscribeEmailTemplate,
     })
 
     return { data }
