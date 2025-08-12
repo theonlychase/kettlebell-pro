@@ -1,4 +1,6 @@
-interface Exercise {
+import type { Ref } from 'vue'
+
+export interface Exercise {
   id: string
   title: string
   description: string
@@ -30,54 +32,15 @@ interface Exercise {
   tips?: string[]
 }
 
-export interface BlogPost {
-  id: string
-  author: {
-    avatar?: {
-      src: string
-      target: string
-    }
-    name: string
-    to?: string
-  }
-  title: string
-  image?: {
-    src: string
-    alt: string
-  }
-  description: string
-  short?: string
-  icon?: string
-  tags?: string[]
-  path: string
-  slug: string
-  created: string
-  lastModified: string
-}
-
-export interface Workout {
-  id: string
-  title: string
-  description: string
-  duration: number
-  difficulty: 'beginner' | 'intermediate' | 'advanced'
-  exercises: Exercise[]
-  tags: string[]
-  imageUrl?: string
-  equipment: string[]
-  caloriesBurned?: number
-  muscleGroups: string[]
-}
-
-export interface Program {
-  id: string
-  title: string
-  description: string
-  price: number
-  duration: string
-  level: 'beginner' | 'intermediate' | 'advanced'
-  workouts: Workout[]
-  features: string[]
-  imageUrl?: string
-  salePrice?: number
-}
+export type EmailJS = Ref<{
+  init: (key: string) => void
+  send: (
+    serviceId: string,
+    templateId: string,
+    templateParams: Record<string, unknown>,
+    options?: Record<string, unknown>,
+  ) => Promise<{
+    status: number
+    text: string
+  }>
+} | null>

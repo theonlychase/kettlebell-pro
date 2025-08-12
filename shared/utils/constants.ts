@@ -3,22 +3,11 @@
  */
 
 /**
- * Exercise difficulty levels
- */
-export const DIFFICULTY_LEVELS = {
-  beginner: 'Beginner',
-  intermediate: 'Intermediate',
-  advanced: 'Advanced',
-  expert: 'Expert',
-} as const
-
-/**
  * Validation constants
  */
-export const VALIDATION_CONSTANTS = {
+export const VALIDATION = {
   email: {
-    maxLength: 254,
-    pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    pattern: /^(?!\.)(?!.*\.\.)([A-Z0-9_'+\-\.]*)[A-Z0-9_+-]@([A-Z0-9][A-Z0-9\-]*\.)+[A-Z]{2,}$/i,
   },
   password: {
     minLength: 8,
@@ -56,15 +45,25 @@ export const NAVIGATION = [
     icon: 'i-custom-kettlebell',
     class: '[&_svg]:w-8 [&_svg]:h-8 -ml-1.5 fill-current',
   },
-  // {
-  //   label: 'Blog',
-  //   to: ROUTES.blog,
-  //   icon: 'i-heroicons-book-open',
-  // },
   {
     label: 'Contact',
     to: ROUTES.contact,
     icon: 'i-lucide-mail',
     class: '[&_svg]:mr-1.5',
+  },
+] as const
+
+export const CONTACT_INFO = [
+  {
+    icon: 'i-heroicons-envelope',
+    label: 'Email',
+    value: 'isleychase@gmail.com',
+    href: 'mailto:isleychase@gmail.com',
+  },
+  {
+    icon: 'i-heroicons-map-pin',
+    label: 'Location',
+    value: 'Parrish, FL / Las Vegas, NV',
+    href: '#',
   },
 ] as const

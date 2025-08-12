@@ -1,37 +1,52 @@
 <script setup lang="ts">
-
+const { email, error, loading, handleSubmit } = useResend()
 </script>
 
 <template>
-  <UFooter :ui="{ top: 'page-container', right: 'max-md:justify-start', left: 'flex-col items-start' }">
-    <template #left>
-      <div class="flex items-center">
-        <UIcon
-          name="i-custom-kettlebell"
-          class="w-8 h-8 fill-current"
-        />
-        <span class="font-bold text-gray-900 dark:text-white">
-          Kettlebell Pro
-        </span>
-      </div>
-      <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
-        Transform your fitness with professional kettlebell training exercises.
-      </p>
-    </template>
-
-    <template #right>
-      <div class="flex flex-col items-end">
-        <div class="flex items-center space-x-2 mt-2">
-          <UButton
-            to="https://www.youtube.com/@ChaseIsley87"
-            target="_blank"
-            icon="i-lucide-youtube"
-            aria-label="YouTube"
-            color="neutral"
-            variant="ghost"
-            size="xl"
-          />
+  <UFooter :ui="{ container: '!hidden' }">
+    <template #top>
+      <div class="flex max-md:flex-wrap items-center justify-between gap-6">
+        <div class="flex flex-col items-start">
+          <div class="flex items-center md-max:mx-auto">
+            <UIcon
+              name="i-custom-kettlebell"
+              class="w-8 h-8 fill-current"
+            />
+            <span class="font-bold text-gray-900 dark:text-white">
+              Kettlebell Pro
+            </span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">
+            Transform your fitness with professional kettlebell training exercises.
+          </p>
         </div>
+
+        <form @submit.prevent="handleSubmit">
+          <UFormField
+            name="email"
+            :error="error ? 'Please enter a valid email' : false"
+            label="Subscribe for updates"
+            size="lg"
+          >
+            <UButtonGroup>
+              <UInput
+                v-model="email"
+                color="neutral"
+                placeholder="Email"
+                :ui="{ base: 'w-[250px]' }"
+                variant="outline"
+              />
+
+              <UButton
+                :loading="loading"
+                :disabled="loading"
+                color="neutral"
+                label="Subscribe"
+                type="submit"
+              />
+            </UButtonGroup>
+          </UFormField>
+        </form>
       </div>
     </template>
   </UFooter>

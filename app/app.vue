@@ -25,7 +25,7 @@ if (import.meta.server) {
 </script>
 
 <template>
-  <UApp :toaster="{ position: 'top-right' }">
+  <UApp :toaster="{ position: 'bottom-right' }">
     <NuxtLoadingIndicator />
 
     <LazyUContentSearch

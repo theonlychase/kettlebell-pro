@@ -1,68 +1,77 @@
 <script setup lang="ts">
 import { z } from 'zod'
-import type { FormSubmitEvent } from '#ui/types'
+import type { FormSubmitEvent, FormSchema } from '#ui/types'
 
-// SEO Meta
 useSeoMeta({
   title: 'Contact - Kettlebell Pro',
   description: 'Get in touch with me. I\'d love to help with your fitness journey and answer any questions about my exercises and programs.',
 })
 
-// Form validation schema
 const schema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
-  subject: z.string().min(5, 'Subject must be at least 5 characters'),
+  subject: z.string().optional(),
   message: z.string().min(5, 'Message must be at least 5 characters'),
 })
 
-type Schema = z.output<typeof schema>
-
-// Form state
 const state = reactive({
   name: '',
   email: '',
   subject: '',
   message: '',
 })
-const toast = useToast()
 
-// Form submission state
+const toast = useToast()
 const isSubmitting = ref(false)
 const isSubmitted = ref(false)
+const success = ref(false)
+const formRef = useTemplateRef('formRef') as FormSchema
 
-// Form submission handler
-async function onSubmit(_event: FormSubmitEvent<Schema>) {
+const {
+  emailJs,
+  emailId,
+  emailKey,
+  templateId,
+  loadEmailJs,
+} = useEmailJs()
+
+async function onSubmit(_event: FormSubmitEvent<z.output<typeof schema>>) {
   isSubmitting.value = true
 
-  try {
-    // Simulate API call - replace with actual submission logic
-    await new Promise(resolve => setTimeout(resolve, 1000))
+  await loadEmailJs()
 
-    // Reset form
-    Object.assign(state, {
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    })
+  if (emailJs.value) {
+    try {
+      const resp = await emailJs.value?.send(emailId, templateId, state, { publicKey: emailKey })
 
-    isSubmitted.value = true
+      if (resp.status === 200) {
+        success.value = true
+        resetForm()
+      }
 
-    setTimeout(() => {
-      isSubmitted.value = false
-    }, 5000)
-  }
-  catch (error) {
-    console.error('Form submission error:', error)
-  }
-  finally {
-    isSubmitting.value = false
+      isSubmitted.value = true
+    }
+    catch (error) {
+      console.error('Form submission error:', error)
+    }
+    finally {
+      isSubmitting.value = false
+    }
   }
 }
 
+function resetForm() {
+  Object.assign(state, {
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
+  formRef?.value?.clear()
+}
+
 watch(isSubmitted, (value) => {
-  if (value) {
+  if (value && success.value) {
     toast.add({
       title: 'Message sent',
       description: 'Thank you for contacting me. I\'ll get back to you within 24 hours.',
@@ -71,42 +80,17 @@ watch(isSubmitted, (value) => {
     })
   }
 })
-
-// Contact information
-const contactInfo = [
-  {
-    icon: 'i-heroicons-envelope',
-    label: 'Email',
-    value: 'isleychase@gmail.com',
-    href: 'mailto:isleychase@gmail.com',
-  },
-  // {
-  //   icon: 'i-heroicons-phone',
-  //   label: 'Phone',
-  //   value: '+1 (555) 123-4567',
-  //   href: 'tel:+15551234567',
-  // },
-  {
-    icon: 'i-heroicons-map-pin',
-    label: 'Location',
-    value: 'Parrish, FL / Las Vegas, NV',
-    href: '#',
-  },
-]
 </script>
 
 <template>
   <UPage>
-    <!-- Page Header -->
     <UPageHeader
       class="page-container"
       title="Contact"
-      description="Get in touch with me. I'd love to help with your fitness journey."
     />
 
     <UContainer>
       <div class="grid lg:grid-cols-2 gap-16 py-12">
-        <!-- Contact Form -->
         <div>
           <div class="mb-8">
             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
@@ -117,10 +101,12 @@ const contactInfo = [
             </p>
           </div>
 
-          <!-- Contact Form -->
           <UForm
+            id="contact"
+            ref="formRef"
             :schema="schema"
             :state="state"
+            :validate-on="['input', 'change']"
             class="space-y-6 max-w-none"
             @submit="onSubmit"
           >
@@ -132,7 +118,6 @@ const contactInfo = [
               <UInput
                 v-model="state.name"
                 placeholder="Full Name"
-                icon="i-heroicons-user"
                 variant="outline"
                 size="lg"
                 color="primary"
@@ -149,7 +134,6 @@ const contactInfo = [
                 v-model="state.email"
                 type="email"
                 placeholder="your.email@example.com"
-                icon="i-heroicons-envelope"
                 variant="outline"
                 size="lg"
                 color="primary"
@@ -160,12 +144,10 @@ const contactInfo = [
             <UFormField
               label="Subject"
               name="subject"
-              required
             >
               <UInput
                 v-model="state.subject"
                 placeholder="What's this about?"
-                icon="i-heroicons-chat-bubble-left-ellipsis"
                 variant="outline"
                 size="lg"
                 color="primary"
@@ -196,49 +178,45 @@ const contactInfo = [
               size="lg"
               :loading="isSubmitting"
               :disabled="isSubmitting"
-              class="w-full justify-center"
+              class="w-full justify-center cursor-pointer"
             >
               {{ isSubmitting ? 'Sending...' : 'Send Message' }}
             </UButton>
           </UForm>
         </div>
 
-        <!-- Contact Information -->
         <div>
-          <div>
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Get in touch
-            </h2>
-            <div class="space-y-4">
-              <div
-                v-for="info in contactInfo"
-                :key="info.label"
-                class="flex items-start gap-4"
-              >
-                <div class="flex-shrink-0">
-                  <UIcon
-                    :name="info.icon"
-                    class="w-5 h-5 text-primary-600 dark:text-primary-400 mt-1"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium text-gray-900 dark:text-white">
-                    {{ info.label }}
-                  </p>
-                  <ULink
-                    v-if="info.href !== '#'"
-                    :to="info.href"
-                    class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400"
-                  >
-                    {{ info.value }}
-                  </ULink>
-                  <p
-                    v-else
-                    class="text-gray-600 dark:text-gray-400"
-                  >
-                    {{ info.value }}
-                  </p>
-                </div>
+          <h2 class="text-2xl font-bold mb-6">
+            Get in touch
+          </h2>
+          <div class="space-y-4">
+            <div
+              v-for="info in CONTACT_INFO"
+              :key="info.label"
+              class="flex items-start gap-4"
+            >
+              <div class="flex-shrink-0">
+                <UIcon
+                  :name="info.icon"
+                  class="w-5 h-5 text-primary-600 dark:text-primary-400 mt-1"
+                />
+              </div>
+              <div>
+                <p class="font-medium">
+                  {{ info.label }}
+                </p>
+                <ULink
+                  v-if="info.href !== '#'"
+                  :to="info.href"
+                  class="hover:text-primary-600 dark:hover:text-primary-400"
+                >
+                  {{ info.value }}
+                </ULink>
+                <p
+                  v-else
+                >
+                  {{ info.value }}
+                </p>
               </div>
             </div>
           </div>

@@ -63,6 +63,9 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appName: 'Kettlebell Pro',
+      emailId: '',
+      emailKey: '',
+      templateId: '',
     },
   },
 
