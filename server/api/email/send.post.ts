@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
 
   try {
     const data = await resend.emails.send({
-      from: `Kettlebell Pro <updates.kettlebellpro.fit>`,
+      from: `Kettlebell Pro <chase@kettlebellpro.fit>`,
       to: [email],
       subject: 'Thanks for subscribing!',
       html: '<strong>It works!</strong>',
