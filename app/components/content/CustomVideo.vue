@@ -69,7 +69,7 @@ const playVideo = () => {
       />
 
       <NuxtImg
-        v-if="!iframeLoaded"
+        v-if="!thumbnailUrl && !iframeLoaded"
         class="w-full h-full object-cover absolute inset-0"
         src="/images/video-placeholder.webp"
         :alt="`${title} loading`"

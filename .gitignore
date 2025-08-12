@@ -19,6 +19,8 @@ logs
 .idea
 .cursor
 .junie
+.claude
+.mcp.json
 
 # Local env files
 .env
@@ -30,6 +32,6 @@ logs
 
 # Plans/Guides
 plan.md
-IMPROVEMENT_PLAN.md
-AUTHENTICATION_TASKS.md
+CLAUDE.md
 .output.txt
+.mcp.json
