@@ -32,9 +32,6 @@ export const VALIDATION = {
 export const ROUTES = {
   home: '/',
   exercises: '/exercises',
-  workouts: '/workouts',
-  programs: '/programs',
-  blog: '/blog',
   contact: '/contact',
 } as const
 

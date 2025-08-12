@@ -4,11 +4,11 @@ useSeoMeta({
   description: 'Login To Your Account',
   robots: 'noindex, nofollow',
 })
-// definePageMeta({ middleware: 'auth' })
+definePageMeta({ middleware: 'auth' })
 </script>
 
 <template>
   <UPageBody>
-    login
+    <AuthForm class="mx-auto mt-16" />
   </UPageBody>
 </template>

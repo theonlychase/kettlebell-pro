@@ -38,6 +38,22 @@ const { navigation } = defineProps<{ navigation: ContentNavigationItem[] }>()
           :kbds="[]"
         />
         <UColorModeButton />
+
+        <UButton
+          label="Sign in"
+          color="neutral"
+          variant="outline"
+          to="/login"
+          class="hidden lg:inline-flex"
+        />
+
+        <UButton
+          label="Sign up"
+          color="neutral"
+          trailing-icon="i-lucide-arrow-right"
+          class="hidden lg:inline-flex"
+          to="/signup"
+        />
       </div>
     </template>
 
