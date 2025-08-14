@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   ],
 
   $development: {
+    runtimeConfig: { public: { baseUrl: 'http://localhost:8888' } },
     vite: {
       optimizeDeps: {
         include: [
@@ -23,6 +24,8 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  $production: { runtimeConfig: { public: { baseUrl: process.env.BASE_URL } } },
 
   // $production: {
   //   image: {
