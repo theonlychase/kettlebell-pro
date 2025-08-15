@@ -102,12 +102,11 @@ export default defineNuxtConfig({
   },
 
   supabase: {
+    redirect: false,
     redirectOptions: {
       login: '/login',
       callback: '/confirm',
-      include: [
-        '/account(/*)?',
-      ],
+      saveRedirectToCookie: true,
     },
   },
 

@@ -33,6 +33,8 @@ export const ROUTES = {
   home: '/',
   exercises: '/exercises',
   contact: '/contact',
+  login: '/login',
+  signup: '/signup',
 } as const
 
 export const NAVIGATION = [

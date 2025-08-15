@@ -93,7 +93,7 @@ watch(isSubmitted, (value) => {
       <div class="grid lg:grid-cols-2 gap-16 py-12">
         <div>
           <div class="mb-8">
-            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 aspect-square">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Send me a message
             </h2>
             <p class="text-gray-600 dark:text-gray-400">

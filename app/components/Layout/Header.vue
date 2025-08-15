@@ -2,6 +2,21 @@
 import type { ContentNavigationItem } from '@nuxt/content'
 
 const { navigation } = defineProps<{ navigation: ContentNavigationItem[] }>()
+const { getUser, signOut } = useAuth()
+
+const user = useState('supabase_user')
+
+if (!user.value) {
+  user.value = await getUser() ?? null
+}
+
+const handleSignOut = async () => {
+  const { error } = await signOut() ?? {}
+
+  if (!error) {
+    user.value = null
+  }
+}
 </script>
 
 <template>
@@ -40,6 +55,7 @@ const { navigation } = defineProps<{ navigation: ContentNavigationItem[] }>()
         <UColorModeButton />
 
         <UButton
+          v-if="!user"
           label="Sign in"
           color="neutral"
           variant="outline"
@@ -48,11 +64,21 @@ const { navigation } = defineProps<{ navigation: ContentNavigationItem[] }>()
         />
 
         <UButton
+          v-if="!user"
           label="Sign up"
           color="neutral"
           trailing-icon="i-lucide-arrow-right"
           class="hidden lg:inline-flex"
           to="/signup"
+        />
+
+        <UButton
+          v-if="user"
+          label="Sign Out"
+          color="neutral"
+          leading-icon="i-lucide-arrow-left"
+          class="hidden lg:inline-flex"
+          @click="async () => await handleSignOut()"
         />
       </div>
     </template>

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { z } from 'zod'
 import type { FormSubmitEvent } from '@nuxt/ui'
-import type { FormSchema } from '#ui/types'
 
 useSeoMeta({
   title: 'Sign Up',
@@ -12,25 +11,25 @@ useSeoMeta({
 definePageMeta({ middleware: 'auth', layout: 'blank' })
 const { signUpNewUser } = useAuth()
 
-const fields = [{
+const fields = ref([{
   name: 'name',
-  type: 'text' as const,
+  type: 'text',
   label: 'Name',
   placeholder: 'Enter your name',
 }, {
   name: 'email',
-  type: 'text' as const,
+  type: 'text',
   label: 'Email',
   placeholder: 'Enter your email',
 }, {
   name: 'password',
   label: 'Password',
-  type: 'password' as const,
+  type: 'password',
   placeholder: 'Enter your password',
-}]
-const success = ref(false)
+}])
 const loading = ref(false)
-const formRef = useTemplateRef('formRef') as FormSchema
+const formRef = useTemplateRef('form')
+const toast = useToast()
 
 const schema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -40,27 +39,35 @@ const schema = z.object({
 
 async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
   loading.value = true
-  await signUpNewUser(payload?.data)
+  const { error } = await signUpNewUser(payload?.data)
   loading.value = false
-  formRef?.value?.clear()
-  success.value = true
+
+  if (error) {
+    console.error('Error signing up:', error)
+    return toast.add({
+      title: 'Error signing up',
+      description: error?.message,
+      icon: 'i-heroicons-check-circle',
+      color: 'error',
+    })
+  }
+
+  toast.add({
+    title: 'Account Created',
+    description: 'Please check your email for a verification link.',
+    icon: 'i-heroicons-check-circle',
+    color: 'success',
+  })
+  formRef?.value?.formRef?.clear()
 }
 </script>
 
 <template>
   <UCard class="max-w-sm mx-auto w-full bg-[var(--ui-bg-muted)]">
-    <UAlert
-      v-if="success"
-      title="Account Created"
-      description="Please check your email for a verification link."
-      icon="i-lucide-check-circle"
-      variant="soft"
-      color="primary"
-      class="animate-fade-in mb-6"
-    />
     <UAuthForm
-      ref="formRef"
+      ref="form"
       :fields="fields"
+      :loading="loading"
       :schema="schema"
       title="Create an account"
       :submit="{ label: 'Create account' }"
@@ -73,13 +80,6 @@ async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
           class="text-primary font-medium"
         >Login</ULink>.
       </template>
-
-      <!--      <template #footer> -->
-      <!--        By signing up, you agree to our <ULink -->
-      <!--          to="/" -->
-      <!--          class="text-primary font-medium" -->
-      <!--        >Terms of Service</ULink>. -->
-      <!--      </template> -->
     </UAuthForm>
   </UCard>
 </template>
