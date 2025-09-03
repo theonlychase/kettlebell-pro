@@ -95,6 +95,37 @@ const handleSignOut = async () => {
         class="mt-4 mb-6"
       />
 
+      <div class="flex gap-x-4 items-center max-w-fit">
+        <UButton
+          v-if="!user"
+          label="Sign in"
+          color="neutral"
+          variant="outline"
+          to="/login"
+        />
+
+        <UButton
+          v-if="!user"
+          label="Sign up"
+          color="neutral"
+          trailing-icon="i-lucide-arrow-right"
+          to="/signup"
+        />
+
+        <UButton
+          v-if="user"
+          label="Sign Out"
+          color="neutral"
+          leading-icon="i-lucide-arrow-left"
+          @click="async () => await handleSignOut()"
+        />
+      </div>
+
+      <USeparator
+        type="dashed"
+        class="mt-4 mb-6"
+      />
+
       <UContentNavigation
         :navigation="navigation"
         highlight

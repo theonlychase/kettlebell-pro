@@ -4,8 +4,7 @@ import type { FormSubmitEvent } from '@nuxt/ui'
 
 useSeoMeta({
   title: 'Sign Up',
-  description: 'Create A New Account',
-  robots: 'noindex, nofollow',
+  description: 'Sign Up to Kettlebell Pro',
 })
 
 definePageMeta({ middleware: 'auth', layout: 'blank' })
@@ -28,8 +27,8 @@ const fields = ref([{
   placeholder: 'Enter your password',
 }])
 const loading = ref(false)
-const formRef = useTemplateRef('form')
 const toast = useToast()
+const submittedKey = ref(0)
 
 const schema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -58,14 +57,15 @@ async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
     icon: 'i-heroicons-check-circle',
     color: 'success',
   })
-  formRef?.value?.formRef?.clear()
+
+  submittedKey.value++
 }
 </script>
 
 <template>
   <UCard class="max-w-sm mx-auto w-full bg-[var(--ui-bg-muted)]">
     <UAuthForm
-      ref="form"
+      :key="submittedKey"
       :fields="fields"
       :loading="loading"
       :schema="schema"

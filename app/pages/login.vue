@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import { z } from 'zod'
 import type { FormSubmitEvent } from '@nuxt/ui'
-import type { FormSchema } from '#ui/types'
 import type { User } from '@supabase/supabase-js'
 
 const redirectInfo = useSupabaseCookieRedirect()
 
 useSeoMeta({
   title: 'Login',
-  description: 'Login To Your Account',
-  robots: 'noindex, nofollow',
+  description: 'Login To Your Kettlebell Pro Account',
 })
 
 definePageMeta({ middleware: 'auth', layout: 'blank' })
@@ -41,7 +39,6 @@ watch(
   () => {
     if (user.value) {
       const path = redirectInfo.path
-      console.log(path.value)
       // Redirect to the saved path, or fallback to home
       return navigateTo(path.value || '/')
     }
