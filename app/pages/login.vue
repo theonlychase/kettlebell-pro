@@ -11,6 +11,7 @@ useSeoMeta({
 })
 
 definePageMeta({ middleware: 'auth', layout: 'blank' })
+
 const { signInWithPassword } = useAuth()
 
 const fields = ref([{
@@ -25,9 +26,9 @@ const fields = ref([{
   placeholder: 'Enter your password',
 }])
 const loading = ref(false)
-const formRef = useTemplateRef('formRef')
 const user = ref<User | null>(null)
 const toast = useToast()
+const submittedKey = ref(0)
 
 const schema = z.object({
   email: z.string().email('Invalid email'),
@@ -50,6 +51,7 @@ async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
   loading.value = true
   const { data, error } = await signInWithPassword(payload?.data)
   loading.value = false
+
   if (error) {
     console.error('Error logging in', error)
     return toast.add({
@@ -59,15 +61,16 @@ async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
       color: 'error',
     })
   }
+
   user.value = data.user
-  formRef?.value?.formRef?.clear()
+  submittedKey.value++
 }
 </script>
 
 <template>
   <UCard class="max-w-sm mx-auto w-full bg-[var(--ui-bg-muted)]">
     <UAuthForm
-      ref="formRef"
+      :key="submittedKey"
       :fields="fields"
       :loading="loading"
       :schema="schema"

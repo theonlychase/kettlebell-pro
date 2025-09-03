@@ -7,7 +7,7 @@ export type Json
     | Json[]
 
 export type Database = {
-  // Allows to automatically instanciate createClient with right options
+  // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
     PostgrestVersion: '12.2.3 (519615d)'
@@ -22,10 +22,10 @@ export type Database = {
     Functions: {
       graphql: {
         Args: {
+          extensions?: Json
           operationName?: string
           query?: string
           variables?: Json
-          extensions?: Json
         }
         Returns: Json
       }
@@ -39,7 +39,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      user_profile: {
+        Row: {
+          confirmed: boolean | null
+          created_at: string | null
+          email: string
+          exists: boolean | null
+          id: string
+          name: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          confirmed?: boolean | null
+          created_at?: string | null
+          email: string
+          exists?: boolean | null
+          id?: string
+          name?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          confirmed?: boolean | null
+          created_at?: string | null
+          email?: string
+          exists?: boolean | null
+          id?: string
+          name?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -181,3 +210,5 @@ export const Constants = {
     Enums: {},
   },
 } as const
+
+export type { PostgrestError } from '@supabase/postgrest-js'

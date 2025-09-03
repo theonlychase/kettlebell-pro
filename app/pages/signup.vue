@@ -8,7 +8,8 @@ useSeoMeta({
 })
 
 definePageMeta({ middleware: 'auth', layout: 'blank' })
-const { signUpNewUser } = useAuth()
+
+const { signUpWithProfileCheck } = useAuth()
 
 const fields = ref([{
   name: 'name',
@@ -38,7 +39,7 @@ const schema = z.object({
 
 async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
   loading.value = true
-  const { error } = await signUpNewUser(payload?.data)
+  const { error } = await signUpWithProfileCheck(payload?.data)
   loading.value = false
 
   if (error) {
