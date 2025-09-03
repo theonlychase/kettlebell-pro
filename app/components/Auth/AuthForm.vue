@@ -3,7 +3,7 @@ import type { FormError } from '#ui/types'
 
 const redirectInfo = useSupabaseCookieRedirect()
 
-const { auth } = useSupabaseClient()
+const { auth } = useSupabaseClient<Database>()
 
 const oAuthLoading = ref(false)
 const otpLoading = ref(false)

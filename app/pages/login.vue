@@ -53,7 +53,6 @@ async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
   loading.value = false
 
   if (error) {
-    console.error('Error logging in', error)
     return toast.add({
       title: 'Error logging in',
       description: error?.message,

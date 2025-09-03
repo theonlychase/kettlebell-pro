@@ -9,7 +9,7 @@ useSeoMeta({
 
 definePageMeta({ middleware: 'auth', layout: 'blank' })
 
-const { signUpWithProfileCheck } = useAuth()
+const { signUpWithProfileCheck } = useAuthOperations()
 
 const fields = ref([{
   name: 'name',
@@ -43,7 +43,6 @@ async function onSubmit(payload: FormSubmitEvent<z.output<typeof schema>>) {
   loading.value = false
 
   if (error) {
-    console.error('Error signing up:', error)
     return toast.add({
       title: 'Error signing up',
       description: error?.message,

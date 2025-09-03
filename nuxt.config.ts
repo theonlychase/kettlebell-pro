@@ -25,13 +25,14 @@ export default defineNuxtConfig({
     },
   },
 
-  $production: { runtimeConfig: { public: { baseUrl: process.env.BASE_URL } } },
-
-  // $production: {
-  //   image: {
-  //     provider: 'netlifyImageCdn',
-  //   },
-  // },
+  $production: {
+    runtimeConfig: {
+      public: {
+        baseUrl: process.env.BASE_URL,
+        authRedirectUrl: `${process.env.BASE_URL}/confirm`,
+      },
+    },
+  },
 
   components: [
     {
@@ -66,6 +67,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       appName: 'Kettlebell Pro',
+      authRedirectUrl: '',
       emailId: '',
       emailKey: '',
       templateId: '',
@@ -108,6 +110,7 @@ export default defineNuxtConfig({
       callback: '/confirm',
       saveRedirectToCookie: true,
     },
+    types: '~/shared/types/database.ts',
   },
 
   uiPro: { license: process.env.NUXT_UI_PRO_LICENSE },

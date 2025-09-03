@@ -41,6 +41,7 @@ export type Database = {
     Tables: {
       user_profile: {
         Row: {
+          auth_user_id: string | null
           confirmed: boolean | null
           created_at: string | null
           email: string
@@ -50,6 +51,7 @@ export type Database = {
           updated_at: string | null
         }
         Insert: {
+          auth_user_id?: string | null
           confirmed?: boolean | null
           created_at?: string | null
           email: string
@@ -59,6 +61,7 @@ export type Database = {
           updated_at?: string | null
         }
         Update: {
+          auth_user_id?: string | null
           confirmed?: boolean | null
           created_at?: string | null
           email?: string
@@ -210,5 +213,3 @@ export const Constants = {
     Enums: {},
   },
 } as const
-
-export type { PostgrestError } from '@supabase/postgrest-js'
