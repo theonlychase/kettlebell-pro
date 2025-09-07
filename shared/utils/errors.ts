@@ -1,4 +1,4 @@
-import { createError } from '#imports'
+import { createError } from 'h3'
 
 export const handleAuthError = (error: unknown, context: string) => {
   if (error && typeof error === 'object' && 'statusCode' in error) {
