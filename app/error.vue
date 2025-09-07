@@ -14,11 +14,7 @@ useSeoMeta({
     <Header />
 
     <UMain>
-      <UContainer>
-        <UPage>
-          <UError :error="error" />
-        </UPage>
-      </UContainer>
+      <UError :error="error" />
     </UMain>
 
     <Footer />

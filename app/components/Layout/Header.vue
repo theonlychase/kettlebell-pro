@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ContentNavigationItem } from '@nuxt/content'
 
-const { navigation } = defineProps<{ navigation: ContentNavigationItem[] }>()
+const { navigation } = defineProps<{ navigation?: ContentNavigationItem[] }>()
 const { getUser, signOut } = useAuth()
 
 const user = useState('supabase_user')

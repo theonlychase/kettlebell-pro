@@ -41,7 +41,7 @@ commonMistakes: [
   'Losing grip on smooth bell',
   'Rounding upper back'
 ]
-videoUrl: 'https://www.youtube.com/embed/0on0IkOBe_w'
+videoUrl: ''
 ---
 
 ## Exercise Details
