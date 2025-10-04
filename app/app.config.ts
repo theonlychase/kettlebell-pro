@@ -10,8 +10,6 @@ export default defineAppConfig({
       neutral: 'neutral',
     },
     fonts: false,
-  },
-  uiPro: {
     footer: { slots: { root: 'mt-auto', bottom: 'px-4 sm:px-6 lg:px-8 py-8 lg:py-4 border-default border-t', top: 'page-container px-4 sm:px-6 lg:px-8 py-6 lg:py-6' } },
     main: { base: 'min-h-full flex-1' },
     // pageHeader: { slots: { container: 'page-container' } },

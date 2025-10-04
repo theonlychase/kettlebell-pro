@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/ui-pro',
+    '@nuxt/ui',
     '@nuxt/content',
     'nuxt-og-image',
     '@vueuse/nuxt',
@@ -112,6 +112,4 @@ export default defineNuxtConfig({
     },
     types: '~/shared/types/database.ts',
   },
-
-  uiPro: { license: process.env.NUXT_UI_PRO_LICENSE },
 })

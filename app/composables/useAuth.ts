@@ -3,10 +3,9 @@ export const useAuth = () => {
   const config = useRuntimeConfig()
 
   async function getUser() {
-    const { data } = await useFetch('/api/auth', {
-      headers: useRequestHeaders(['cookie']),
-    })
-    return data
+    const data = await $fetch('/api/auth', { headers: useRequestHeaders(['cookie']) })
+
+    return data ?? ''
   }
 
   async function signUpNewUser(payload: { email: string, name: string, password: string }) {

@@ -35,7 +35,7 @@ const active = ref(['tips'])
 </script>
 
 <template>
-  <UPageAccordion
+  <UAccordion
     v-model="active"
     :items="items"
   >
@@ -68,5 +68,5 @@ const active = ref(['tips'])
         </div>
       </div>
     </template>
-  </UPageAccordion>
+  </UAccordion>
 </template>
