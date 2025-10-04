@@ -7,7 +7,7 @@ const { getUser, signOut } = useAuth()
 const user = useState('supabase_user')
 
 if (!user.value) {
-  user.value = await getUser() ?? null
+  user.value = await getUser()
 }
 
 const handleSignOut = async () => {

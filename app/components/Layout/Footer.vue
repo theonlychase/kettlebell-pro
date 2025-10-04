@@ -28,7 +28,7 @@ const { email, error, loading, handleSubmit } = useResend()
             label="Subscribe for updates"
             size="lg"
           >
-            <UButtonGroup>
+            <UFieldGroup>
               <UInput
                 v-model="email"
                 color="neutral"
@@ -44,7 +44,7 @@ const { email, error, loading, handleSubmit } = useResend()
                 label="Subscribe"
                 type="submit"
               />
-            </UButtonGroup>
+            </UFieldGroup>
           </UFormField>
         </form>
       </div>
